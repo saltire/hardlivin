@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hard Livin' Configurator</title>
+		<link rel='stylesheet' type='text/css' href='static/squares.css' />
+		<script type='text/javascript' src='static/jquery-1.10.2.min.js'></script>
+		<script type='text/javascript' src='static/jquery-ui-1.10.3.custom.min.js'></script>
+		<script type='text/javascript' src='static/squares.js'></script>
+	</head>
+	<body>
+		<div class='topbar'>
+			<h1>Hard Livin' Configurator</h1>
+			<div class='buttons'>
+				<a class='save disabled' href='#'>Save Board</a>
+			</div>
+			<div class='status'></div>
+		</div>
+		<div class='board-container'>
+			<div class='board'>
+				{% for column in columns %}
+				<div class='column'>
+					{% for square in column %}
+					{% if square %}
+					<a href='#{{ square }}' class='square'>
+						<img src='static/images/{{ square }}.png' />
+					</a>
+					{% else %}
+					<div class='empty'></div>
+					{% endif %}
+					{% endfor %}
+				</div>
+				{% endfor %}
+				<div class='column'>
+					{% for _ in range(5) %}
+					<div class='empty'></div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		<div class='info'>
+			{% for square, (name, desc) in squares.iteritems() %}
+			<div id='{{ square }}'>
+				<img src='static/images/{{ square }}.png' />
+				<p class='name'>{{ name }}</p>
+				<p class='desc'>{{ desc }}</p>
+			</div>
+			{% endfor %}
+		</div>
+		<div class='unused'>
+			{% for square in unused %}
+			<a href='#{{ square }}' class='square'>
+				<img src='static/images/{{ square }}.png' />
+			</a>
+			{% endfor %}
+		</div>
+	</body>
+</html>

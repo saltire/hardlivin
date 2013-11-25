@@ -1,0 +1,51 @@
+body { margin: 0; background: #333; color: #fff; font-family: sans-serif; }
+
+img {
+	image-rendering: optimizeSpeed;             /* FUCK SMOOTHING, GIVE ME SPEED  */
+	image-rendering: -moz-crisp-edges;          /* Firefox                        */
+	image-rendering: -o-crisp-edges;            /* Opera                          */
+	image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+	image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+	-ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+.topbar { overflow: auto; }
+.topbar h1 { float: left; margin: 0 0 0 17px; width: 384px; font-size: 24px; line-height: 48px; }
+.topbar div { float: left; margin-right: 20px; line-height: 48px; }
+
+.buttons { line-height: 48px; }
+.buttons a { height: 24px; padding: 5px 20px; border: 0; background: #fff; color: #333;
+	font-size: 14px; text-decoration: none; }
+.buttons a:hover { background: #999; color: #fff; }
+.buttons a:active { background: #000; }
+.buttons a.disabled { background: #fff; color: #ccc; cursor: default; }
+
+.square, .empty { display: block; width: 64px; height: 64px; background: #edb; outline: none; }
+.square img { width: 100%; height: 100%; }
+
+.board-container { margin-bottom: 30px; padding-left: 16px; background: #fff; overflow-x: scroll; }
+.board { width: 100%; height: 426px; white-space: nowrap; }
+.board .column { float: left; margin: 16px 16px 0 0; }
+.board .column .square,
+.board .column .empty { margin-bottom: 16px; border: 1px solid #fff; }
+
+.board .column .square:hover { border-color: #963; }
+
+.square.ui-dragged { visibility: hidden; }
+.square.ui-draggable-dragging { border: 1px solid #fff; }
+.empty.ui-drophover { background: #963; }
+
+.info { width: 400px; min-height: 1px; float: left; }
+.info div { display: none; padding: 0 30px; }
+.info div img { float: left; width: 128px; height: 128px; margin-right: 15px;
+	background: #edb; border: 1px solid #fff; }
+.info div p { margin-top: 0; }
+.info div .name { font-size: 20px; }
+.info div .desc { font-size: 14px; }
+
+.unused { height: 288px; margin: 0 0 20px 400px; overflow-y: scroll; }
+.unused .square, .unused .empty { float: left; margin: 0 8px 8px 0;
+	border: 1px solid #333; }
+.unused .square:hover { border-color: #fff; }
+
+	
