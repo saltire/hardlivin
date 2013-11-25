@@ -5,13 +5,14 @@
 		<link rel='stylesheet' type='text/css' href='static/squares.css' />
 		<script type='text/javascript' src='static/jquery-1.10.2.min.js'></script>
 		<script type='text/javascript' src='static/jquery-ui-1.10.3.custom.min.js'></script>
+		<script type='text/javascript' src='static/jquery.editable.min.js'></script>
 		<script type='text/javascript' src='static/squares.js'></script>
 	</head>
 	<body>
 		<div class='topbar'>
 			<h1>Hard Livin' Configurator</h1>
 			<div class='buttons'>
-				<a class='save disabled' href='#'>Save Board</a>
+				<a class='save disabled' href='#'>Save Changes</a>
 			</div>
 			<div class='status'></div>
 		</div>
@@ -21,7 +22,7 @@
 				<div class='column'>
 					{% for square in column %}
 					{% if square %}
-					<a href='#{{ square }}' class='square'>
+					<a href='#{{ square }}' class='square' title='{{ info[square][0] }}'>
 						<img src='static/images/{{ square }}.png' />
 					</a>
 					{% else %}
@@ -38,7 +39,7 @@
 			</div>
 		</div>
 		<div class='info'>
-			{% for square, (name, desc) in squares.iteritems() %}
+			{% for square, (name, desc) in info.iteritems() %}
 			<div id='{{ square }}'>
 				<img src='static/images/{{ square }}.png' />
 				<p class='name'>{{ name }}</p>
@@ -48,7 +49,7 @@
 		</div>
 		<div class='unused'>
 			{% for square in unused %}
-			<a href='#{{ square }}' class='square'>
+			<a href='#{{ square }}' class='square' title='{{ info[square][0] }}'>
 				<img src='static/images/{{ square }}.png' />
 			</a>
 			{% endfor %}

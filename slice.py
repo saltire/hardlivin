@@ -17,7 +17,8 @@ with open('squares.csv', 'rb') as csvfile:
 
 
 imgpath = os.path.join('static', 'images')
-os.makedirs(imgpath)
+if not os.path.exists(imgpath):
+    os.makedirs(imgpath)
 
 # slice image into individual squares
 img = Image.open('squares.png')

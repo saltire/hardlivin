@@ -17,8 +17,17 @@ def get_square_info(square):
         name, desc = square.split('\n', 1)
     except ValueError:
         name, desc = square, ''
+
+    # generate filename from name
     filename = re.sub('[^\w-]', '', name.lower())
-    return filename, name, desc
+    return filename, (name, desc)
+
+
+def get_filename(square):
+    if not square:
+        return None
+    filename = get_square_info(square)[0]
+    return filename if filename in g.info else None
 
 
 @app.before_request
@@ -27,51 +36,53 @@ def load_csvs():
     if '/static/' in request.path:
         return
 
-    # squares.csv contains name and description separated by a line break
-    # g.squares is an ordered dict >> filename: name, description
-    # filenames are generated from the name
-    g.squares = OrderedDict()
+    # g.info is an ordered dict: {filename: name, description}
+    # g.sourcemap is a list of rows containing filenames, in source image position
+    g.info = OrderedDict()
+    g.sourcemap = []
     with open('squares.csv', 'rb') as csvfile:
         for row in csv.reader(csvfile):
-            for square in row:
-                if square:
-                    filename, name, desc = get_square_info(square)
-                    g.squares[filename] = name, desc
+            g.info.update(get_square_info(square) for square in row if square)
+            g.sourcemap.append([get_filename(square) for square in row])
 
-    # board.csv contains name
-    # g.board is a dict >> (x, y): filename
-    g.board = {}
+    # g.board is a list of rows containing filenames, in board position
     with open('board.csv', 'rb') as csvfile:
-        for y, row in enumerate(csv.reader(csvfile)):
-            for x, square in enumerate(row):
-                if square:
-                    filename, name, desc = get_square_info(square)
-                    if filename in g.squares:
-                        g.board[x, y] = filename
+        g.board = [[get_filename(square) for square in row] for row in csv.reader(csvfile)]
 
 
 @app.route('/')
 def draw_board():
-    unused = g.squares.keys()
-    for filename in g.board.itervalues():
-        unused.remove(filename)
+    unused = g.info.keys()
+    for row in g.board:
+        for filename in row:
+            if filename:
+                unused.remove(filename)
 
-    colcount = max(xx for xx, _ in g.board.iterkeys()) + 1
-    columns = [[(g.board[x, y] if (x, y) in g.board else None)
-                for y in range(ROWCOUNT)]
-               for x in range(colcount)]
-
-    return render_template('squares.html', columns=columns, squares=g.squares, unused=unused)
+    return render_template('squares.html', columns=zip(*g.board), info=g.info, unused=unused)
 
 
 @app.route('/save', methods=['post'])
-def save_board():
-    rows = zip(*[column.split(',') for column in request.form.getlist('columns[]')])
+def save_changes():
+    data = request.get_json()
 
+    # save info to squares.csv
+    print data['info']
+    if data['info']:
+        for filename, info in data['info'].iteritems():
+            g.info[filename] = info['name'], info['desc']
+
+        with open('squares.csv', 'wb') as csvfile:
+            writer = csv.writer(csvfile)
+            for row in g.sourcemap:
+                writer.writerow([('\n'.join(g.info[filename]).strip() if filename in g.info else '')
+                                 for filename in row])
+
+
+    # save rows to board csv
     with open('board.csv', 'wb') as csvfile:
         writer = csv.writer(csvfile)
-        for row in rows:
-            writer.writerow([(g.squares[filename][0] if filename in g.squares else '')
+        for row in zip(*[column.split(',') for column in data['columns']]):
+            writer.writerow([(g.info[filename][0] if filename in g.info else '')
                              for filename in row])
 
     return jsonify({'saved': True})

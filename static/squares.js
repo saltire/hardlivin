@@ -1,5 +1,7 @@
 $(function() {
 	
+	// run after the board changes, to ensure there is one blank column at the end
+	
 	function setEmptyColumns() {
 		var $emptycols = $('.column .square').last().parent().nextAll();
 		if ($emptycols.length > 1) {
@@ -15,6 +17,39 @@ $(function() {
 		}
 		$('.board').css({minWidth: $('.column').length * $('.column').outerWidth(true) + 'px'});
 	}
+	
+	
+	// click squares to show their info
+	
+	$('.board, .unused').on('click', '.square', function() {
+		$('.info > div').hide();
+		$('.info #' + $(this).attr('href').slice(1)).show();
+		return false;
+	});
+	
+	
+	// edit name and description of square in info area
+	
+	//$('.info p').editable({ // changing square names not supported yet
+	$('.info .desc').editable({
+		lineBreaks: false,
+		callback: function(data) {
+			if (data.$el.hasClass('name') && data.content == '') {
+				// reset content of title if it is blank
+				data.$el.html(data.$el.attr('data-original'));
+				
+			} else if (data.content !== false) {
+				data.$el.attr('data-changed', 1);
+				$('.save').removeClass('disabled');
+			}
+			data.$el.removeAttr('data-original');
+		},
+	}).on('edit', function(e, $el) {
+		$el.parent().attr('data-original', $el.val());
+	});
+	
+	
+	// drag and drop between board, and sortable unused squares
 	
 	var drag_opts = {
 		connectToSortable: '.unused',
@@ -55,13 +90,6 @@ $(function() {
 		},
 	};
 	
-	$('.board, .unused').on('click', '.square', function() {
-		// show the square in the info area
-		$('.info > div').hide();
-		$('.info #' + $(this).attr('href').slice(1)).show();
-		return false;
-	});
-	
 	$('.board .square').draggable(drag_opts);
 	
 	$('.empty').droppable(drop_opts);
@@ -82,11 +110,15 @@ $(function() {
 		},
 	});
 	
+	
+	// save board to csv
+	
 	$('.save').click(function() {
 		if ($(this).hasClass('disabled')) {
 			return false;
 		}
 		
+		// collect columns in the board
 		var columns = [];
 		$('.column').slice(0, -1).each(function() {
 			var column = [];
@@ -96,9 +128,24 @@ $(function() {
 			columns.push(column.join(','));
 		});
 		
-		$.post('save', {columns: columns}, function(response) {
-			$('.status').css({color: '#0f0'}).html('Saved!').fadeOut(2000);
-			$('.save').addClass('disabled');
+		// collect name and description of each
+		var info = {};
+		$('.info p[data-changed=1]').removeAttr('data-changed').parent().each(function() {
+			info[$(this).attr('id')] = {
+				name: $('.name', this).text(),
+				desc: $('.desc', this).text(),
+			};
+		});
+		
+		$.ajax({
+			type: 'POST',
+			contentType: 'application/json',
+			data: JSON.stringify({columns: columns, info: info}),
+			url: 'save',
+			success: function(e) {
+				$('.status').css({color: '#0f0'}).html('Saved!').fadeOut(2000);
+				$('.save').addClass('disabled');
+			},
 		});
 	});
 });
