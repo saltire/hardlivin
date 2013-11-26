@@ -1,14 +1,18 @@
 $(function() {
 	
-	// run after the board changes, to ensure there is one blank column at the end
+	// count columns after the board changes, to ensure there is one blank column at the end
 	
 	function setEmptyColumns() {
-		var $emptycols = $('.column .square').last().parent().nextAll();
+		var $emptycols = $('.board .square').last().parent().nextAll();
 		if ($emptycols.length > 1) {
 			// remove all but one empty column from the end 
 			$emptycols.slice(1).remove();
 		}
 		else if ($emptycols.length == 0) {
+			// if no squares on the board at all, clear all columns
+			if ($('.board .square').length == 0) {
+				$('.board').empty();
+			}
 			// add one empty column to the end
 			var $lastcol = $('<div class="column" />').appendTo('.board');
 			for (i = 0; i < 5; i++) {
@@ -54,44 +58,47 @@ $(function() {
 	var drag_opts = {
 		connectToSortable: '.unused',
 		helper: 'clone',
-		appendTo: 'body',
 		revert: 'invalid',
 		start: function(e, ui) {
+			// trigger click to show info
 			$(this).trigger('click');
+			
+			// add css class to style original square during drag
 			$(this).addClass('ui-dragged');
 		},
 		stop: function(e, ui) {
+			// remove class in case drag was incomplete
 			$(this).removeClass('ui-dragged');
+			
+			// if dropped elsewhere on the board, replace with a droppable blank square
+			if (ui.helper.attr('data-dropped')) {
+				ui.helper.removeAttr('data-dropped');
+				$(this).replaceWith($('<div class="empty" />').droppable(drop_opts));
+			}
 		},
 	};
+	$('.board .square').draggable(drag_opts);
 	
 	var drop_opts = {
 		hoverClass: 'ui-drophover',
 		drop: function(e, ui) {
-			// create clone of square to add at drop spot
-			var $sq = ui.helper.clone().removeClass('ui-draggable-dragging').removeClass('ui.dragged')
-				.draggable(drag_opts).css({position: 'relative', top: 'auto', left: 'auto'});
-			
-			if (ui.draggable.parent().hasClass('column')) {
-				// if moved from board, replace with a blank square
-				ui.draggable.replaceWith($('<div class="empty" />').droppable(drop_opts));
-				
-			} else {
-				// if moved from unused area, remove it
+			// if moved from unused area, remove it from there
+			if (ui.draggable.parent().hasClass('unused')) {
 				ui.draggable.remove();
 			}
 			
-			// add the clone we created
-			$(this).replaceWith($sq);
+			// replace with a clone of the dragged helper, clear css and bind events
+			$(this).replaceWith(ui.helper.clone().removeClass('ui-draggable-dragging')
+				.css({position: 'relative', top: 'auto', left: 'auto'}).draggable(drag_opts));
+			
+			// add a flag to the helper so we know to replace the original with a blank
+			ui.helper.attr('data-dropped', 1);
 			
 			setEmptyColumns();
 			
 			$('.save').removeClass('disabled');
 		},
 	};
-	
-	$('.board .square').draggable(drag_opts);
-	
 	$('.empty').droppable(drop_opts);
 	
 	$('.unused').sortable({
@@ -99,8 +106,8 @@ $(function() {
 			ui.item.trigger('click');
 		},
 		receive: function(e, ui) {
+			// if dragged from the board, replace original with a droppable blank square
 			if (ui.item.parent().hasClass('column')) {
-				// if moved from board, replace with a blank square
 				ui.item.after($('<div class="empty" />').droppable(drop_opts)).detach();
 				setEmptyColumns();
 			}
