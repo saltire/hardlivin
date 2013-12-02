@@ -79,15 +79,14 @@ def save_changes():
             with open(csvname, 'wb') as csvfile:
                 writer = csv.writer(csvfile)
                 for row in g.sourcemap[csvname]:
-                    writer.writerow([('\n'.join(g.info.get(filename, [])).strip())
+                    writer.writerow([('\n'.join(g.info.get(filename, [])[:2]).strip())
                                      for filename in row])
 
     # save rows to board csv
     with open('board.csv', 'wb') as csvfile:
         writer = csv.writer(csvfile)
         for row in zip(*[column.split(',') for column in data['columns']]):
-            writer.writerow([(g.info[filename][0] if filename in g.info else '')
-                             for filename in row])
+            writer.writerow([g.info.get(filename, [''])[0] for filename in row])
 
     return jsonify({'saved': True})
 
