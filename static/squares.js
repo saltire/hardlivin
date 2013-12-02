@@ -25,10 +25,10 @@ $(function() {
 	
 	// click squares to show their info
 	
-	$('.board, .unused').on('click', '.square', function() {
+	$('.board, .unused').on('click', '.square', function(e) {
+		e.preventDefault();
 		$('.info > div').hide();
 		$('.info #' + $(this).attr('href').slice(1)).show();
-		return false;
 	});
 	
 	
@@ -120,7 +120,9 @@ $(function() {
 	
 	// save board to csv
 	
-	$('.save').click(function() {
+	$('.save').click(function(e) {
+		e.preventDefault();
+		
 		if ($(this).hasClass('disabled')) {
 			return false;
 		}

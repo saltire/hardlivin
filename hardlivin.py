@@ -1,5 +1,6 @@
 from collections import OrderedDict
 import csv
+import os
 import re
 
 from flask import Flask, g, jsonify, render_template, request
@@ -12,22 +13,9 @@ app.jinja_options = dict(app.jinja_options, trim_blocks=True, lstrip_blocks=True
 ROWCOUNT = 5
 
 
-def get_square_info(square):
-    try:
-        name, desc = square.split('\n', 1)
-    except ValueError:
-        name, desc = square, ''
-
-    # generate filename from name
-    filename = re.sub('[^\w-]', '', name.lower())
-    return filename, (name, desc)
-
-
-def get_filename(square):
-    if not square:
-        return None
-    filename = get_square_info(square)[0]
-    return filename if filename in g.info else None
+def get_filename(name):
+    # convert a square name deterministically into a filename
+    return re.sub('[^\w-]', '', name.lower())
 
 
 @app.before_request
@@ -36,18 +24,33 @@ def load_csvs():
     if '/static/' in request.path:
         return
 
-    # g.info is an ordered dict: {filename: name, description}
+    files = os.listdir('.')
+    csvnames = [f for f in files if f[-4:] == '.csv' and f[:-4] + '.png' in files]
+
+    # cells in info csv should contain name, then optionally a line break and a description
+    # g.info is an ordered dict: {filename: name, description, csv filename}
     # g.sourcemap is a list of rows containing filenames, in source image position
     g.info = OrderedDict()
-    g.sourcemap = []
-    with open('squares.csv', 'rb') as csvfile:
-        for row in csv.reader(csvfile):
-            g.info.update(get_square_info(square) for square in row if square)
-            g.sourcemap.append([get_filename(square) for square in row])
+    g.sourcemap = {}
+    for csvname in csvnames:
+        g.sourcemap[csvname] = []
+        with open(csvname, 'rb') as csvfile:
+            for row in csv.reader(csvfile):
+                sourcerow = []
+                for square in row:
+                    if square:
+                        name, desc = square.split('\n', 1) if '\n' in square else (square, '')
+                        filename = get_filename(name)
+                        g.info[filename] = name, desc, csvname
+                        sourcerow.append(filename)
+                    else:
+                        sourcerow.append(None)
+                g.sourcemap[csvname].append(sourcerow)
 
+    # cells in board csv should contain name
     # g.board is a list of rows containing filenames, in board position
     with open('board.csv', 'rb') as csvfile:
-        g.board = [[get_filename(square) for square in row] for row in csv.reader(csvfile)]
+        g.board = [[get_filename(name) for name in row] for row in csv.reader(csvfile)]
 
 
 @app.route('/')
@@ -66,17 +69,18 @@ def save_changes():
     data = request.get_json()
 
     # save info to squares.csv
-    print data['info']
     if data['info']:
         for filename, info in data['info'].iteritems():
-            g.info[filename] = info['name'], info['desc']
+            # replace stored square info with new info
+            g.info[filename] = info['name'], info['desc'], g.info[filename][2]
 
-        with open('squares.csv', 'wb') as csvfile:
-            writer = csv.writer(csvfile)
-            for row in g.sourcemap:
-                writer.writerow([('\n'.join(g.info[filename]).strip() if filename in g.info else '')
-                                 for filename in row])
-
+        # rewrite info csv file
+        for csvname in g.sourcemap:
+            with open(csvname, 'wb') as csvfile:
+                writer = csv.writer(csvfile)
+                for row in g.sourcemap[csvname]:
+                    writer.writerow([('\n'.join(g.info.get(filename, [])).strip())
+                                     for filename in row])
 
     # save rows to board csv
     with open('board.csv', 'wb') as csvfile:
