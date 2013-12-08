@@ -3,9 +3,9 @@ $(function() {
 	// count columns after the board changes, to ensure there is one blank column at the end
 	
 	function setEmptyColumns() {
-		var $emptycols = $('.board .square').last().parent().nextAll();
+		var $emptycols = $('.column .square:not(".ui-dragged")').last().parent().nextAll();
 		if ($emptycols.length > 1) {
-			// remove all but one empty column from the end 
+			// remove all but one empty column from the end
 			$emptycols.slice(1).remove();
 		}
 		else if ($emptycols.length == 0) {
@@ -58,6 +58,7 @@ $(function() {
 	var drag_opts = {
 		connectToSortable: '.unused',
 		helper: 'clone',
+		appendTo: 'body',
 		revert: 'invalid',
 		start: function(e, ui) {
 			// trigger click to show info
