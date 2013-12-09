@@ -1,0 +1,14 @@
+.squares { display: none; }
+
+img {
+	image-rendering: optimizeSpeed;             /* FUCK SMOOTHING, GIVE ME SPEED  */
+	image-rendering: -moz-crisp-edges;          /* Firefox                        */
+	image-rendering: -o-crisp-edges;            /* Opera                          */
+	image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+	image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+	-ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+.game { margin-top: 150px; font-size: 0; text-align: center; }
+.game div a { display: inline-block; margin: 7px; border: 1px solid #fff; }
+.game div a img { width: 64px; height: 64px; }

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hard Livin' Memory</title>
+		<link rel='stylesheet' type='text/css' href='/static/memory.css' />
+		<script type='text/javascript' src='static/jquery-1.10.2.min.js'></script>
+		<script type='text/javascript' src='static/memory.js'></script>
+	</head>
+	<body>
+		<h1>Hard Livin' Memory</h1>
+		<div class='game'>
+		</div>
+		<div class='squares'>
+			{% for square in squares %}
+			<img src='/static/images/{{ square }}.png' id='{{ square }}' />
+			{% endfor %}
+		</div>
+	</body>
+</html>
