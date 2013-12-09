@@ -14,6 +14,9 @@ outpath = os.path.join('static', 'images')
 if not os.path.exists(outpath):
     os.makedirs(outpath)
 
+for filename in os.listdir(outpath):
+    os.unlink(os.path.join(outpath, filename))
+
 
 for imgfile, padding in files.iteritems():
     # get square names and info
