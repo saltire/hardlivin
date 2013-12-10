@@ -10,7 +10,7 @@ files = {'marcus-squares': (0, 0, 0, 0),
          'zen-squares': (1, 1, 1, 1),
          }
 
-outpath = os.path.join('static', 'images')
+outpath = os.path.join('hardlivin', 'static', 'images')
 if not os.path.exists(outpath):
     os.makedirs(outpath)
 
@@ -18,15 +18,16 @@ for filename in os.listdir(outpath):
     os.unlink(os.path.join(outpath, filename))
 
 
+datapath = os.path.join('hardlivin', 'data')
 for imgfile, padding in files.iteritems():
     # get square names and info
-    with open(imgfile + '.csv', 'rb') as csvfile:
+    with open(os.path.join(datapath, imgfile + '.csv'), 'rb') as csvfile:
         sqnames = {(sx, sy): re.sub('[^\w-]', '', square.split('\n', 1)[0].lower())
                    for sy, row in enumerate(csv.reader(csvfile))
                    for sx, square in enumerate(row) if square}
 
     # slice image into individual squares
-    img = Image.open(imgfile + '.png')
+    img = Image.open(os.path.join(datapath, imgfile + '.png'))
     width, height = img.size
     pt, pr, pb, pl = padding
     pwidth, pheight = SQSIZE + pl + pr, SQSIZE + pt + pb
