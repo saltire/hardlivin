@@ -7,7 +7,7 @@ $(function() {
 	for (y = 0; y < height; y++) {
 		$row = $('<div />').appendTo('.board');
 		for (x = 0; x < width; x++) {
-			$row.append('<div><a /></div>');
+			$row.append($('<div class="square" />').append('<a />'));
 		}
 	}
 	
@@ -57,33 +57,44 @@ $(function() {
 		// get id of unmatched face-up square, if any
 		var otherid = $('.active').length ? $('.active').first().attr('data-name') : null;
 		
+		// turn off clickable appearance for all squares if two have been flipped over
 		if (otherid !== null) {
-			$('.board a').css({cursor: 'default'});
+			$('.board a').addClass('noclick');
 		}
 		
-		// turn over this square
-		$(this).animate({width: 0}, 100, function() {
-			console.log($(this));
+		// animate it to 0 width
+		$(this).addClass('noclick').animate({width: 0}, 100, function() {
+			// now that it's invisible, append the image
 			$('<img src="./static/images/64/' + squares[pos] + '.png" />')
 				.attr('data-name', squares[pos]).addClass('active').appendTo($(this));
-			$(this).animate({width: $(this).css('height')}, 100);
-
-			// match: keep both squares
-			if (otherid == squares[pos]) {
-				$('.active').removeClass('active');
-				$('.board a').css({cursor: 'pointer'});
-			}
-			// no match: remove both squares
-			else if (otherid !== null) {
-				window.setTimeout(function() {
-					$('.active').parent().animate({width: 0}, 100, function() {
-						$('.active').remove();
-						$(this).animate({width: $(this).css('height')}, 100, function() {
-							$('.board a').css({cursor: 'pointer'});
+			// now animate it back to full width
+			$(this).animate({width: $(this).css('height')}, 100, function() {
+				if (otherid == null) {
+					return;
+				}
+				
+				// increment turn counter
+				$('.turns').html(parseInt($('.turns').html()) + 1);
+				
+				// match: keep both squares
+				if (otherid == squares[pos]) {
+					$('<div class="overlay" />').insertAfter($('.active').parent())
+						.css({background: '#0f0'}).fadeOut(750);
+					$('.active').removeClass('active').parent().addClass('solved');
+					$('.board a:not(.solved)').removeClass('noclick');
+				}
+				// no match: remove both squares
+				else {
+					window.setTimeout(function() {
+						$('.active').parent().animate({width: 0}, 100, function() {
+							$('.active').remove();
+							$(this).animate({width: $(this).css('height')}, 100, function() {
+								$('.board a:not(.solved)').removeClass('noclick');
+							});
 						});
-					});
-				}, 1000);
-			}
+					}, 500);
+				}
+			});
 		})
 	});
 });

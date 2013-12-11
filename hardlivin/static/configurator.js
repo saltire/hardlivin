@@ -20,6 +20,10 @@ $(function() {
 			}
 		}
 		$('.board').css({minWidth: $('.column').length * $('.column').outerWidth(true) + 'px'});
+		
+		// recalculate square count for each area
+		$('.bcount').html($('.board .square').length);
+		$('.ucount').html($('.unused .square').length)
 	}
 	
 	
@@ -153,7 +157,7 @@ $(function() {
 			data: JSON.stringify({columns: columns, info: info}),
 			url: 'save',
 			success: function(e) {
-				$('.status').css({color: '#0f0'}).html('Saved!').fadeOut(2000);
+				$('<span />').appendTo('.status').html('Saved!').css({color: '#0f0'}).fadeOut(2000);
 				$('.save').addClass('disabled');
 			},
 		});

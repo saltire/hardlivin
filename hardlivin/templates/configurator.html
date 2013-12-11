@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Hard Livin' Configurator</title>
+		<link rel='stylesheet' type='text/css' href='static/main.css' />
 		<link rel='stylesheet' type='text/css' href='static/configurator.css' />
 		<script type='text/javascript' src='static/jquery-1.10.2.min.js'></script>
 		<script type='text/javascript' src='static/jquery-ui-1.10.3.custom.min.js'></script>
@@ -14,7 +15,9 @@
 			<div class='buttons'>
 				<a class='save disabled' href='#'>Save Changes</a>
 			</div>
-			<div class='status'></div>
+			<div class='status'><span></span></div>
+			<div>Board: <span class='count bcount'>{{ info|length - unused|length }}</span></div>
+			<div>Unused: <span class='count ucount'>{{ unused|length }}</span></div>
 		</div>
 		<div class='board-container'>
 			<div class='board'>
