@@ -1,14 +1,5 @@
 body { margin: 0; background: #333; color: #fff; font-family: sans-serif; }
 
-img {
-	image-rendering: optimizeSpeed;             /* FUCK SMOOTHING, GIVE ME SPEED  */
-	image-rendering: -moz-crisp-edges;          /* Firefox                        */
-	image-rendering: -o-crisp-edges;            /* Opera                          */
-	image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-	image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-	-ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
-}
-
 .topbar { overflow: auto; }
 .topbar h1 { float: left; margin: 0 0 0 17px; width: 384px; font-size: 24px; line-height: 48px; }
 .topbar div { float: left; margin-right: 20px; line-height: 48px; }
@@ -21,7 +12,6 @@ img {
 .buttons a.disabled { background: #fff; color: #ccc; cursor: default; }
 
 .square, .empty { display: block; width: 64px; height: 64px; background: #edb; outline: none; }
-.square img { width: 100%; height: 100%; }
 
 .board-container { margin-bottom: 32px; background: #fff; overflow-x: scroll; }
 .board { width: 100%; height: 400px; padding: 15px 1px 1px 15px; font-size: 0; white-space: nowrap; }
@@ -37,7 +27,7 @@ img {
 
 .info { width: 400px; margin-right: 16px; min-height: 1px; float: left; }
 .info div { display: none; }
-.info div img { float: left; width: 128px; height: 128px; margin-left: 32px; background: #edb;
+.info div img { float: left; margin-left: 32px; background: #edb;
 	border: 1px solid #fff; }
 .info div p { margin: 0 0 16px 178px; }
 .info div .name { font-size: 20px; }

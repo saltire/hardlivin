@@ -64,7 +64,7 @@ $(function() {
 		// turn over this square
 		$(this).animate({width: 0}, 100, function() {
 			console.log($(this));
-			$('<img src="./static/images/' + squares[pos] + '.png" />')
+			$('<img src="./static/images/64/' + squares[pos] + '.png" />')
 				.attr('data-name', squares[pos]).addClass('active').appendTo($(this));
 			$(this).animate({width: $(this).css('height')}, 100);
 

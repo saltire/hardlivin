@@ -23,7 +23,7 @@
 					{% for square in column %}
 					{% if square %}
 					<a href='#{{ square }}' class='square' title='{{ info[square][0] }}'>
-						<img src='static/images/{{ square }}.png' />
+						<img src='static/images/64/{{ square }}.png' />
 					</a>
 					{% else %}
 					<div class='empty'></div>
@@ -41,7 +41,7 @@
 		<div class='info'>
 			{% for square, (name, desc, csvname) in info.iteritems() %}
 			<div id='{{ square }}'>
-				<img src='static/images/{{ square }}.png' />
+				<img src='static/images/128/{{ square }}.png' />
 				<p class='name'>{{ name }}</p>
 				<p class='desc'>{{ desc }}</p>
 			</div>
@@ -50,7 +50,7 @@
 		<div class='unused'>
 			{% for square in unused %}
 			<a href='#{{ square }}' class='square' title='{{ info[square][0] }}'>
-				<img src='static/images/{{ square }}.png' />
+				<img src='static/images/64/{{ square }}.png' />
 			</a>
 			{% endfor %}
 		</div>
