@@ -54,6 +54,12 @@ def write_info(newinfo):
                 writer.writerow([('\n'.join(info.get(filename, [])[:2]).strip())
                                  for filename in row])
 
+    # write NEW info file
+    with open(os.path.join(DATADIR, 'info.csv'), 'wb') as csvfile:
+        writer = csv.writer(csvfile)
+        for filename, fileinfo in info.iteritems():
+            writer.writerow([filename] + list(fileinfo))
+
 
 def read_board():
     # cells in board csv should contain name

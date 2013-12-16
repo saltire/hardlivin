@@ -1,0 +1,334 @@
+girlfriendghost,Girlfriend Ghost,,marcus-squares.csv
+banana,Banana,,marcus-squares.csv
+mudwave,Mud Wave,,marcus-squares.csv
+beholder,Beholder,,marcus-squares.csv
+angryvendingmachine,Angry Vending Machine,,marcus-squares.csv
+toxicfern,Toxic Fern,,marcus-squares.csv
+hospitalwaitingroom,Hospital Waiting Room,,marcus-squares.csv
+ballotbox,Ballot Box,,marcus-squares.csv
+uglyshirt,Ugly Shirt,,marcus-squares.csv
+chickmagnet,Chick Magnet,,marcus-squares.csv
+scottishstopsign,Scottish Stop Sign,,marcus-squares.csv
+shitstorm,Shit Storm,,marcus-squares.csv
+hypno-flag,Hypno-Flag,,marcus-squares.csv
+badblood,Bad Blood,,marcus-squares.csv
+monochromerainbow,Monochrome Rainbow,,marcus-squares.csv
+gapingchasm,Gaping Chasm,,marcus-squares.csv
+liquidhole,Liquid Hole,"This stuff is amazing!
+(Advance to a specific space)",zen-squares.csv
+glitterbomb,Glitter Bomb,,marcus-squares.csv
+rubikshypercube,Rubik's Hypercube,,marcus-squares.csv
+rubikstesseract,Rubik's Tesseract,,marcus-squares.csv
+bluewhale,Blue Whale,,marcus-squares.csv
+cooties,Cooties,,marcus-squares.csv
+evilmastermind,Evil Mastermind,,marcus-squares.csv
+thumbsup,Thumbs Up,,marcus-squares.csv
+rubiksspiral,Rubik's Spiral,,marcus-squares.csv
+rubiksvortex,Rubik's Vortex,,marcus-squares.csv
+sidewaysstalactites,Sideways Stalactites,,marcus-squares.csv
+lizardpresident,Lizard President,,marcus-squares.csv
+vampirepresident,Vampire President,,marcus-squares.csv
+recurringnightmare,Recurring Nightmare,,marcus-squares.csv
+stormclouds,Storm Clouds,,marcus-squares.csv
+electricalstorm,Electrical Storm,,marcus-squares.csv
+lightningstrike,Lightning Strike,,marcus-squares.csv
+spikedpunch,Spiked Punch,,marcus-squares.csv
+messofwires,Mess of Wires,,marcus-squares.csv
+ufosighting,UFO Sighting,,marcus-squares.csv
+cubefarm,Cube Farm,,marcus-squares.csv
+bloodstorm,Blood Storm,,marcus-squares.csv
+alienabduction,Alien Abduction,,marcus-squares.csv
+innerdemon,Inner Demon,,marcus-squares.csv
+stilllifewithfruit,Still Life with Fruit,,marcus-squares.csv
+agoodnightssleep,A Good Night's Sleep,,marcus-squares.csv
+insomnia,Insomnia,,marcus-squares.csv
+synaethesia,Synaethesia,,marcus-squares.csv
+forestfire,Forest Fire,,marcus-squares.csv
+hammerheadgoldfish,Hammerhead Goldfish,,marcus-squares.csv
+powerlines,Power Lines,,marcus-squares.csv
+peacock,Peacock,,marcus-squares.csv
+demonicpeacock,Demonic Peacock,,marcus-squares.csv
+all-seeingorb,All-Seeing Orb,,marcus-squares.csv
+snakeeyes,Snake Eyes,"Piercing eyes bring bad luck. 
+-1 D",zen-squares.csv
+cateyes,Cat Eyes,"Cat Eyes Warm your heart.
++2 V",zen-squares.csv
+themeyes,Them Eyes,"There is something about those eyes.
+4 Spin: 1=-1D, 2=-1G, 3=-1V, 4 = move 1 next turn.",zen-squares.csv
+fisheyes,Fish Eyes,"Fish Eyes help you see the light.
++1 G",zen-squares.csv
+klutz,Klutz,"A Klutz draws near.
+4spin: 
+1= He bumps into you -1V 
+2= He falls into you -2V, 3=  
+3= His klutziness makes you feel better about yourself +1G
+4= He is his only victim.",zen-squares.csv
+gumshoe,Gumshoe,Questions you profusely. -1G,zen-squares.csv
+tonyrobbin,Tony Robbin',"You pay him a lot of money to boost your confidence. 
+-5D and +1G",zen-squares.csv
+conartist,Con Artist,"Instead of being so gullible you should be more careful next time.
+-4D, 2G",zen-squares.csv
+modernracist,Modern Racist,"He insults you on a profoundly new level.
+-3G",zen-squares.csv
+uneducatedleader,Uneducated Leader,"His almost complete lack of confidence leaves you feeling uneasy.
+-1G",zen-squares.csv
+blushingbridezilla,Blushing Bridezilla,"You are happy you are not marrying this intensely delusional and difficult woman.
++2G",zen-squares.csv
+shyster,Shyster,"He takes your money with promises of a healthier future for us all.
+-1D and +1G",zen-squares.csv
+gameshowghost,Gameshow Ghost,"He takes your money with promises of a healthier future for us all.
+-1D and +1G",zen-squares.csv
+wrongsidedlightingman,Wrong Sided Lighting Man,"Light has the opposing effect on him.
+-1G",zen-squares.csv
+bigmistake,Big Mistake,"Hanging out with this guys has caused you nothing but trouble.
+-1D and -1G",zen-squares.csv
+stanface,Stan Face,,zen-squares.csv
+hornyfeminist,Horny Feminist,"Her intense beliefs are making her incredibly unhappy, and this rubs off on you.
+-2G",zen-squares.csv
+faceofevil,Face of Evil,"This happy clown is really the devil.
+-2D, -2G, and -2V",zen-squares.csv
+gamemaster1,Game Master 1,Advice: The more difficult squares are usually up top.,zen-squares.csv
+gamemaster2,Game Master 2,Advice: Knowing your odds will help you succeed.,zen-squares.csv
+allman,All Man,"A god among men. Leave an impression with him. He Decides:
+4Spin: 
+1&2 = He likes you. He teaches you new things. +3D, +3G, +3G
+3 = He doesn't like you likes you. You evaluate your sense of self worth -1D, -1G, -1V
+4 = He hates you and teaches you a lesson.  +3D, +3G, +3G",zen-squares.csv
+twiceaman,Twice a Man,"He is twice the man you are. He makes you feel:
+4spin:
+1&2 = like you are half a man. -2D, -2G, -2G
+3&4 = Whatever. To each their own.",zen-squares.csv
+mansman,Man's Man,"You admire his qualities a lot and he inspires you to be a better person.
++3D, +3G, +3G",zen-squares.csv
+halfaman,Half a Man,"""Psst! Hey buddy. I got somethin' fer ya.""  Choose:
+1. To avoid him.
+2. Accept what he offers. 4Spin: 1&2= -3V and +3 G, 3=-3V, 4=-4V.",zen-squares.csv
+otherhalfaman,Other Half a Man,"This pathetic man makes you feel really good about yourself.
++2G",zen-squares.csv
+reversesanta,Reverse Santa,"He takes your stuff away for himself.
+-2D",zen-squares.csv
+serialdater,Serial Dater,"He teaches you how to start fresh.
++1D and +2G",zen-squares.csv
+fashionpolice,Fashion Police,"What you wear will never be good enough.
+-2G",zen-squares.csv
+babywithcandy,Baby with Candy,"Choose:
+1. Leave the baby's candy alone. 
+2. Take his candy. +2V and -4G",zen-squares.csv
+sneakyraccoon,Sneaky Raccoon,"You never know what they are going to do
+7spin:
+1= It takes your food. -1V
+2= It accepts you into their group. +1G
+3= It defends its territory and successfully attacks you. -1G
+4= It sprays its scent at you. -1V and -1G
+5= It walks away suspiciously.
+6= It leads you to its food stash. +1V 
+7= It robs you of the cash in your wallet. -4D",zen-squares.csv
+bwognee,Bwognee,"This adorable rabbit is so fuzzy that it makes you feel loved.
++1D, +1G, +1V",zen-squares.csv
+whiterabbit,White Rabbit,"This particular rabbit is extraordinarily deadly.
+-4V",zen-squares.csv
+nest,Nest,"Choose:
+1. Leave it along and walk away.
+2. 4spin:
+1= The mother bird defends its nest and pecks at your eyes. -2V
+2= Nurture the eggs to hatch, teach the chicks to eat, and eventually teach them to fly away. +4D, +2G
+3= Accidentally drop the eggs on the ground, thus disturbing the delicate balance of nature. -3G, -3G 
+4= Cook and eat the eggs. +4V, -4G",zen-squares.csv
+dumbduck,Dumb Duck,"This dumb duck is so annoying!
+4Spin:
+1= Being associated with it at all loses you respect. -2D
+2= This duck is so dumb it rubs off on your intelligence. -2G
+3= This duck is painful to be around. -2V
+4= This dumb duck is extra annoying today. -1D, -1G, and -1V",zen-squares.csv
+helmetcat,Helmet Cat,"Helmet Cat challenges you to a race for money. 
+1. 7Spin once: This number is how fast Helmet Cat goes in the race.
+2. 7Spin again: 
+Spin above the number of the Helmet Cat's speed and you surpass the Helmet Cat's speed and you win the race. +3D
+Spin Below the number of the Helmet Cat's speed and you lose the race. -3D
+Spin the same number of the Helmet Cat's speed and you tie. No money is exchanged.",zen-squares.csv
+snakeplane,Snake Plane,"It takes you for a a rather frightening extended flight. 
+On your next turn, add +2 to your total movement and -2G",zen-squares.csv
+flyingshark,Flying Shark,"A rather difficult opponent to battle.
+7Spin:
+1-5= the amount of V taken away.
+6-7= Defeat the Flying Shark and send it back to the ocean, or the sky, or whatever.",zen-squares.csv
+nuderabbit,Nude Rabbit,"Nude Rabbit loves you very much. It makes you feel very loved by taking care of you.
++1D, +1G, +1G",zen-squares.csv
+unwiseowl,Unwise Owl,"Chose from the following squares to occupy next
+(determine a selection based on its placement)",zen-squares.csv
+clearbear,Clear Bear,"Clear Bear offers clarity. 
+(Determine the selection based on its placement and inform of the player of what is available that is good)",zen-squares.csv
+sleepwalkingdog,Sleepwalking Dog,"You never know what is going to happen when a sleepwalking dog passes you by. 
+4Spin
+1= It sniffs you and passes you by.
+2= It bites you. -2V
+3= It licks your wounds. +1V
+4= It howls disturbingly loud at you. -2G",zen-squares.csv
+invitingghost,Inviting Ghost,Inviting Ghost invites you to be haunted. -2G,zen-squares.csv
+frostybitch,Frosty Bitch,This ghostly mutt chills your soul by biting you with its icicle fangs. -3V,zen-squares.csv
+ghostfossil,Ghost Fossil,The ghost released from this fossil appreciates you letting it free. +3D,zen-squares.csv
+lightninghand,Lightning Hand,"Lightning Hand shocks you back to your senses. -2V, +2G",zen-squares.csv
+tailish,Tailish,"A Tallish walks rather quickly and effortlessly towards you.
+If your Gumption is less than 5, you 4spin for amount of V lost.
+If your Gumption is higher than 5, Defeat it by 4spinning a 3 or 4. 
+Spin a 1 for -1V, Spin a 2 for a -2V.",zen-squares.csv
+insinceresmile,Insincere Smile,,zen-squares.csv
+plusdog,Plus Dog,,zen-squares.csv
+bigno,Big No,,zen-squares.csv
+bigup,Big Up,,zen-squares.csv
+charmingsnake,Charming Snake,,zen-squares.csv
+towelwhippingtentacle,Towel Whipping Tentacle,,zen-squares.csv
+rosethorn,Rose Thorn,,zen-squares.csv
+uglygenie,Ugly Genie,,zen-squares.csv
+blobhead,Blob Head,,zen-squares.csv
+greenspider,Green Spider,,zen-squares.csv
+malesperm,Male Sperm,,zen-squares.csv
+malespermonwheels,Male Sperm on Wheels,,zen-squares.csv
+pittsburgh,Pittsburgh,,zen-squares.csv
+allergyplant,Allergy Plant,,zen-squares.csv
+supersmallpoisonousbug,Super Small Poisonous Bug,,zen-squares.csv
+pituitarygland,Pituitary Gland,,zen-squares.csv
+brokendancer,Broken Dancer,"Broken Dancer challenges you to a dance battle. 
+If your Gumption is less than 7, you lose to -2V. 
+If your Gumption is 7 or more, you defeat Broken Dancer +1D",zen-squares.csv
+kisswalker,Kisswalker,"Kiss Walker wants to kiss you to death.  
+If your Vigour is more than 3, you successfully run away.
+If your Vigour is 3 or less, you are kissed to death and it is Game Over.",zen-squares.csv
+terribleenvy,Terrible Envy,"Terrible Envy wants your things.
+If your Vigour is 5 or more, you defeat Terrible Envy for +2D
+If your Vigour is less than 5 -5D",zen-squares.csv
+darkcard,Dark Card,"Dark Card forces a gamble for your possessions. 4Spin:
+1&3 = You lose. -3D
+2&4 = You Win +1D",zen-squares.csv
+hotchick,Hot Chick,"She makes you feel so good, but at the price of begin burned. +2G -2V",zen-squares.csv
+murderofcrows,Murder of Crows,You befriend a Murder of Crows. Move to (an adjacent monster space) with a one round use of a bonus +5 attack.,zen-squares.csv
+peopleperson,People Person,"People Person knows you better than yourself. - 2D, -2G, -2V",zen-squares.csv
+codependentleech,Codependent Leech,This little guy latches onto you and begins to consume your Vigour. 4Spin. The amount is how much Vigor you lose.,zen-squares.csv
+strictspaceman,Strict Space Man,"Strict Spaceman will not less you pass without a fight.
+7Spin repeatedly until you spin a 3 or a 7. Any other value is worth -1V.",zen-squares.csv
+x-raywoman,X-Ray Woman,"She helps you see through yourself, but at a painful cost. +4G -4V",zen-squares.csv
+popularcar,Popular Car,"This vehicle adds a +2 movement bonus to your next spin, at the cost of your self esteem -2G.",zen-squares.csv
+uninformedpunk,Uninformed Punk,"He does not care why. He wants a fight.
+If your Vigour is more than 4, you successfully defeat the Uninformed Punk and take his money. +5D.
+If your Vigour is 4 or less, the Uninformed Punk successfully defeats you and takes your money. -5D and -2V.",zen-squares.csv
+blackpaw,Black Paw,,zen-squares.csv
+chaoticact,Chaotic Act,,zen-squares.csv
+bookofporpoliticalagenda,Book of P or Political Agenda,-2D to pay for this book.,zen-squares.csv
+poeticjustice,Poetic Justice,,zen-squares.csv
+giantrulebook,Giant Rule Book,"According to the Giant Rule Book you must do the following: 
+1. Pay you respect to the Rule Book -1D
+2. Make your Gumption 5, regardless of what it is now.
+3. Go where the Giant Rule Book wants you to go. 4Spin. Go straight forward the amount shown.",zen-squares.csv
+planb,Plan B,Spin to go go forward. if you don't like the amount spin one more time and try again.,zen-squares.csv
+mediocritysubscription,Mediocrity Subscription,"Equalize Deeds, Gumption and Vigour to equal 5.",zen-squares.csv
+medikit,Medikit,This particular Medikit contains a poisonous spider and it bites you. -1V,zen-squares.csv
+yellowsocks,Yellow Socks,,zen-squares.csv
+strangeglasses,Strange Glasses,,zen-squares.csv
+bucketofchaos,Bucket of Chaos,,zen-squares.csv
+comicallylargeredx,Comically Large Red X,,zen-squares.csv
+sharporb,Sharp Orb,,zen-squares.csv
+wayspinner,Way Spinner,,zen-squares.csv
+shockart,Shock Art,,zen-squares.csv
+meteorite,Meteorite,,zen-squares.csv
+spikesup,Spikes Up,,zen-squares.csv
+3-shooter,3-Shooter,,zen-squares.csv
+hotcan,Hot Can,,zen-squares.csv
+scroll,Scroll,,zen-squares.csv
+disk1,Disk 1,,zen-squares.csv
+disk2,Disk 2,,zen-squares.csv
+influentialalbum,Influential Album,,zen-squares.csv
+superuglysweater,Super Ugly Sweater,,zen-squares.csv
+awfulshirt,Awful Shirt,,zen-squares.csv
+emotionaldumptruck,Emotional Dump Truck,,zen-squares.csv
+toynoisemaker,Toy Noisemaker,,zen-squares.csv
+participationribbon,Participation Ribbon,,zen-squares.csv
+aliveredballoonfriend,Alive Red Balloon Friend,,zen-squares.csv
+frenchhornslug,French Horn Slug,,zen-squares.csv
+talkingkey,Talking Key,,zen-squares.csv
+devilbulb,Devil Bulb,,zen-squares.csv
+duncecap,Dunce Cap,,zen-squares.csv
+badhaircut,Bad Haircut,,zen-squares.csv
+dyingtooth,Dying Tooth,"With his dying breath he bites you out of anger, so you take money from his wallet. -2V and +2D",zen-squares.csv
+gloriahammerstein,Gloria Hammerstein,,zen-squares.csv
+lonesomeshoe,Lonesome Shoe,,zen-squares.csv
+ball1,Ball 1,,zen-squares.csv
+elfball,Elf Ball,,zen-squares.csv
+satanicorb,Satanic Orb,,zen-squares.csv
+bigtripleeye,Big Triple Eye,,zen-squares.csv
+yellowsnowball,Yellow Snowball,,zen-squares.csv
+blackballer,Black Baller,,zen-squares.csv
+ballofmadness,Ball of Madness,,zen-squares.csv
+alarmbell,Alarm Bell,,zen-squares.csv
+roboto,Roboto,,zen-squares.csv
+robotguard,Robot Guard,,zen-squares.csv
+marchingclock,Marching Clock,,zen-squares.csv
+potion,Potion,,zen-squares.csv
+brainmedicine,Brain Medicine,,zen-squares.csv
+brainwash,Brainwash,,zen-squares.csv
+intensecologne,Intense Cologne,,zen-squares.csv
+knowitall,Know It All,,zen-squares.csv
+uglybottle,Ugly Bottle,,zen-squares.csv
+rapidaging,Rapid Aging,,zen-squares.csv
+ipecac,Ipecac,,zen-squares.csv
+snakeoil,Snake Oil,You cannot believe you were suckered into paying for this stuff that doesn't even work. - 3G,zen-squares.csv
+wetcement,Wet Cement,You notice a footprint in the Wet Cement and take the opportunity to also deface it. Immediately a police officer jumps out of the nearby bushes and charges you with vandalism. - 3D,zen-squares.csv
+poisonspazzycola,Poison Spazzy Cola,This stuff is so bad for you. -4V,zen-squares.csv
+redtownpaint,Red Town Paint,"This stuff is specially formulate dot help you make the most of a situation. +3D, +3G, and +3V",zen-squares.csv
+seeminglyshallowpuddle,Seemingly Shallow Puddle,,zen-squares.csv
+stickysituation,Sticky Situation,Eew. Gross. Move forward one space in any direction next turn.,zen-squares.csv
+sugarcrash,Sugar Crash,Way too much sugar conks you out hard. -2V,zen-squares.csv
+notavocadosandwich,Not Avocado Sandwich,"The ingredients of this evil sandwich heals you by +2V at the expense of a 4spin:
+1 = -2D
+2 = -3D
+3 = -2G
+4 = -3G",zen-squares.csv
+all-seeinglatte,All-Seeing Latte,The All-Seeing Latte suggests you skip the next surrounding spaces and adds +1 to your next spin.,zen-squares.csv
+steak,Steak,"Are you MAN enough to take this thick cut on?
+If your Gumption is more than 7: T Guy thinks you deserve to learn how to tenderize, marinade, and cook itself to perfection. +5V.
+If your Gumption is below 7: T Guy thinks you aren't manly enough to eat him and he smacks you around a bit to toughen you up. -2V",zen-squares.csv
+accuratefortunecookie,Accurate Fortune Cookie,The accurate fortune cookie knows you're going forward 2 spaces. Go forward 2 spaces.,zen-squares.csv
+bran,Bran,"It tastes awful, but you feel much more regular. +4V",zen-squares.csv
+painscription,Painscription,"After consuming one of these, you are not sure if this drug even works. 
+4Spin:
+1 = Cures what ails you. +1v 
+2 = Placebo effect. Nothing happens.
+3 = Intensifies pain. -1V
+4 = Your body spirals out of control. -3V",zen-squares.csv
+glassofwhite,Glass of White,"Whatever that was sure had a lot of nutrients in it. +3V, +3G",zen-squares.csv
+swill,Swill,Tastes disgusting but helps you relax. +1G and -1V,zen-squares.csv
+teatime,Tea Time,Relax. Its Tea Time. +1V,zen-squares.csv
+leveragecrank,Leverage Crank,"At the cost of your respect, you personally gain. -2D, +1G, and +1V",zen-squares.csv
+redtape,Red Tape,"You get wrapped up in it. Trying to move forward only makes the tape mow sticky and unmanageable to escape.
+4spin. the value is them subtracted from your next move.",zen-squares.csv
+file13,File 13,"You pay money to view its contents. -2D. 
+This file contains a list of difficult clients. Avoid the next few squares: (list a few squares that are negative in proximity to its whereabouts.",zen-squares.csv
+secrethandshake,Secret Handshake,"You attempt to fit in with these people.
+4Spin: 
+1 and 3 = unsuccessful attempt. They reject you and move you forward one space (into something lightly negative)
+2 = They appreciate your attempt but your handshake needs work. They send you off with awarding.
+4 = You successfully perform the secret handshake and convince them to accept you as a member. You are entitled to a series of benefits after paying an entrance fee. -2D, +1G, and +1V",zen-squares.csv
+pinklunchbox,Pink Lunchbox,Immediately upon opening your senses are invaded by an overwhelming intense pungency of exquisite rotting. The tears in your eyes make it difficult to tell what it once was. You then feel violently ill and vomit. -1V,zen-squares.csv
+guilttrip,Guilt Trip,The guilt trip taxes your confidence and takes you on a journey you never would have willfully intended on going. -2G and move forward 2 spaces.,zen-squares.csv
+mysteriousbriefcase,Mysterious Briefcase,You never really get a clear view of what is inside. The mystery eats away at your conscious as your imagination gets to the best of you. -1G,zen-squares.csv
+crystalmusicbox,Crystal Music Box,"It's sound is exquisitely and uniquely devastating. -1D, -1G, -2V",zen-squares.csv
+hospital,Hospital,This particular hospital has mediocre service. +2V,zen-squares.csv
+dreamboat,Dreamboat,"You get lost in his eyes and he sails you away to paradise for roughly 3 weeks, only to realize he is not the one for you. -3G, +2G",zen-squares.csv
+cube,Cube,"The mysterious cube building continues to be a mystery after your visit, but you feel better after having visited. +5V",zen-squares.csv
+seniorrandomizer,Senior Randomizer,,zen-squares.csv
+fattyacid,Fatty Acid,This guy is healthy. You eat him up. +2V,zen-squares.csv
+transfattyacid,Trans Fatty Acid,,zen-squares.csv
+unknown,Unknown,,zen-squares.csv
+arrowswarm,Arrow Swarm,Move straight forward 3 spaces,zen-squares.csv
+queenarrow,Queen Arrow,Move straight ahead 5 spaces,zen-squares.csv
+glittercloud,Glitter Cloud,"Upon breathing this in, you feel some strange effects. 4Spin:
+1= +2D, -1G, and +1V
+2= +1D, +2G, and -1V
+3= -1D, -1G, and +2V
+4= -1D, -1G, and -1V",zen-squares.csv
+secondhandsmoke,Second Hand Smoke,Breathing this stuff in makes you cough. - 1V,zen-squares.csv
+toothedman,Toothed Man,,zen-squares.csv
+zeitgeist,Zeitgeist,An overwhelming feeling of influence washes over you and you move forward 1 space.,zen-squares.csv
+altruism,Altruism,Being nice always has a price. -2D and +2G,zen-squares.csv
+divorceryspell,Divorcery Spell,"This powerful spell devastates you into submission for about a half a year to a year's time. -5D, -5G, -5V",zen-squares.csv
+moochingglove,Mooching Glove,Damned mooching hand fondles your wallet without even asking. -1D,zen-squares.csv
+nannystate,Nanny State,"A state that takes care of all of us requires higher taxation. - 3D, +1V",zen-squares.csv
