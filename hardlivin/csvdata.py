@@ -12,35 +12,27 @@ def get_filename(name):
     return re.sub('[^\w-]', '', name.lower())
 
 
-def read_info():
+def read_sourcemap():
     files = os.listdir(DATADIR)
     csvnames = [f for f in files if f[-4:] == '.csv' and f[:-4] + '.png' in files]
 
-    # cells in info csv should contain name, then optionally a line break and a description
-    # g.info is an ordered dict: {filename: name, description, csv filename}
-    # g.sourcemap is a list of rows containing filenames, in source image position
-    info = OrderedDict()
     sourcemap = {}
     for csvname in csvnames:
-        sourcemap[csvname] = []
         with open(os.path.join(DATADIR, csvname), 'rb') as csvfile:
-            for row in csv.reader(csvfile):
-                sourcerow = []
-                for square in row:
-                    if square:
-                        name, desc = square.split('\n', 1) if '\n' in square else (square, '')
-                        filename = get_filename(name)
-                        info[filename] = name, desc, csvname
-                        sourcerow.append(filename)
-                    else:
-                        sourcerow.append(None)
-                sourcemap[csvname].append(sourcerow)
+            sourcemap[csvname] = [[(get_filename(square) if square else None) for square in row]
+                                  for row in csv.reader(csvfile)]
 
-    return info, sourcemap
+    return sourcemap
+
+
+def read_info():
+    with open(os.path.join(DATADIR, 'info.csv'), 'rb') as csvfile:
+        return OrderedDict((row[0], row[1:]) for row in csv.reader(csvfile))
 
 
 def write_info(newinfo):
-    info, sourcemap = read_info()
+    sourcemap = read_sourcemap()
+    info = read_info()
 
     for filename, newinf in newinfo.iteritems():
         # replace stored square info with new info
@@ -69,7 +61,7 @@ def read_board():
 
 
 def write_board(rows):
-    info, _ = read_info()
+    info = read_info()
 
     with open(os.path.join(DATADIR, 'board.csv'), 'wb') as csvfile:
         writer = csv.writer(csvfile)

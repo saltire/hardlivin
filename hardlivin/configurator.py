@@ -9,7 +9,7 @@ ROWCOUNT = 5
 
 @app.route('/')
 def draw_board():
-    info, _ = csvdata.read_info()
+    info = csvdata.read_info()
     board = csvdata.read_board()
 
     unused = info.keys()
