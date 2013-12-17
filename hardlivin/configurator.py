@@ -14,7 +14,7 @@ def draw_board():
     info = csvdata.read_info()
     board = csvdata.read_board()
 
-    used = itertools.chain(*board)
+    used = list(itertools.chain(*board))
     unused = [filename for filename in info.iterkeys() if filename not in used]
 
     return render_template('configurator.html', columns=zip(*board), info=info, unused=unused)

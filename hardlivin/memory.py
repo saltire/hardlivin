@@ -6,5 +6,5 @@ import csvdata
 
 @app.route('/memory')
 def memory_game():
-    info, _ = csvdata.read_info()
+    info = csvdata.read_info()
     return render_template('memory.html', squares=info.keys())
