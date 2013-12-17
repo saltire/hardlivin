@@ -43,7 +43,7 @@ def write_info(newinfo):
 
     for filename, newinf in newinfo.iteritems():
         # replace stored square info with new info
-        info[filename] = newinf['name'], newinf['desc'], info[filename][2]
+        info[filename] = newinf['name'], newinf['desc']
 
     # write NEW info file
     with open(os.path.join(DATADIR, 'info.csv'), 'wb') as csvfile:

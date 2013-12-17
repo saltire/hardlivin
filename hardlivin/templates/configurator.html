@@ -42,7 +42,7 @@
 			</div>
 		</div>
 		<div class='info'>
-			{% for square, (name, desc, csvname) in info.iteritems() %}
+			{% for square, (name, desc) in info.iteritems() %}
 			<div id='{{ square }}'>
 				<img src='static/images/128/{{ square }}.png' />
 				<p class='name'>{{ name }}</p>
