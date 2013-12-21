@@ -1,0 +1,8 @@
+body { background: #000; color: #ff6; }
+
+a { color: #c63; text-decoration: none; }
+a:hover { border-bottom: 1px dotted #c63; }
+
+.title { padding: 100px 0 50px; text-align: center; }
+
+p { text-align: center; }

@@ -9,7 +9,7 @@ import csvdata
 ROWCOUNT = 5
 
 
-@app.route('/')
+@app.route('/configurator')
 def draw_board():
     info = csvdata.read_info()
     board = csvdata.read_board()
@@ -20,7 +20,7 @@ def draw_board():
     return render_template('configurator.html', columns=zip(*board), info=info, unused=unused)
 
 
-@app.route('/save', methods=['post'])
+@app.route('/configurator/save', methods=['post'])
 def save_changes():
     data = request.get_json()
 

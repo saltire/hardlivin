@@ -155,7 +155,7 @@ $(function() {
 			type: 'POST',
 			contentType: 'application/json',
 			data: JSON.stringify({columns: columns, info: info}),
-			url: 'save',
+			url: '/configurator/save',
 			success: function(e) {
 				$('<span />').appendTo('.status').html('Saved!').css({color: '#0f0'}).fadeOut(2000);
 				$('.save').addClass('disabled');
