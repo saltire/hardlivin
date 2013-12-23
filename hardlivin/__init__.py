@@ -9,11 +9,4 @@ app.jinja_options = dict(app.jinja_options, trim_blocks=True, lstrip_blocks=True
 
 
 # view functions must be imported into this module for routing to work
-import configurator
-import memory
-import title
-
-
-def get_filename(name):
-    # convert a square name deterministically into a filename
-    return re.sub('[^\w-]', '', name.lower())
+import views

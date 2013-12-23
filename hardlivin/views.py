@@ -6,11 +6,27 @@ from . import app
 import csvdata
 
 
-ROWCOUNT = 5
+@app.route('/')
+def title():
+    return render_template('title.html')
+
+
+@app.route('/play')
+def draw_board():
+    info = csvdata.read_info()
+    board = csvdata.read_board()
+
+    return render_template('play.html', columns=zip(*board), info=info)
+
+
+@app.route('/memory')
+def memory_game():
+    info = csvdata.read_info()
+    return render_template('memory.html', squares=info.keys())
 
 
 @app.route('/configurator')
-def draw_board():
+def draw_configurator():
     info = csvdata.read_info()
     board = csvdata.read_board()
 

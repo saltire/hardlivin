@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HARD LIVIN'</title>
+		<link rel='stylesheet' type='text/css' href='static/main.css' />
+		<link rel='stylesheet' type='text/css' href='static/play.css' />
+		<script type='text/javascript' src='static/jquery-1.10.2.min.js'></script>
+		<script type='text/javascript' src='static/play.js'></script>
+	</head>
+	<body>
+		<div class='topbar'>
+			<img src='static/title4-horiz.png' alt="HARD LIVIN'" />
+		</div>
+		<div class='board-container'>
+			<div class='board'>
+				{% for column in columns %}
+				<div class='column'>
+					{% for square in column %}
+					{% if square %}
+					<a href='#{{ square }}' class='square' title='{{ info[square][0] }}'>
+						<img src='static/images/64/{{ square }}.png' />
+					</a>
+					{% else %}
+					<div class='empty'></div>
+					{% endif %}
+					{% endfor %}
+				</div>
+				{% endfor %}
+				<div class='column'>
+					{% for _ in range(5) %}
+					<div class='empty'></div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		<div class='info'>
+			{% for square, (name, desc) in info.iteritems() %}
+			<div id='{{ square }}'>
+				<img src='static/images/128/{{ square }}.png' />
+				<p class='name'>{{ name }}</p>
+				<p class='desc'>{{ desc }}</p>
+			</div>
+			{% endfor %}
+		</div>
+	</body>
+</html>
