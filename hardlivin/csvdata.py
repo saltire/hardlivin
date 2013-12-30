@@ -22,8 +22,7 @@ def read_sourcemaps():
     sourcemaps = {}
     for csvname in csvnames:
         with open(os.path.join(DATADIR, csvname), 'rb') as csvfile:
-            sourcemaps[csvname] = [[(get_filename(square) if square else None) for square in row]
-                                   for row in csv.reader(csvfile)]
+            sourcemaps[csvname] = [[square for square in row] for row in csv.reader(csvfile)]
     return sourcemaps
 
 
@@ -33,9 +32,9 @@ def read_info():
     with open(os.path.join(DATADIR, 'info.csv'), 'rb') as csvfile:
         infofile = {row[0]: tuple(row[1:]) for row in csv.reader(csvfile)}
 
-    return odict((filename, infofile.get(filename, ''))
+    return odict((get_filename(name), infofile.get(get_filename(name), (name, '')))
                  for sourcemap in read_sourcemaps().itervalues() for row in sourcemap
-                 for filename in row if filename)
+                 for name in row if name)
 
 
 def write_info(newinfo):

@@ -27,7 +27,7 @@ datapath = os.path.join('hardlivin', 'data')
 for imgfile, padding in files.iteritems():
     # get square names and info
     with open(os.path.join(datapath, imgfile + '.csv'), 'rb') as csvfile:
-        sqnames = {(sx, sy): re.sub('[^\w-]', '', square.split('\n', 1)[0].lower())
+        sqnames = {(sx, sy): re.sub('[^\w-]', '', square.lower())
                    for sy, row in enumerate(csv.reader(csvfile))
                    for sx, square in enumerate(row) if square}
 
