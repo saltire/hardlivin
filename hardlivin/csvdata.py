@@ -32,6 +32,8 @@ def read_info():
     with open(os.path.join(DATADIR, 'info.csv'), 'rb') as csvfile:
         infofile = {row[0]: tuple(row[1:]) for row in csv.reader(csvfile)}
 
+    # FIXME: this should really not be calling get_filename twice.
+    # instead, the info file should be indexed by name, not by filename.
     return odict((get_filename(name), infofile.get(get_filename(name), (name, '')))
                  for sourcemap in read_sourcemaps().itervalues() for row in sourcemap
                  for name in row if name)
@@ -54,13 +56,19 @@ def write_info(newinfo):
 def read_board():
     """Board CSV contains human-readable square names,
     but return a list of rows of filenames."""
+    # FIXME: this really shouldn't be calling read_info.
+    # instead, this whole thing should be a class and info should be a class property.
+    info = read_info()
     with open(os.path.join(DATADIR, 'board.csv'), 'rb') as csvfile:
-        return [[get_filename(name) for name in row] for row in csv.reader(csvfile)]
+        # FIXME: also, get_filename shouldn't be called twice - index info by name instead.
+        return [[get_filename(name) if get_filename(name) in info else None for name in row]
+                for row in csv.reader(csvfile)]
 
 
 def write_board(rows):
     info = read_info()
 
+    # TODO: set line delimiter to \n (here and in slice.py)
     with open(os.path.join(DATADIR, 'board.csv'), 'wb') as csvfile:
         writer = csv.writer(csvfile)
         for row in rows:
