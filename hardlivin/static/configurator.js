@@ -38,11 +38,10 @@ $(function() {
 	
 	// edit name and description of square in info area
 	
-	//$('.info p').editable({ // changing square names not supported yet
-	$('.info .desc').editable({
+	$('.info p, .info .desc').editable({
 		lineBreaks: false,
 		callback: function(data) {
-			if (data.$el.hasClass('name') && data.content == '') {
+			if (data.$el.hasClass('title') && data.content == '') {
 				// reset content of title if it is blank
 				data.$el.html(data.$el.attr('data-original'));
 				
@@ -146,7 +145,7 @@ $(function() {
 		var info = {};
 		$('.info p[data-changed=1]').removeAttr('data-changed').parent().each(function() {
 			info[$(this).attr('id')] = {
-				name: $('.name', this).text(),
+				title: $('.title', this).text(),
 				desc: $('.desc', this).text(),
 			};
 		});

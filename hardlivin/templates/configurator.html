@@ -23,10 +23,10 @@
 			<div class='board'>
 				{% for column in columns %}
 				<div class='column'>
-					{% for square in column %}
-					{% if square %}
-					<a href='#{{ square }}' class='square' title='{{ info[square][0] }}'>
-						<img src='static/images/64/{{ square }}.png' />
+					{% for filename in column %}
+					{% if filename %}
+					<a href='#{{ filename }}' class='square' title='{{ info[filename][0] }}'>
+						<img src='static/images/64/{{ filename }}.png' />
 					</a>
 					{% else %}
 					<div class='empty'></div>
@@ -42,18 +42,18 @@
 			</div>
 		</div>
 		<div class='info'>
-			{% for square, (name, desc) in info.iteritems() %}
-			<div id='{{ square }}'>
-				<img src='static/images/128/{{ square }}.png' />
-				<p class='name'>{{ name }}</p>
+			{% for filename, (title, desc) in info.iteritems() %}
+			<div id='{{ filename }}'>
+				<img src='static/images/128/{{ filename }}.png' />
+				<p class='title'>{{ title }}</p>
 				<p class='desc'>{{ desc }}</p>
 			</div>
 			{% endfor %}
 		</div>
 		<div class='unused'>
-			{% for square in unused %}
-			<a href='#{{ square }}' class='square' title='{{ info[square][0] }}'>
-				<img src='static/images/64/{{ square }}.png' />
+			{% for filename in unused %}
+			<a href='#{{ filename }}' class='square' title='{{ info[filename][0] }}'>
+				<img src='static/images/64/{{ filename }}.png' />
 			</a>
 			{% endfor %}
 		</div>

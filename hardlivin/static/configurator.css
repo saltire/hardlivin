@@ -27,7 +27,7 @@
 .info div img { float: left; margin-left: 32px; background: #edb;
 	border: 1px solid #fff; }
 .info div p { margin: 0 0 16px 178px; }
-.info div .name { font-size: 20px; }
+.info div .title { font-size: 20px; }
 .info div .desc { font-size: 14px; min-height: 200px; white-space: pre-wrap; }
 .info div .desc:hover { background: #222; cursor: text; }
 .info textarea { width: 100% !important; border: 0; background: #111 !important; color: #fff; }
