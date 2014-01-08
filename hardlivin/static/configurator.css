@@ -20,6 +20,7 @@
 
 .square.ui-dragged { visibility: hidden; }
 .square.ui-draggable-dragging { border: 1px solid #fff !important; }
+.square.dimmed img { opacity: 0.5; }
 .empty.ui-drophover { background: #963; }
 
 .info { width: 400px; margin-right: 16px; min-height: 1px; float: left; }

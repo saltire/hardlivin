@@ -27,12 +27,12 @@ $(function() {
 	}
 	
 	
-	// click squares to show their info
+	// dim painted squares with checkbox
 	
-	$('.board, .unused').on('click', '.square', function(e) {
-		e.preventDefault();
-		$('.info > div').hide();
-		$('.info #' + $(this).attr('href').slice(1)).show();
+	$('#dim-painted').change(function() {
+		$('.painted input:checked').map(function() {
+			return $('.square[href$="' + $(this).closest('.info > div').attr('id') + '"]');
+		}).toggleClass('dimmed');
 	});
 	
 	
@@ -41,6 +41,22 @@ $(function() {
 	$('.painted input').change(function() {
 		$(this).closest('.info > div').attr('data-changed', 1);
 		$('.save').removeClass('disabled');
+		
+		// also toggle dim on the corresponding square if that option is enabled
+		
+		if ($('#dim-painted').is(':checked')) {
+			$('.square[href$="' + $(this).closest('.info > div').attr('id') + '"]')
+				.toggleClass('dimmed');
+		}
+	});
+	
+	
+	// click squares to show their info
+	
+	$('.board, .unused').on('click', '.square', function(e) {
+		e.preventDefault();
+		$('.info > div').hide();
+		$('.info #' + $(this).attr('href').slice(1)).show();
 	});
 	
 	
@@ -156,7 +172,7 @@ $(function() {
 			info[$(this).attr('id')] = {
 				title: $('.title', this).text(),
 				desc: $('.desc', this).text(),
-				painted: $('input:checked', this) ? 1 : 0,
+				painted: $('input', this).is(':checked') ? 1 : 0,
 			};
 		});
 		
