@@ -36,6 +36,14 @@ $(function() {
 	});
 	
 	
+	// painted checkbox adds changed flag to its item and enables save button
+	
+	$('.painted input').change(function() {
+		$(this).closest('.info > div').attr('data-changed', 1);
+		$('.save').removeClass('disabled');
+	});
+	
+	
 	// edit name and description of square in info area
 	
 	$('.info p, .info .desc').editable({
@@ -46,7 +54,8 @@ $(function() {
 				data.$el.html(data.$el.attr('data-original'));
 				
 			} else if (data.content !== false) {
-				data.$el.attr('data-changed', 1);
+				// add changed flag to this item and enable save button
+				data.$el.closest('.info > div').attr('data-changed', 1);
 				$('.save').removeClass('disabled');
 			}
 			data.$el.removeAttr('data-original');
@@ -143,10 +152,11 @@ $(function() {
 		
 		// collect name and description of each
 		var info = {};
-		$('.info p[data-changed=1]').removeAttr('data-changed').parent().each(function() {
+		$('.info > div[data-changed=1]').removeAttr('data-changed').each(function() {
 			info[$(this).attr('id')] = {
 				title: $('.title', this).text(),
 				desc: $('.desc', this).text(),
+				painted: $('input:checked', this) ? 1 : 0,
 			};
 		});
 		

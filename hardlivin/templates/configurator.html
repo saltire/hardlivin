@@ -42,9 +42,12 @@
 			</div>
 		</div>
 		<div class='info'>
-			{% for filename, (title, desc) in info.iteritems() %}
+			{% for filename, (title, desc, painted) in info.iteritems() %}
 			<div id='{{ filename }}'>
 				<img src='static/images/128/{{ filename }}.png' />
+				<div class='painted'>Painted?
+					<input type='checkbox' {% if painted %}checked='checked' {% endif %}/>
+				</div>
 				<p class='title'>{{ title }}</p>
 				<p class='desc'>{{ desc }}</p>
 			</div>

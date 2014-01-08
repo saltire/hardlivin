@@ -4,6 +4,8 @@ import os
 
 
 DATAPATH = os.path.join(os.path.dirname(__file__), 'data')
+INFOCOLS = 'title', 'desc', 'painted'
+
 
 class CSVData:
     def __init__(self):
@@ -13,7 +15,7 @@ class CSVData:
 
         # read info
         with open(os.path.join(DATAPATH, 'info.csv'), 'rb') as csvfile:
-            descs = {row[0]: row[1] for row in csv.reader(csvfile)}
+            info = {row[0]: tuple(row[1:]) for row in csv.reader(csvfile)}
 
         self.info = OrderedDict()
         for source in self.sources:
@@ -21,7 +23,10 @@ class CSVData:
                 for y, row in enumerate(csv.reader(csvfile)):
                     for x, title in enumerate(row):
                         if title:
-                            self.info['{0}-{1}-{2}'.format(source, x, y)] = title, descs.get(title, '')
+                            sqinfo = (title,) + info.get(title, ())
+                            # pad sqinfo to the correct number of columns
+                            sqinfo += ('',) * (len(INFOCOLS) - len(sqinfo))
+                            self.info['{0}-{1}-{2}'.format(source, x, y)] = sqinfo
 
         # read board
         with open(os.path.join(DATAPATH, 'board.csv'), 'rb') as csvfile:
@@ -30,9 +35,10 @@ class CSVData:
 
 
     def write_info(self, newinfo):
-        for filename, newinf in newinfo.iteritems():
+        for filename, sqinfo in newinfo.iteritems():
+            print filename, sqinfo
             # replace stored square info with new info
-            self.info[filename] = newinf['title'], newinf['desc']
+            self.info[filename] = tuple(sqinfo.get(col) for col in INFOCOLS)
 
         # write NEW info file
         with open(os.path.join(DATAPATH, 'info.csv'), 'wb') as csvfile:
