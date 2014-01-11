@@ -1,4 +1,4 @@
-Girlfriend Ghost,,
+Girlfriend Ghost,,0
 Banana,,
 Beholder,,
 Angry Vending Machine,,
@@ -11,44 +11,47 @@ Scottish Stop Sign,,
 Shit Storm,,
 Hypno-Flag,,
 Bad Blood,,
-Monochrome Rainbow,,
+Monochrome Rainbow,,1
 Gaping Chasm,,
 Liquid Hole,"This stuff is amazing!
 (Advance to a specific space)",
 Glitter Bomb,,
-Rubik's Hypercube,,
-Rubik's Tesseract,,
+Rubik's Hypercube,,1
+Rubik's Tesseract,,1
 Blue Whale,,
 Cooties,,
 Evil Mastermind,,
 Thumbs Up,,
-Rubik's Spiral,,
-Rubik's Vortex,,
+Rubik's Spiral,,1
+Rubik's Vortex,,1
 Sideways Stalactites,,
 Lizard President,,
 Vampire President,,
+Slime Storm,,1
 Recurring Nightmare,,
 Storm Clouds,,
-Electrical Storm,,
+Electrical Storm,,1
 Lightning Strike,,
 Spiked Punch,,
 Mess of Wires,,
 UFO Sighting,,
-Cube Farm,,
+Cube Farm,,1
 Blood Storm,,
 Alien Abduction,,
 Inner Demon,,
 Still Life with Fruit,,
 A Good Night's Sleep,,
 Insomnia,,
-Synaethesia,,
+Synaethesia,,1
 Forest Fire,,
 Hammerhead Goldfish,,
-Pyramids,,
-Power Lines,,
+Fighting Fish on Steroids,,
+Wavy Rainbow,,
+Pyramids,,1
+Power Lines,,1
 Peacock,,
 Demonic Peacock,,
-All-Seeing Orb,,
+All-Seeing Orb,,1
 Ruby Ship,,
 Night Vision Peacock,,
 Hypnotic Screensaver,,
@@ -56,33 +59,48 @@ Ghost Ship,,
 Little Brown Jug,,
 Lemon Eye Drops,,
 Hypercubes,,
-Monster 1,,
-Monster 3,,
-Monster 5,,
+Monster 1,,1
+Monster 3,,1
+Monster 5,,1
 Blaster Worm,,
 Blood Wave,,
 Worker Bee,,
 Heartburn,,
-Monster 2,,
-Monster 4,,
-Angry Mob,,
+Monster 2,,1
+Monster 4,,1
+Angry Mob,,1
 Golden Wave,,
 Tidal Wave,,
-Oops,,
-Second Planet,,
+Oops,,1
+Second Planet,,1
 Exit Planet Earth,,
 Mud Wave,,
 Fireflies,,
 Moon,,
 Blood Moon,,
 Bleeding Moon,,
-Car Crash,,
-Volcano,,
+Tetris Problem,,
+Tetris Demon,,
+Car Crash,,1
+Volcano,,1
 Little Fluffy Clouds,,
 Cellphone Vision,,
 Cellphone Photo,,
+Pixel Cat,,1
+Haunted Attic,,1
+Haunted Turret,,1
+White Cat,,
+Fist Bump,,1
 Helvetica,,
-X-ray Angler Fish,,
+X-ray Angler Fish,,1
+Triggerfish,,
+Haunted Living Room,,1
+Haunted Doorway,,1
+Angry Cat,,1
+Secret Decoder Ring,,
+Alligator,,
+Fight Night,,
+Clumsy Devil,,
 Snake Eyes,"Piercing eyes bring bad luck. 
 -1 D",
 Cat Eyes,"Cat Eyes Warm your heart.
@@ -133,7 +151,7 @@ Vegas Lights Lady,,
 Business Douche,,
 Sir Reginald the Cyclops,,
 Game Master 1,Advice: The more difficult squares are usually up top.,
-Game Master 2,Advice: Knowing your odds will help you succeed.,
+Game Master 2,,
 All Man,"A god among men. Leave an impression with him. He Decides:
 4Spin: 
 1&2 = He likes you. He teaches you new things. +3D, +3G, +3G
@@ -233,6 +251,8 @@ Sickly Seagull,,
 Heavy Hen,,
 Screaming Chimp,,
 Charlie Horse,,
+Gambling Seal,,
+Massive Shark Whale,,
 Inviting Ghost,Inviting Ghost invites you to be haunted. -2G,
 Frosty Bitch,This ghostly mutt chills your soul by biting you with its icicle fangs. -3V,
 + Dog,,
@@ -276,6 +296,8 @@ Wall Flies,,
 Trans Fatty Acid,,
 Fatty Acid,This guy is healthy. You eat him up. +2V,
 Crystal Jerk,,
+L'ove,,
+Crying Dragon,,
 Broken Dancer,"Broken Dancer challenges you to a dance battle. 
 If your Gumption is less than 7, you lose to -2V. 
 If your Gumption is 7 or more, you defeat Broken Dancer +1D",
@@ -289,7 +311,7 @@ Dark Card,"Dark Card forces a gamble for your possessions. 4Spin:
 1&3 = You lose. -3D
 2&4 = You Win +1D",1
 Hot Chick,"She makes you feel so good, but at the price of begin burned. +2G -2V",1
-Murder of Crows,You befriend a Murder of Crows. Move to (an adjacent monster space) with a one round use of a bonus +5 attack.,
+Murder of Crows,You befriend a Murder of Crows. Move to (an adjacent monster space) with a one round use of a bonus +5 attack.,1
 People Person,"People Person knows you better than yourself. - 2D, -2G, -2V",1
 Codependent Leech,This little guy latches onto you and begins to consume your Vigour. 4Spin. The amount is how much Vigor you lose.,1
 Strict Space Man,"Strict Spaceman will not less you pass without a fight.
@@ -325,6 +347,7 @@ Toy Noisemaker,,
 Participation Ribbon,,
 Door Number Three,,
 Fun Bucks,,
+Noosiance,,
 Book of P or Political Agenda,-2D to pay for this book.,
 Poetic Justice,,
 Cult Codex,,
@@ -338,11 +361,11 @@ Bad News,,
 Boys Handbook,,
 The Meaning of Life,,
 Alive Red Balloon Friend,,
-French Horn Slug,,
+French Horn Slug,,0
 Talking Key,,
 Devil Bulb,,
 Dunce Cap,,
-Bad Haircut,,
+Bad Haircut,,0
 Dying Tooth,"With his dying breath he bites you out of anger, so you take money from his wallet. -2V and +2D",
 Gloria Hammerstein,,
 Lonesome Shoe,,
@@ -391,7 +414,6 @@ Snake Oil,You cannot believe you were suckered into paying for this stuff that d
 Liquid Hole,"This stuff is amazing!
 (Advance to a specific space)",
 Wet Cement,You notice a footprint in the Wet Cement and take the opportunity to also deface it. Immediately a police officer jumps out of the nearby bushes and charges you with vandalism. - 3D,
-Poison Spazzy Cola,This stuff is so bad for you. -4V,
 Red Town Paint,"This stuff is specially formulate dot help you make the most of a situation. +3D, +3G, and +3V",
 Seemingly Shallow Puddle,,
 Sticky Situation,Eew. Gross. Move forward one space in any direction next turn.,
@@ -405,14 +427,15 @@ Not Avocado Sandwich,"The ingredients of this evil sandwich heals you by +2V at 
 All-Seeing Latte,The All-Seeing Latte suggests you skip the next surrounding spaces and adds +1 to your next spin.,
 T Guy Steak,,
 Accurate Fortune Cookie,The accurate fortune cookie knows you're going forward 2 spaces. Go forward 2 spaces.,
-Bran,"It tastes awful, but you feel much more regular. +4V",
+Bowl of Bran,,
 Painscription,"After consuming one of these, you are not sure if this drug even works. 
 4Spin:
 1 = Cures what ails you. +1v 
 2 = Placebo effect. Nothing happens.
 3 = Intensifies pain. -1V
 4 = Your body spirals out of control. -3V",
-Glass of White,"Whatever that was sure had a lot of nutrients in it. +3V, +3G",
+Glass of White and Orange,,
+Regular and Diet Poison Spazzy Cola,,
 Swill,Tastes disgusting but helps you relax. +1G and -1V,
 Tea Time,Relax. Its Tea Time. +1V,
 Second Hand Smoke,Breathing this stuff in makes you cough. - 1V,
@@ -424,8 +447,7 @@ Purple Flutter Bomb,,
 Spikes Up,,
 Spike Ball,,
 Rocket Hammer,,
-Leverage Crank,"At the cost of your respect, you personally gain. -2D, +1G, and +1V",
-Red TapeDouble-Sided ,,
+Double-Sided Red Tape,,
 File 13,"You pay money to view its contents. -2D. 
 This file contains a list of difficult clients. Avoid the next few squares: (list a few squares that are negative in proximity to its whereabouts.",
 Secret Handshake,"You attempt to fit in with these people.
@@ -441,13 +463,34 @@ Mysterious Briefcase,You never really get a clear view of what is inside. The my
 Crystal Music Box,"It's sound is exquisitely and uniquely devastating. -1D, -1G, -2V",
 Cube,"The mysterious cube building continues to be a mystery after your visit, but you feel better after having visited. +5V",
 Sack of Food,,
-Poppycock,,
-Claptrap,,
-Codswallop,,
-Blather,,
-Baloney,,
-Crapola,,
-Load of Crock,,
-Hogwash,,
-Fiddlesticks,,
-Flim Flam,,
+Poppycock,,1
+Claptrap,,1
+Codswallop,,1
+Blather,,1
+Baloney,,1
+Crapola,,1
+Load of Crock,,1
+Hogwash,,1
+Fiddlesticks,,1
+Flim Flam,,1
+Impending Doom,,
+Vulnerable Feeling,,
+Rock Bottom,,
+Overwhelming Feeling,,
+Depressive Haze,,
+Glitter Cloud,,
+Altruism,,
+Near Death Experience,,
+Clown Avalanche,,
+Green Vortex,,
+The Power of Music,,
+Nanny State,,
+Arrow Swarm,,
+Queen Arrow,,
+Zeitgeist,,
+Talking Guidance Star,,
+Q,,
+Caution! Sharp Cutter,,
+Caution! Talking Skull,,
+Caution! Talking Pig,,
+Caution! Crying,,

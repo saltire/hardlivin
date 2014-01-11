@@ -36,9 +36,8 @@ class CSVData:
 
     def write_info(self, newinfo):
         for filename, sqinfo in newinfo.iteritems():
-            print filename, sqinfo
             # replace stored square info with new info
-            self.info[filename] = tuple(sqinfo.get(col) for col in INFOCOLS)
+            self.info[filename] = tuple(sqinfo.get(col, '') for col in INFOCOLS)
 
         # write NEW info file
         with open(os.path.join(DATAPATH, 'info.csv'), 'wb') as csvfile:
@@ -53,8 +52,8 @@ class CSVData:
             sourcemaps.setdefault(source, {})[int(x), int(y)] = fileinfo[0]
 
         for source in self.sources:
-            w = max(x for x, _ in sourcemaps[source])
-            h = max(y for _, y in sourcemaps[source])
+            w = max(x for x, _ in sourcemaps[source]) + 1
+            h = max(y for _, y in sourcemaps[source]) + 1
             with open(os.path.join(DATAPATH, source + '.csv'), 'wb') as csvfile:
                 writer = csv.writer(csvfile, lineterminator='\n')
                 for y in range(h):

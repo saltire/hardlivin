@@ -9,7 +9,7 @@ IMGPATH = os.path.join(os.path.dirname(__file__), 'hardlivin', 'static', 'images
 DATAPATH = os.path.join(os.path.dirname(__file__), 'hardlivin', 'data')
 SQSIZE = 12
 
-sizes = [64, 128]
+sizes = [128]
 files = {'marcus': (0, 0, 0, 0),
          'zen': (1, 1, 1, 1),
          }

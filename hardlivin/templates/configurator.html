@@ -27,7 +27,7 @@
 					{% for filename in column %}
 					{% if filename %}
 					<a href='#{{ filename }}' class='square' title='{{ info[filename][0] }}'>
-						<img src='static/images/64/{{ filename }}.png' />
+						<img src='static/images/128/{{ filename }}.png' />
 					</a>
 					{% else %}
 					<div class='empty'></div>
@@ -57,7 +57,7 @@
 		<div class='unused'>
 			{% for filename in unused %}
 			<a href='#{{ filename }}' class='square' title='{{ info[filename][0] }}'>
-				<img src='static/images/64/{{ filename }}.png' />
+				<img src='static/images/128/{{ filename }}.png' />
 			</a>
 			{% endfor %}
 		</div>

@@ -9,6 +9,7 @@
 .buttons a.disabled { background: #fff; color: #ccc; cursor: default; }
 
 .square, .empty { display: block; width: 64px; height: 64px; background: #edb; outline: none; }
+.square img { width: 100%; height: 100%; }
 
 .board-container { margin-bottom: 32px; background: #fff; overflow-x: scroll; }
 .board { width: 100%; height: 400px; padding: 15px 1px 1px 15px; font-size: 0; white-space: nowrap; }
