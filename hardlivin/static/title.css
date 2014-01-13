@@ -3,7 +3,7 @@ body { background: #000; color: #ff6; }
 a { color: #c63; text-decoration: none; }
 a:hover { border-bottom: 1px dotted #c63; }
 
-.title { width: 750px; height: 450px; margin: 100px auto; position: relative; z-index: 1; }
+.title { width: 750px; margin: 75px auto 0; position: relative; z-index: 1; }
 .title div { background-image: url('/static/title.png'); position: absolute; z-index: 2; }
 .title div:hover { background-image: url('/static/title-overlay.png'); }
 .title .h { width: 105px; height: 96px; left: 159px; top: 108px; background-position: -159px -108px; }
