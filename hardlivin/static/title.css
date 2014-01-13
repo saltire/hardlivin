@@ -3,6 +3,20 @@ body { background: #000; color: #ff6; }
 a { color: #c63; text-decoration: none; }
 a:hover { border-bottom: 1px dotted #c63; }
 
-.title { padding: 100px 0 50px; text-align: center; }
+.title { width: 750px; height: 450px; margin: 100px auto; position: relative; z-index: 1; }
+.title div { background-image: url('/static/title.png'); position: absolute; z-index: 2; }
+.title div:hover { background-image: url('/static/title-overlay.png'); }
+.title .h { width: 105px; height: 96px; left: 159px; top: 108px; background-position: -159px -108px; }
+.title .a { width: 93px; height: 96px; left: 267px; top: 108px; background-position: -267px -108px; }
+.title .r { width: 96px; height: 96px; left: 369px; top: 108px; background-position: -369px -108px; }
+.title .d { width: 102px; height: 96px; left: 465px; top: 108px; background-position: -465px -108px; }
+.title .l { width: 111px; height: 120px; left: 123px; top: 204px; background-position: -123px -204px; }
+.title .i1 { width: 60px; height: 120px; left: 240px; top: 204px; background-position: -240px -204px; }
+.title .v { width: 99px; height: 120px; left: 312px; top: 204px; background-position: -312px -204px; }
+.title .i2 { width: 60px; height: 120px; left: 420px; top: 204px; background-position: -420px -204px; }
+.title .n { width: 120px; height: 120px; left: 477px; top: 204px; background-position: -477px -204px; }
+.title .ap { width: 33px; height: 48px; left: 585px; top: 204px; background-position: -585px -204px;
+	z-index: 3; }
 
 p { text-align: center; }
+
