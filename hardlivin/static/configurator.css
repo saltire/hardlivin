@@ -23,13 +23,13 @@
 .square.dimmed { opacity: 0.1; }
 .empty.ui-drophover { background: #963; }
 
-.info { width: 400px; margin-right: 16px; min-height: 1px; float: left; }
+.info { float: left; width: 400px; margin: 0 16px 0 32px; min-height: 1px; font-size: 14px; }
 .info > div { display: none; }
-.info > div img { float: left; margin-left: 32px; background: #edb; border: 1px solid #fff; }
-.info > div .painted { float: left; clear: left; width: 128px; margin: 10px 0 0 32px; }
-.info > div p { margin: 0 0 16px 178px; }
+.info > div .left { float: left; width: 130px; margin: 0 16px 16px 0; }
+.info > div img { background: #edb; border: 1px solid #fff; }
+.info > div > p { margin: 0 0 16px 146px; }
 .info > div .title { font-size: 20px; }
-.info > div .desc { font-size: 14px; min-height: 200px; white-space: pre-wrap; }
+.info > div .desc { min-height: 200px; white-space: pre-wrap; }
 .info > div .desc:hover { background: #222; cursor: text; }
 .info textarea { width: 100% !important; border: 0; background: #111 !important; color: #fff; }
 

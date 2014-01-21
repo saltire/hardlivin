@@ -43,11 +43,19 @@
 			</div>
 		</div>
 		<div class='info'>
-			{% for filename, (title, desc, painted) in info.iteritems() %}
+			{% for filename, (title, desc, painted, diff) in info.iteritems() %}
 			<div id='{{ filename }}'>
-				<img src='static/images/128/{{ filename }}.png' />
-				<div class='painted'>Painted?
-					<input type='checkbox' {% if painted %}checked='checked' {% endif %}/>
+				<div class='left'>
+					<img src='static/images/128/{{ filename }}.png' />
+					<p class='painted'>Painted?
+						<input type='checkbox' {% if painted %}checked='checked' {% endif %}/>
+					</p>
+					<p class='difficulty'>
+						{% for d in range(5, 0, -1) %}
+						<input type='radio' name='{{ filename }}-difficulty' value='{{ d }}' {% if diff|int == d %}checked='checked' {% endif %}/> {{ d }}<br />
+						{% endfor %}
+						<input type='radio' name='{{ filename }}-difficulty' value='0' {% if diff|int == 0 %}checked='true' {% endif %}/> None<br />
+					</p>
 				</div>
 				<p class='title'>{{ title }}</p>
 				<p class='desc'>{{ desc }}</p>

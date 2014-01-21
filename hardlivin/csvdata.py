@@ -4,7 +4,7 @@ import os
 
 
 DATAPATH = os.path.join(os.path.dirname(__file__), 'data')
-INFOCOLS = 'title', 'desc', 'painted'
+INFOCOLS = 'title', 'desc', 'painted', 'difficulty'
 
 
 class CSVData:

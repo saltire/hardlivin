@@ -23,9 +23,12 @@ $(function() {
 		
 		// recalculate square count for each area
 		$('.bcount').html($('.board .square').length);
-		$('.ucount').html($('.unused .square').length)
+		$('.ucount').html($('.unused .square').length);
+		
+		// set clear and random buttons
+		$('.clear').toggleClass('disabled', !$('.board .square').length);
+		$('.random').toggleClass('disabled', !$('.unused .square').length);
 	}
-	
 	
 	// dim painted squares with checkbox
 	
@@ -51,11 +54,24 @@ $(function() {
 	});
 	
 	
+	// reset difficulty checkboxes, let them enable save button
+	
+	$('.difficulty input[checked="true"]').prop('checked', true);
+	$('.difficulty input').change(function() {
+		$(this).closest('.info > div').attr('data-changed', 1);
+		$('.save').removeClass('disabled');
+	});
+	
+	
 	// clear board
 	
 	$('.clear').click(function(e) {
 		e.preventDefault();
-		$('.board .square').draggable('disable').appendTo('.unused');
+		if ($(this).hasClass('disabled')) {
+			return;
+		}
+		
+		$('.board .square').draggable('destroy').appendTo('.unused');
 		setEmptyColumns();
 	});
 	
@@ -64,10 +80,13 @@ $(function() {
 	
 	$('.random').click(function(e) {
 		e.preventDefault();
+		if ($(this).hasClass('disabled')) {
+			return;
+		}
+		
 		while ($('.unused .square').length) {
 			var random = Math.floor(Math.random() * $('.unused .square').length);
 			$('.empty').first().replaceWith($('.unused .square').eq(random).draggable(drag_opts));
-
 			if (!$('.empty').length) {
 				// add one empty column to the end
 				var $lastcol = $('<div class="column" />').appendTo('.board');
@@ -77,6 +96,7 @@ $(function() {
 			}
 		}
 		$('.empty').droppable(drop_opts);
+		setEmptyColumns();
 	});
 	
 	
@@ -180,9 +200,8 @@ $(function() {
 	
 	$('.save').click(function(e) {
 		e.preventDefault();
-		
 		if ($(this).hasClass('disabled')) {
-			return false;
+			return;
 		}
 		
 		// collect columns in the board
@@ -201,7 +220,8 @@ $(function() {
 			info[$(this).attr('id')] = {
 				title: $('.title', this).text(),
 				desc: $('.desc', this).text(),
-				painted: $('input', this).is(':checked') ? 1 : 0,
+				painted: $('.painted input', this).is(':checked') ? 1 : 0,
+				difficulty: $('.difficulty input:checked').val(),
 			};
 		});
 		
