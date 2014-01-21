@@ -84,17 +84,58 @@ $(function() {
 			return;
 		}
 		
-		while ($('.unused .square').length) {
-			var random = Math.floor(Math.random() * $('.unused .square').length);
-			$('.empty').first().replaceWith($('.unused .square').eq(random).draggable(drag_opts));
-			if (!$('.empty').length) {
-				// add one empty column to the end
-				var $lastcol = $('<div class="column" />').appendTo('.board');
-				for (i = 0; i < 5; i++) {
-					$('<div class="empty" />').appendTo($lastcol);
-				}
+		// add empty columns if necessary
+		while ($('.unused .square').length > $('.empty').length) {
+			var $lastcol = $('<div class="column" />').appendTo('.board');
+			for (var s = 0; s < 5; s++) {
+				$('<div class="empty" />').appendTo($lastcol);
 			}
 		}
+		
+		// get unused squares of each level, and find the # of columns needed for each level
+		var $unleveled = $('.unused .square'),
+			leveled = [],
+			levelempty = [];
+		for (var i = 0; i < 5; i++) {
+			leveled[i] = $unleveled.filter(function() {
+				return 5 - parseInt($('.difficulty input:checked', $(this).attr('href')).val()) == i;
+			});
+			$unleveled = $unleveled.not(leveled[i]);
+			
+			// get empty squares at this level
+			levelempty[i] = $('.empty').filter(function() {
+				return $(this).index() == i;
+			});
+			
+			// add empty columns at this level if necessary
+			while (leveled[i].length > levelempty[i].length) {
+				var $lastcol = $('<div class="column" />').appendTo('.board');
+				for (var s = 0; s < 5; s++) {
+					$('<div class="empty" />').appendTo($lastcol);
+				}
+				levelempty[i] = levelempty[i].add($('.empty', $lastcol).eq(i));
+			}
+		}
+		
+		// place squares for each level
+		for (var i = 0; i < 5; i++) {
+			while (leveled[i].length) {
+				var $square = leveled[i].eq(Math.floor(Math.random() * leveled[i].length));
+				var $empty = levelempty[i].eq(Math.floor(Math.random() * levelempty[i].length));
+				$empty.replaceWith($square.draggable(drag_opts));
+				leveled[i] = leveled[i].not($square);
+				levelempty[i] = levelempty[i].not($empty);
+			}
+		}
+		
+		// place unleveled squares
+		while ($unleveled.length) {
+			var $square = $unleveled.eq(Math.floor(Math.random() * $unleveled.length));
+			var $empty = $('.empty').eq(Math.floor(Math.random() * $('.empty').length));
+			$empty.replaceWith($square.draggable(drag_opts));
+			$unleveled = $unleveled.not($square);
+		}
+		
 		$('.empty').droppable(drop_opts);
 		setEmptyColumns();
 	});
@@ -111,7 +152,7 @@ $(function() {
 	
 	// edit name and description of square in info area
 	
-	$('.info p, .info .desc').editable({
+	$('.info .title, .info .desc').editable({
 		lineBreaks: false,
 		callback: function(data) {
 			if (data.$el.hasClass('title') && data.content == '') {
