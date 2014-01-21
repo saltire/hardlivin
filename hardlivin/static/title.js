@@ -1,7 +1,7 @@
 function colourRandomLetter() {
 	var $nohover = $('.title div').not('.hover');
 	var random = Math.floor(Math.random() * $nohover.length);
-	$('.hover').removeClass('hover')
+	$('.hover').removeClass('hover');
 	$nohover.eq(random).addClass('hover');
 	setTimeout(colourRandomLetter, 300);
 }

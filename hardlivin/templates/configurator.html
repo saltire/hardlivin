@@ -12,13 +12,13 @@
 	<body>
 		<div class='topbar'>
 			<h1>Hard Livin' Configurator</h1>
-			<div class='buttons'>
-				<a class='save disabled' href='#'>Save Changes</a>
-			</div>
+			<div class='save button disabled'>Save Changes</div>
 			<div class='status'><span></span></div>
 			<div>Board: <span class='count bcount'>{{ info|length - unused|length }}</span></div>
 			<div>Unused: <span class='count ucount'>{{ unused|length }}</span></div>
 			<div>Dim painted squares: <input id='dim-painted' type='checkbox' /></div>
+			<div class='clear button'>Clear</div>
+			<div class='random button'>Fill randomly</div>
 		</div>
 		<div class='board-container'>
 			<div class='board'>

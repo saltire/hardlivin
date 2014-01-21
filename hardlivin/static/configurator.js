@@ -29,8 +29,8 @@ $(function() {
 	
 	// dim painted squares with checkbox
 	
-	$('#dim-painted').change(function() {
-		$('.painted input:checked').map(function() {
+	$('#dim-painted').prop('checked', false).change(function() {
+		$painted = $('.painted input:checked').map(function() {
 			return $('.square[href$="' + $(this).closest('.info > div').attr('id') + '"]');
 		}).toggleClass('dimmed');
 	});
@@ -48,6 +48,35 @@ $(function() {
 			$('.square[href$="' + $(this).closest('.info > div').attr('id') + '"]')
 				.toggleClass('dimmed');
 		}
+	});
+	
+	
+	// clear board
+	
+	$('.clear').click(function(e) {
+		e.preventDefault();
+		$('.board .square').draggable('disable').appendTo('.unused');
+		setEmptyColumns();
+	});
+	
+	
+	// fill board randomly
+	
+	$('.random').click(function(e) {
+		e.preventDefault();
+		while ($('.unused .square').length) {
+			var random = Math.floor(Math.random() * $('.unused .square').length);
+			$('.empty').first().replaceWith($('.unused .square').eq(random).draggable(drag_opts));
+
+			if (!$('.empty').length) {
+				// add one empty column to the end
+				var $lastcol = $('<div class="column" />').appendTo('.board');
+				for (i = 0; i < 5; i++) {
+					$('<div class="empty" />').appendTo($lastcol);
+				}
+			}
+		}
+		$('.empty').droppable(drop_opts);
 	});
 	
 	
