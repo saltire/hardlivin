@@ -7,11 +7,11 @@
 .button:active { background: #000; }
 .button.disabled { background: #fff; color: #ccc; cursor: default; }
 
-.square, .empty { display: block; width: 64px; height: 64px; background: #edb; outline: none; }
+.square, .empty { display: block; width: 60px; height: 60px; background: #edb; outline: none; }
 .square img { width: 100%; height: 100%; }
 
 .board-container { margin-bottom: 32px; background: #fff; overflow-x: scroll; }
-.board { width: 100%; height: 400px; padding: 15px 1px 1px 15px; font-size: 0; white-space: nowrap; }
+.board { width: 100%; padding: 15px 1px 1px 15px; font-size: 0; white-space: nowrap; }
 .board .column { display: inline-block; vertical-align: top; }
 .board .column .square,
 .board .column .empty { margin: 0 14px 14px 0; border: 1px solid #fff; }
@@ -27,7 +27,7 @@
 .info > div { display: none; }
 .info > div .left { float: left; width: 130px; margin: 0 16px 16px 0; }
 .info > div img { background: #edb; border: 1px solid #fff; }
-.info > div > p { margin: 0 0 16px 146px; }
+.info > div > p { margin: 0 0 16px 162px; }
 .info > div .title { font-size: 20px; }
 .info > div .desc { min-height: 200px; white-space: pre-wrap; }
 .info > div .desc:hover { background: #222; cursor: text; }

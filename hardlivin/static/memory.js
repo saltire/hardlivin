@@ -65,7 +65,7 @@ $(function() {
 		// animate it to 0 width
 		$(this).addClass('noclick').animate({width: 0}, 100, function() {
 			// now that it's invisible, append the image
-			$('<img src="static/images/128/' + squares[pos] + '.png" />')
+			$('<img src="static/images/144/' + squares[pos] + '.png" />')
 				.attr('data-name', squares[pos]).addClass('active').appendTo($(this));
 			// now animate it back to full width
 			$(this).animate({width: $(this).css('height')}, 100, function() {

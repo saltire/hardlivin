@@ -2,15 +2,15 @@
 
 .board { margin: auto; padding: 24px; background: #fff; font-size: 0;
 	text-align: center; }
-.board .square { display: inline-block; width: 66px; height: 66px; margin: 7px;
+.board .square { display: inline-block; width: 74px; height: 74px; margin: 7px;
 	vertical-align: top; position: relative; }
-.board .square a { display: block; width: 64px; height: 64px; margin: auto; background: #edb;
+.board .square a { display: block; width: 72px; height: 72px; margin: auto; background: #edb;
 	cursor: pointer; border: 1px solid #fff; position: relative; z-index: 2; }
 .board .square a:hover { border-color: #963; }
 .board .square a.noclick { border: 0; top: 1px; cursor: default; }
 .board .square a img { width: 100%; height: 100%; }
 
-.board .square .overlay { width: 80px; height: 80px;
+.board .square .overlay { width: 88px; height: 88px;
 	position: absolute; top: -7px; left: -7px; z-index: 1; }
 
 .squares { display: none; }

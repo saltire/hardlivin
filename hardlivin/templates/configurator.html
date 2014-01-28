@@ -27,7 +27,7 @@
 					{% for filename in column %}
 					{% if filename %}
 					<a href='#{{ filename }}' class='square' title='{{ info[filename][0] }}'>
-						<img src='static/images/128/{{ filename }}.png' />
+						<img src='static/images/144/{{ filename }}.png' />
 					</a>
 					{% else %}
 					<div class='empty'></div>
@@ -46,7 +46,7 @@
 			{% for filename, (title, desc, painted, diff) in info.iteritems() %}
 			<div id='{{ filename }}'>
 				<div class='left'>
-					<img src='static/images/128/{{ filename }}.png' />
+					<img src='static/images/144/{{ filename }}.png' />
 					<p class='painted'>Painted?
 						<input type='checkbox' {% if painted %}checked='checked' {% endif %}/>
 					</p>
@@ -65,7 +65,7 @@
 		<div class='unused'>
 			{% for filename in unused %}
 			<a href='#{{ filename }}' class='square' title='{{ info[filename][0] }}'>
-				<img src='static/images/128/{{ filename }}.png' />
+				<img src='static/images/144/{{ filename }}.png' />
 			</a>
 			{% endfor %}
 		</div>
