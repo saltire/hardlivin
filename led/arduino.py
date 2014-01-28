@@ -9,5 +9,4 @@ class Arduino:
         time.sleep(2)
 
     def write_ints(self, *ints):
-        print 'sending bytes', [hex(i) for i in ints]
         self.serial.write(''.join(chr(i) for i in ints))
