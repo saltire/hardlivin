@@ -6,6 +6,19 @@ from PIL import Image
 from arduino import Arduino
 
 
+def convert_colour(r, g, b, a=255):
+    return (r >> 4, g >> 4, b >> 4) if a else (0, 0, 0)
+
+
+def pack_colours(colourdata):
+    colourbytes = []
+    for colour1, colour2 in zip(*[iter(colourdata)] * 2):
+        r1, g1, b1 = convert_colour(*colour1)
+        r2, g2, b2 = convert_colour(*colour2)
+        colourbytes.extend([r1 << 4 | g1, b1 << 4 | r2, g2 << 4 | b2])
+    return colourbytes
+
+
 class ImageServer:
     def __init__(self, port='COM7'):
         imgdir = 'images'
@@ -17,15 +30,14 @@ class ImageServer:
         while True:
             code = self.arduino.serial.read(1)
             if code == 'A':
-                print 'got send_image code'
+                print 'got request for image'
                 self.send_image(random.choice(self.images))
             elif code == 'B':
-                print 'got send_col code'
+                print 'got request for column'
                 self.send_cols(random.choice(self.images))
-
-
-    def convert_colour(self, r, g, b, a):
-        return (r >> 4, g >> 4, b >> 4) if a else (0, 0, 0)
+            elif code == 'C':
+                print 'got request for title'
+                self.send_image('title.png')
 
 
     def send_image(self, imgpath):
@@ -34,8 +46,8 @@ class ImageServer:
 
         # this next line breaks the list of pixels into groups of 2
         for colour1, colour2 in zip(*[iter(img.getdata())] * 2):
-            r1, g1, b1 = self.convert_colour(*colour1)
-            r2, g2, b2 = self.convert_colour(*colour2)
+            r1, g1, b1 = convert_colour(*colour1)
+            r2, g2, b2 = convert_colour(*colour2)
 
             self.arduino.write_ints(r1 << 4 | g1, b1 << 4 | r2, g2 << 4 | b2)
             self.arduino.serial.read(1)
@@ -52,10 +64,9 @@ class ImageServer:
             if x > 0:
                 self.arduino.serial.read(1)
             for y in xrange(0, h, 2):
-                r1, g1, b1 = self.convert_colour(*pix[x, y])
-                r2, g2, b2 = self.convert_colour(*pix[x, y + 1])
+                r1, g1, b1 = convert_colour(*pix[x, y])
+                r2, g2, b2 = convert_colour(*pix[x, y + 1])
                 self.arduino.write_ints(r1 << 4 | g1, b1 << 4 | r2, g2 << 4 | b2)
-
 
 
 if __name__ == '__main__':

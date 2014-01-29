@@ -9,10 +9,6 @@
 #define C   A2
 RGBmatrixPanel matrix(A, B, C, CLK, LAT, OE, false);
 
-void setup() {
-	matrix.begin();
-	Serial.begin(9600);
-}
 
 void request_column(int16_t col[]) {
 	Serial.write('B');
@@ -47,6 +43,41 @@ void request_square(int16_t image[12][12]) {
 	}
 }
 
+void draw_title() {
+	Serial.write('C');
+
+	int16_t row[32];
+	int8_t x = 0, y = 0;
+
+	while (y < 16) {
+		if (Serial.available() >= 3) {
+			uint8_t byte1 = Serial.read();
+			uint8_t byte2 = Serial.read();
+			uint8_t byte3 = Serial.read();
+
+			row[x] = matrix.Color888(
+					byte1 / 16 << 4,
+					byte1 % 16 << 4,
+					byte2 / 16 << 4, 1);
+			row[x + 1] = matrix.Color888(
+					byte2 % 16 << 4,
+					byte3 / 16 << 4,
+					byte3 % 16 << 4, 1);
+
+			Serial.write(1);
+			x += 2;
+			if (x == 32) {
+				for (uint8_t xx = 0; xx < 32; xx++) {
+					matrix.drawPixel(xx, y, row[xx]);
+				}
+
+				x = 0;
+				y++;
+			}
+		}
+	}
+}
+
 void draw_square(int8_t xoff, int8_t yoff, int16_t image[12][12]) {
 	for (uint8_t y = 0; y < 12; y++) {
 		for (uint8_t x = 0; x < 12; x++) {
@@ -69,35 +100,42 @@ void scroll_left(uint8_t repeat, uint8_t speed) {
 }
 
 void scroll_multiple(uint8_t repeat, uint8_t speed) {
-	//int16_t image1[12][12];
+	int16_t image1[12][12];
 	int16_t image2[12][12];
 	int16_t image3[12][12];
-	int16_t image4[12][12] = {0};
-	//request_square(image1);
+	//int16_t image4[12][12];
+	request_square(image1);
 	request_square(image2);
 	request_square(image3);
 
-	int16_t col[12];
+	//int16_t col[12];
 
 	for (int8_t xoff = 2; xoff >= -24; xoff--) {
+//		if (xoff < -10 && xoff >= -22) {
+//			request_column(col);
+//			for (uint8_t y = 0; y < 12; y++) {
+//				image4[-10 - xoff][y] = col[y];
+//			}
+//		}
+
 		matrix.fillScreen(0);
-		//draw_square(xoff, 2, image1);
+		draw_square(xoff, 2, image1);
 		draw_square(xoff + 14, 2, image2);
 		draw_square(xoff + 28, 2, image3);
-
-		if (xoff < -10) {
-			request_column(col);
-			for (uint8_t y = 0; y < 12; y++) {
-				image4[xoff + 10][y] = col[y];
-			}
-			draw_square(xoff + 42, 2, image4);
-		}
+		//draw_square(xoff + 42, 2, image4);
 
 		delay(speed);
 	}
 }
 
+void setup() {
+	matrix.begin();
+	Serial.begin(9600);
+
+	draw_title();
+}
+
 void loop() {
-	scroll_left(1, 100);
+	//scroll_left(1, 100);
 	//scroll_multiple(1, 100);
 }
