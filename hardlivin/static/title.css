@@ -23,5 +23,6 @@ a:hover { border-bottom: 1px dotted #c63; }
 .feature span { color: #ff6; font-size: 120%; font-weight: bold; text-shadow: 0 3px 0 #c63; }
 
 p { width: 750px; margin: 30px auto; font-size: 20px; line-height: 36px; text-align: justify; }
-
 .gallery { margin: 60px auto; text-align: center; }
+.logos { text-align: center; }
+.logos img { margin: 0 10px; }
