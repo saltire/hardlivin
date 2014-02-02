@@ -10,8 +10,7 @@ DATAPATH = os.path.join(os.path.dirname(__file__), 'hardlivin', 'data')
 SQSIZE = 12
 
 sizes = [144]
-files = {'marcus': (0, 0, 0, 0),
-         'zen': (1, 1, 1, 1),
+files = {'catalogue': (1, 1, 1, 1),
          }
 
 print 'removing image folder...'
