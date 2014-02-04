@@ -1,0 +1,670 @@
+Girlfriend Ghost
+You are haunted by relationships past.
+G > 5: +1G / -1G
+3
+
+Banana
+Your breakfast somehow makes you more cheerful than usual.
++2V +1G
+2
+
+Angry Vending Machine
+Don't count on getting a snack today. This machine snacks on your coins instead.
+-1V -1D
+2
+
+Beholder
+All eyes on you.
+7spin: -5VG / -4VG / -3VG / -2VG / -1VG / -- / +5DG
+5
+
+Ballot Box
+You briefly imagine that you have some control over events.
+Move directly to any square on the next column. (Incl. Lizard pres + Vampire pres)
+3
+
+Toxic Fern
+Don't touch it. Don't even go near it.
+-1V
+1
+
+Gaping Chasm
+A sign reads "Keep off the grass." Perhaps you should have paid attention!
+Move 2 squares downward.
+4
+
+Scottish Stop Sign
+Stop and enjoy the scenery a moment. Now away with ye!
++1G
+1
+
+Gaping Chasm
+The sign said "Keep off the grass." You wish you'd paid attention.
+Move 2 squares downward.
+3
+
+Hypno-Flag
+You stand at attention, and when told to march, you march.
+March 3 squares forward.
+3
+
+Bad Blood
+It definitely shouldn't be that colour.
+-2V
+2
+
+Liquid Hole
+The floor seems somehow more menacing than it did yesterday.
+Move 2 squares downward.
+3
+
+Cooties
+Eeeew!
+-1G
+1
+
+Evil Mastermind
+Battle this foe in complete darkness, or be cast out of his domain.
+7spin > 6: +3G / Move 2 down
+5
+
+Glitter Vision
+You are blinded by the light!
+4spin and move straight forward.
+4
+
+Thumbs Up
+You're feeling great!
+4spin: Move up
+1
+
+Sideways Stalactites
+Watch where you're going!
+4spin > 4: -- / -2V
+4
+
+Reach for the Stars
+You're up in the clouds. You're so close.
+G > 6: +3D / --
+5
+
+Lizard President
+You're thinking you should've voted for the vampire.
+-3 V / +2 G
+3
+
+Vampire President
+Maybe we would have been better off with the lizard.
+-3 D / +2 G
+2
+
+Uppercut
+Can you dodge this savage blow?
+V > 6: +2D / -2V
+4
+
+Pyramids
+Discover ancient secrets.
+Move to any square in the next two columns.
+5
+
+Power Tower
+Access granted only for those with enough... power.
+VGD > 5: Move up 2.
+3
+
+Refraction Wave
+The colours of the world change around you, and you find yourself elsewhere.
+Move to any square in the next 3 columns.
+4
+
+Still Life With Fruit
+It looks delicious, but please don't touch it.
+-1V
+1
+
+Cube Farm
+Hey you over there! Head down and get back to work!
+-2G
+1
+
+World of Wires
+Nice new electronic device you've got there! Hooking it up might take a while.
+Move up to 2 squares this turn.
+2
+
+Hypnotic Screensaver
+You spend more time than you should staring at this, but you feel relaxed.
++1 V, move up to 2 squares.
+2
+
+All-Seeing Orb
+You briefly gain the power of far sight, and learn many strange things.
+Trade up to 3 -D / +G
+5
+
+Ghost Ship
+The full moon glints off of the waves, and a misty vessel seems to appear in the distance.
++2 to next spin
+5
+
+Sailing Ship
+You pay your passage downriver, and enjoy a relaxing voyage.
+-2D, +2 to next spin
+3
+
+Ruby Spaceship
+Ever since the night that otherworldly light shone on you from the sky, you've been feeling lucky.
++3D
+4
+
+Little Brown Jug
+You won't feel good tomorrow, but you sure feel great right now!
+-1D -2V +3G
+2
+
+Lemon Eye Drops
+You probably should have thought twice before grabbing these off the shelf.
++1V -3G
+2
+
+Hypercube
+A glimpse into the fourth dimension leaves you confused, but fascinated.
++2G
+4
+
+Angry Mob
+The people are taking to the streets. Are you one of them, or are you just in their way?
+D > 6: -2VG
+3
+
+Tetris Crisis
+This isn't looking good.
+-2G
+2
+
+Car Crash
+It takes guts to drive a road like this.
+G < 7: -3V
+3
+
+Family Shield
+You'll need this for the battles ahead.
++2V
+3
+
+Cell Phone Vision
+Hey, watch where you're going!
+-1 to next spin
+2
+
+Cell Phone Photo
+
+Fist Bump
+You're not sure if that's handshake, a fist bump, or a high five coming your way. Think fast!
+4spin x2: 2 in a row? +2G / -1G
+2
+
+Wheel of Choices
+Suddenly you have so many options.
+7spin to move on your next turn.
+3
+
+Fight Night
+You've got a lot riding on this!
+4spin > 2: +3V / -3V
+5
+
+Imagination Land
+A breeze and sunshine are coming through the window. Your mind drifts away from your work.
+Move anywhere within the next 2 columns.
+4
+
+Daytime Sugar Skull
+
+Nighttime Sugar Skull
+
+Ice Floe Hut
+
+Beardcicle
+The cold weather transforms your face into an ice sculpture.
+-1V +1G
+1
+
+Burning Bridge
+Just keep moving forward and don't look back.
+Move straight ahead on your next spin.
+4
+
+Sunrise Castle
+
+Text Adventure
+Games weren't always so flashy and bright.
+
+Forbidding Moon
+
+Money Suit
+Makes you feel like a million bucks! (Mud Wave afterward)
++3D +2G
+5
+
+Natural 20
+You score a critical hit in battle! (all monsters within 2 squares' movement)
+Move up to 2 squares and score the maximum on your spin.
+3
+
+Cat's Crystal
+
+Helvetica
+When in doubt, it's a solid choice.
++1 G
+2
+
+Impossible Triangle
+The angles... they are not real!
+-3G
+5
+
+Blood Storm
+This weather saps your strength. 
+V > 6: -- / -2V
+3
+
+Brain Storm
+You can get through this weather if you use your head.
+G > 6: -- / -2V
+3
+
+Green Storm
+
+Blood Storm II: The Sequel
+The weather continues to sap your strength.
+V > 7: -- / -2V
+4
+
+Fire Storm
+It's cold! It's hot!
+-1G / -2V
+5
+
+Electrical Storm
+
+Slime Storm
+It's a little sticky out today. You don't think you'll make it far.
+Move up to 2 squares.
+2
+
+Arrow Storm
+Seek shelter from the storm... over that way!
+Move only straight ahead or down on your next turn.
+3
+
+Storm Clouds
+The sky is an evil colour today. Wherever you're going, go quickly!
+7-spin on your next turn.
+1
+
+Lightning Bolt
+Forks of light illuminate the sky. You hope none land near you.
+7-spin > 1: -- / -3V
+2
+
+Tornado
+It rips a path straight through everything. Quickly leap out of the way!
+Move up to 2 squares straight up or down.
+3
+
+Hurricane
+Swirling winds scatter everything around the landscape, including you.
+4-spin: Move 2 up / Move 2 down / Move to the top of next column / Move to bottom of next column
+3
+
+Blood Wave
+This wave is cheerfully coloured, but a painful ride.
+-2V + Move 3 squares ahead
+4
+
+Mud Wave
+A tsunami of muddy water, all over your nice new clothes! (after Money Suit)
+-3D
+5
+
+Tubular Wave
+Radical! What a tasty wave! Ride this one out!
++2 to your next spin
+1
+
+Yellow Wave
+Something about this water makes you not want to get wet.
+-2G, -1 to next spin
+2
+
+Technology Wave
+It's coming whether you like it or not, so why not surf it?
+Move 3 squares ahead
+3
+
+Shit Storm
+You probably shouldn't have left the house today.
+-2GVD
+4
+
+Little Fluffy Clouds
+The sunrise is invigorating. Or is that a sunset?
++3G
+4
+
+Forest Fire
+You definitely can't go this way.
+Move only up or forward next turn.
+3
+
+Volcano
+Run as fast as you can!
+7-spin, move only forward.
+5
+
+Monochrome Rainbow
+It seems a little less impressive than most rainbows.
+-1G
+1
+
+Insomnia
+The strangest things happen to you when you can't sleep. (sometime before Recurring Nightmare)
+-2V -1G
+3
+
+A Good Night's Sleep
+A great cure for so many ills.
++1VGD
+3
+
+Synaesthesia
+Taste the rainbow.
+Trade: -3 to any, +3 of any other.
+5
+
+Heartburn
+Is that passion you are feeling, or is it stomach acid?
+-1V +1G
+1
+
+Mysterious Silence
+This would be relaxing if it wasn't so ominous.
+-2G
+5
+
+Recurring Nightmare
+It appears every night, leaving you wishing you still had insomnia!
+-3G
+4
+
+Coma
+Everything goes black...
+Move forward 7.
+4
+
+Wake Up in the Hospital (7 past Coma)
+...and suddenly everything is blinding white.
+-4V
+4
+
+Dr. Spectre
+During a feverish illness, you seem to remember a shadowy figure tending to you.
+-
+4
+
+Uncontained Virus
+Your fever is rising. The chills are taking hold.
+4spin: -3V / -2V / -1V / Move ahead 1
+4
+
+Oops
+We had a little accident, but it's not like it's the end of thFWOOOOOSHH!!!!!
+Trade: -3 to any two, +3 to the other
+5
+
+Gibbous Moon
+Another month passes, and you pause to reflect.
+Trade: -2 to any, +2 to another
+3
+
+Second Earth
+You have a chance to start life anew.
+Trade: -3 to any, +3 to another
+4
+
+Exit Planet Earth
+You embark on a great adventure from which you might not return.
+4spin > 2: Move directly to Space Station / Move directly to Gibbous Moon
+5
+
+Bleeding Moon
+You've never really believed in signs from the heavens, but this is undeniably portentous.
+Trade: -3 to any, +1 to any other
+4
+
+Space Station
+Advanced technology and a great view, what more could you ask for?
+Trade: -1 to any, +2 to other 2
+5
+
+UFO
+You are visited by an unearthly presence. They leave you with gifts and knowledge.
+Trade: -2 to any, +1 to any other
+5
+
+Alien Abduction
+A strange glow suffuses you, and you feel an upward pull. (directly below UFO)
+Move up 1 square
+4
+
+Rubik's Hypercube
+This coloured shape boggles your mind.
+4spin: -- / -- / -1VGD / +1VGD, move straight ahead next turn.
+3
+
+Rubik's Tesseract
+This multicoloured object baffles you. (2 past Hypercube)
+4spin: -- / -- / -2VGD / +2VGD, move straight ahead next turn.
+3
+
+Rubik's Spiral
+This multidimensional polyhedron leaves you disoriented. (2 past Tesseract)
+4spin: -- / -- / -3VGD / +3VGD, move straight ahead next turn.
+3
+
+Rubik's Vortex
+This pan-dimensional, omnicoloured geometric impossibility nauseates and enlightens you.
+7spin: -- / -- / -- / -- / -- / -3VG / +3VG, 7-spin next turn.
+3
+
+Turmoil
+A state of great disturbance, confusion, or uncertainty.
+4spin: -1VGD / -2G / -2V / -2D / -- / -- / --
+4
+
+Distraction
+Extreme agitation of the mind or emotions.
+4spin: -1G / -1V / -1D / --
+3
+
+Befuddlement
+Confusion resulting from failure to understand.
+4spin: -1V / -1G / -1D / --
+3
+
+Discombobulation
+A feeling of embarrassment that leaves you confused.
+4spin: -1G / -1D / -1V / --
+3
+
+Bewilderment
+The condition of being confused or disoriented.
+7spin: -1VGD / -2V / -2D / -2G / -- / -- / --
+4
+
+Uncertainty
+The state of being uncertain; doubt; hesitancy.
+4spin: -1D / -1G / -1V / --
+2
+
+Incomprehension
+Inability or failure to comprehend; lack of understanding.
+4spin: -1D / -1V / -1G / --
+2
+
+Vexation
+The state of being annoyed, frustrated, or worried.
+4spin: -1V / -1D / -1G / --
+2
+
+Perplexity
+Inability to deal with or understand something complicated or unaccountable.
+7spin: -2VG / -2VD / -2DG / -- / -- / -- / --
+5
+
+Mystification
+A mental state characterized by a lack of clear and orderly thought and behaviour.
+7spin: -1VGD / -2D / -2G / -2V / -- / -- / --
+4
+
+Blue Whale
+
+Hammerhead Goldfish
+
+Fighting Fish on Steroids
+
+Peacock
+It blinds you with bright colours.
+Test G < 4: -1V
+2
+
+Night Vision Peacock
+It blinds you even in the absence of light!
+Test G < 6: -1V
+3
+
+Demon Peacock
+It blinds you with colours brighter than you've ever seen!
+Test G < 7: -2V
+4
+
+Worker Bee
+Hard work brings sweet rewards.
+Test G > 6: +2V
+2
+
+Blaster Worm
+He looks harmless, but once you let him in he causes havoc.
+Test G < 5: -3D
+4
+
+Jar of Fireflies
+You do not fear the darkness. (3 before a battle)
+Go ahead 3 squares, and +3G for the next turn only.
+5
+
+X-ray Fish
+
+Alligator in a Box
+Quick, put it back in!
+4spin < 2: -2V
+2
+
+Triggerfish
+
+Pixel Cat
+This pixel's edges are razor sharp!
+4spin < 2: -1V
+2
+
+White Cat
+
+Angry Cat
+His caterwaul is surprisingly piercing!
+
+Pink Puffball Kitten
+You stop to pet it and have a hard time letting it go!
++1G, move up to 2 squares next turn
+1
+
+Elephant
+This elephant will give you a ride if you can make it up on top of his back.
+Test V > 4: 7spin next turn
+2
+
+Upper-Class Whale
+He barely takes notice of such small folk as you.
+-
+5
+
+Annoying Rabbit
+
+Tetris Demon
+Little-known fact: Tetris is never a single player game. You are always playing against me.
+Test V > 6, G > 6: +2 D / -1 D
+4
+
+Sneaky Devil
+He appears out of nowhere just to mess with you. Getting past him takes wits and skill.
+Test G > 7, V > 7: -- / -2D
+5
+
+Pentavil
+This five-pointed malefactor stares at you from a wall. His piercing gaze judges you harshly.
+Test D > 7, G > 7: -- / -3G
+5
+
+Doomicorn
+It offers you a ride, but you fear it might be mocking you. Can you mount this spectral stallion?
+Test V > 8, G > 7: +3 to next spin / -3V
+5
+
+Clumsy Devil
+This brute threatens you with awkwardly large horns. You think you might be able to slip by...
+Test V > 6, G > 5: -- / -3V
+4
+
+Skinny Devil
+This wispy fiend offers you passage at a price. (next square is a hazard of some kind)
+Choose: -2D or move only 1 square
+3
+
+Cloud Devil
+The weather is demonically adverse today.
+Test G > 8: -- / -2G, -1 from next spin
+4
+
+Devil Orb
+This orb flits in front of you, whispering that it can carry you places.
+Pay up to 5 D, travel to any square within that many columns.
+2
+
+Devil Moon
+The night sky glows red. Your sleep is troubled.
+Test G > 7, V > 7: -- / -2GV
+4
+
+Devil Flies
+The insects buzzing around tonight seem motivated by an uncommon malice.
+Test G > 5, V > 5: 
+1
+
+Stacks of Cash
+They're just lying here.
++2D
+
+Stacks and Sacks of Cash
+They are lying here in a suspiciously tidy pile.
++3D
+
+Stacks and Sacks of Cash and Gold
+A pile of wealth is stacked here almost dangerously high.
++4D
+
+Stacks and Sacks of Cash and Gold and a Kitten
+A pile of wealth is stacked to the ceiling, and it's adorable!
++4D +2G
+
+

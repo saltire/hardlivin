@@ -1,0 +1,38 @@
+EFFECTS:
+
+Direct Effect
++- X of 1 or more stats
++- (spin) of 1 or more stats
+
+Trade
+-X of stat A, +Y of stat B
+-X of stat, bonus (or no penalty) to movement
+
+Move effect
++- X to next spin
+
+Forced movement
+Go X squares in Y direction
+
+Restricted movement
+Go only in X direction(s)
+
+Warp
+Go directly to another square
+
+Warp choice
+Go directly to one of X squares.
+
+Battle bonus
+Go directly to a battle with a bonus to your stats.
+
+
+GAMBLING:
+
+Battle
+Spin higher than X - good/bad effect
+
+Test
+Stat higher than X - good/bad result
+
+

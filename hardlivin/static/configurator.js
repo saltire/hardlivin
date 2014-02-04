@@ -3,7 +3,7 @@ $(function() {
 	// count columns after the board changes, to ensure there is one blank column at the end
 	
 	function setEmptyColumns() {
-		var $emptycols = $('.column .square:not(".ui-dragged")').last().parent().nextAll();
+		var $emptycols = $('.column .square:not(".ui-dragged")').first().parent().prevAll();
 		if ($emptycols.length > 1) {
 			// remove all but one empty column from the end
 			$emptycols.slice(1).remove();
@@ -14,7 +14,7 @@ $(function() {
 				$('.board').empty();
 			}
 			// add one empty column to the end
-			var $lastcol = $('<div class="column" />').appendTo('.board');
+			var $lastcol = $('<div class="column" />').prependTo('.board');
 			for (i = 0; i < 5; i++) {
 				$('<div class="empty" />').droppable(drop_opts).appendTo($lastcol);
 			}
@@ -36,17 +36,21 @@ $(function() {
 		$painted = $('.painted input:checked').map(function() {
 			return $('.square[href$="' + $(this).closest('.info > div').attr('id') + '"]');
 		}).toggleClass('dimmed');
+		console.log($painted);
 	});
 	
 	
-	// painted checkbox adds changed flag to its item and enables save button
+	// options add changed flag to their items and enable save button
 	
-	$('.painted input').change(function() {
+	$('.painted, .locked, .difficulty').find('input').change(function() {
 		$(this).closest('.info > div').attr('data-changed', 1);
 		$('.save').removeClass('disabled');
-		
-		// also toggle dim on the corresponding square if that option is enabled
-		
+	});
+
+	
+	// painted checkbox toggles dim on the corresponding square if that option is enabled
+	
+	$('.painted input').change(function() {
 		if ($('#dim-painted').is(':checked')) {
 			$('.square[href$="' + $(this).closest('.info > div').attr('id') + '"]')
 				.toggleClass('dimmed');
@@ -54,13 +58,9 @@ $(function() {
 	});
 	
 	
-	// reset difficulty checkboxes, let them enable save button
+	// reset difficulty checkboxes
 	
 	$('.difficulty input[checked="true"]').prop('checked', true);
-	$('.difficulty input').change(function() {
-		$(this).closest('.info > div').attr('data-changed', 1);
-		$('.save').removeClass('disabled');
-	});
 	
 	
 	// clear board
@@ -71,7 +71,10 @@ $(function() {
 			return;
 		}
 		
-		$('.board .square').draggable('destroy').appendTo('.unused');
+		$('.board .square').filter(function() {
+			return $('.locked input', $(this).attr('href')).not(':checked').length;
+		}).after($('<div class="empty" />').droppable(drop_opts))
+			.draggable('destroy').appendTo('.unused');
 		setEmptyColumns();
 	});
 	
@@ -86,7 +89,7 @@ $(function() {
 		
 		// add empty columns if necessary
 		while ($('.unused .square').length > $('.empty').length) {
-			var $lastcol = $('<div class="column" />').appendTo('.board');
+			var $lastcol = $('<div class="column" />').prependTo('.board');
 			for (var s = 0; s < 5; s++) {
 				$('<div class="empty" />').appendTo($lastcol);
 			}
@@ -109,7 +112,7 @@ $(function() {
 			
 			// add empty columns at this level if necessary
 			while (leveled[i].length > levelempty[i].length) {
-				var $lastcol = $('<div class="column" />').appendTo('.board');
+				var $lastcol = $('<div class="column" />').prependTo('.board');
 				for (var s = 0; s < 5; s++) {
 					$('<div class="empty" />').appendTo($lastcol);
 				}
@@ -152,7 +155,7 @@ $(function() {
 	
 	// edit name and description of square in info area
 	
-	$('.info .title, .info .desc').editable({
+	$('.info .title, .info .desc, .info .effect').editable({
 		lineBreaks: false,
 		callback: function(data) {
 			if (data.$el.hasClass('title') && data.content == '') {
@@ -221,6 +224,7 @@ $(function() {
 	$('.empty').droppable(drop_opts);
 	
 	$('.unused').sortable({
+		scroll: false,
 		start: function(e, ui) {
 			ui.item.trigger('click');
 		},
@@ -245,31 +249,30 @@ $(function() {
 			return;
 		}
 		
-		// collect columns in the board
-		var columns = [];
-		$('.column').slice(0, -1).each(function() {
-			var column = [];
-			$(this).children().each(function() {
-				column.push($(this).hasClass('square') ? $(this).attr('href').slice(1) : '');
-			});
-			columns.push(column.join(','));
-		});
-		
 		// collect name and description of each
 		var info = {};
-		$('.info > div[data-changed=1]').removeAttr('data-changed').each(function() {
+		$('.info > div').each(function() {
+			var row = '', column = '';
+			var $boardsq = $('.board .square[href$=' + $(this).attr('id') + ']');
+			if ($boardsq.length) {
+				row = $boardsq.index();
+				column = $('.column').length - $boardsq.parent().index() - 1;
+			}
 			info[$(this).attr('id')] = {
 				title: $('.title', this).text(),
 				desc: $('.desc', this).text(),
-				painted: $('.painted input', this).is(':checked') ? 1 : 0,
-				difficulty: $('.difficulty input:checked').val(),
+				effect: $('.effect', this).text(),
+				difficulty: $('.difficulty input:checked', this).val(),
+				column: column,
+				row: row,
+				locked: $('.locked input', this).is(':checked') ? 1 : 0,
 			};
 		});
 		
 		$.ajax({
 			type: 'POST',
 			contentType: 'application/json',
-			data: JSON.stringify({columns: columns, info: info}),
+			data: JSON.stringify(info),
 			url: '/configurator/save',
 			success: function(e) {
 				$('<span />').appendTo('.status').html('Saved!').css({color: '#0f0'}).fadeOut(2000);

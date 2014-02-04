@@ -26,23 +26,26 @@ def memory_game():
 @app.route('/configurator')
 def draw_configurator():
     data = CSVData()
-    used = list(itertools.chain(*data.board))
+    used = list(itertools.chain(*data.columns))
     unused = [filename for filename in data.info.iterkeys() if filename not in used]
 
-    return render_template('configurator.html',
-                           columns=zip(*data.board), info=data.info, unused=unused)
+    return render_template('configurator.html', columns=data.columns, info=data.info, unused=unused)
 
 
 @app.route('/configurator/save', methods=['post'])
 def save_changes():
     data = CSVData()
-    newdata = request.get_json()
 
     # save new info to source csvs
-    if newdata['info']:
-        data.write_info(newdata['info'])
-
-    # save rows to board csv
-    data.write_board(zip(*[column.split(',') for column in newdata['columns']]))
+    data.write_info(request.get_json())
 
     return jsonify({'saved': True})
+
+
+@app.route('/catalogue')
+def catalogue():
+    data = CSVData()
+    return render_template('catalogue.html', info=data.info)
+
+
+

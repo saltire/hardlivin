@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Hard Livin' Catalogue</title>
+		<link rel='stylesheet' type='text/css' href='static/catalogue.css' />
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th></th>
+				<th>#</th>
+				<th>Title</th>
+				<th>Purchased by</th>
+				<th>Contact Info</th>
+				<th>Amount Paid</th>
+			</tr>
+			{% for filename, (title, desc, painted, diff, row, column) in info.iteritems() %}
+			<tr>
+				<td><img src='static/images/144/{{ filename }}.png' /></td>
+				<td>{{ title }}</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			{% endfor %}
+		</table>
+	</body>
+</html>
