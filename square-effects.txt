@@ -28,10 +28,10 @@ Don't touch it. Don't even go near it.
 -1V
 1
 
-Gaping Chasm
-A sign reads "Keep off the grass." Perhaps you should have paid attention!
-Move 2 squares downward.
-4
+Ugly Sweater
+This thing hurts your eyes to look at, and it hurts your pride to wear.
+-1G
+1
 
 Scottish Stop Sign
 Stop and enjoy the scenery a moment. Now away with ye!
