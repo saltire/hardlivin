@@ -25,6 +25,9 @@ class CSVData:
                 for y, row in enumerate(csv.reader(csvfile)):
                     for x, title in enumerate(row):
                         if title:
+                            if title not in info:
+                                print 'No info found:', title
+
                             filename = '{0}-{1}-{2}'.format(source, x, y)
                             sqinfo = dict(zip(INFOCOLS,
                                               (title,) + info.get(title, ()) # source csv info

@@ -13,10 +13,10 @@
 				<th>Contact Info</th>
 				<th>Amount Paid</th>
 			</tr>
-			{% for filename, (title, desc, painted, diff, row, column) in info.iteritems() %}
+			{% for filename, sqinfo in info.iteritems() %}
 			<tr>
 				<td><img src='static/images/144/{{ filename }}.png' /></td>
-				<td>{{ title }}</td>
+				<td>{{ sqinfo['title'] }}</td>
 				<td></td>
 				<td></td>
 				<td></td>

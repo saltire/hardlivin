@@ -3,3 +3,8 @@
 .pydevproject
 .settings
 *.pyc
+*.psd
+*.ttf
+*.fon
+*.otf
+*.tif
