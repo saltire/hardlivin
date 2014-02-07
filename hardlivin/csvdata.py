@@ -15,7 +15,7 @@ class CSVData:
 
         # read info
         with open(os.path.join(DATAPATH, 'info.csv'), 'rb') as csvfile:
-            info = {row[0]: tuple(s.decode('utf-8') for s in row[1:])
+            info = {row[0]: tuple(s for s in row[1:])
                     for row in csv.reader(csvfile)}
 
         colcount = 0
