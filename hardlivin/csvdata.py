@@ -15,7 +15,7 @@ class CSVData:
 
         # read info
         with open(os.path.join(DATAPATH, 'info.csv'), 'rb') as csvfile:
-            info = {row[0]: tuple(s for s in row[1:])
+            info = {row[0]: tuple(unicode(s, 'utf-8') for s in row[1:])
                     for row in csv.reader(csvfile)}
 
         colcount = 0
@@ -26,7 +26,7 @@ class CSVData:
                     for x, title in enumerate(row):
                         if title:
                             if title not in info:
-                                print 'No info found:', title
+                                print 'No info found for', title
 
                             filename = '{0}-{1}-{2}'.format(source, x, y)
                             sqinfo = dict(zip(INFOCOLS,
@@ -51,7 +51,7 @@ class CSVData:
         with open(os.path.join(DATAPATH, 'info.csv'), 'wb') as csvfile:
             writer = csv.writer(csvfile, lineterminator='\n')
             for filename, sqinfo in self.info.iteritems():
-                writer.writerow([sqinfo[i] for i in INFOCOLS])
+                writer.writerow([unicode(sqinfo[i]).encode('utf-8') for i in INFOCOLS])
 
         # write NEW source files
         sourcemaps = {}

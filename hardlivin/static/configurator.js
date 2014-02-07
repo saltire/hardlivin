@@ -29,6 +29,7 @@ $(function() {
 		$('.clear').toggleClass('disabled', !$('.board .square').length);
 		$('.random').toggleClass('disabled', !$('.unused .square').length);
 	}
+	setEmptyColumns();
 	
 	// dim painted squares with checkbox
 	
