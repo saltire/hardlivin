@@ -1,2 +1,7 @@
-table td { border-bottom: }
-table img { width: 60px; height: 60px; }
+body { font-family: helvetica, arial, sans-serif; }
+table { width: 100%; border-collapse: collapse; }
+table td { padding: 2px 8px; border: 1px solid #000; }
+table td.thumb { width: 40px; padding: 2px; }
+table td.narrow { width: 48px; text-align: center; }
+table td.blank { width: 25%; }
+table img { width: 100%; background: #edb; }

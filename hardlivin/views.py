@@ -43,9 +43,26 @@ def save_changes():
 
 
 @app.route('/catalogue')
-def catalogue():
+@app.route('/catalogue/<sort>')
+def catalogue(sort=None):
+    if sort not in ['title', 'position']:
+        sort = 'position'
+
+    sorts = {'title': lambda sq: sq['title'],
+             'position': lambda sq: (sq['column'], sq['row'])
+             }
+
     data = CSVData()
-    return render_template('catalogue.html', info=data.info)
+    info = [{'filename': filename,
+                       'title': sqinfo['title'],
+                       'pos': '{0}{1}'.format(int(sqinfo['column']) + 1, 'ABCDE'[int(sqinfo['row'])]),
+                       'column': int(sqinfo['column']),
+                       'row': int(sqinfo['row']),
+                       }
+            for filename, sqinfo in data.info.iteritems()
+            if sqinfo['column'] != '' and sqinfo['row'] != '']
+
+    return render_template('catalogue.html', info=sorted(info, key=sorts[sort]))
 
 
 

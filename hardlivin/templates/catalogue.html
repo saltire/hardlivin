@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>Hard Livin' Catalogue</title>
-		<link rel='stylesheet' type='text/css' href='static/catalogue.css' />
+		<link rel='stylesheet' type='text/css' href='/static/catalogue.css' />
 	</head>
 	<body>
 		<table>
@@ -13,14 +13,14 @@
 				<th>Contact Info</th>
 				<th>Amount Paid</th>
 			</tr>
-			{% for filename, sqinfo in info.iteritems() %}
+			{% for sqinfo in info %}
 			<tr>
-				<td><img src='static/images/144/{{ filename }}.png' /></td>
+				<td class='thumb'><img src="/static/images/144/{{ sqinfo['filename'] }}.png" /></td>
+				<td class='narrow'>{{ sqinfo['pos'] }}</td>
 				<td>{{ sqinfo['title'] }}</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td class='blank'></td>
+				<td class='blank'></td>
+				<td class='narrow'></td>
 			</tr>
 			{% endfor %}
 		</table>
