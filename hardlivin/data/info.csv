@@ -1,287 +1,287 @@
-Snake Eyes,Piercing eyes shake your confidence.,-2G,2,,,0
-Cat Eyes,These eyes warm your heart.,+2G,2,,,0
-Them Eyes,There is something mysterious about them eyes.,-1G,1,,,0
-Fish Eyes,These help you see the light.,+1G,1,,,0
-Come Hither Look,"You succumb to the stare of pair of hypnotic eyes, to much consequence.",-3G,2,,,0
-Puppy Dog Eye,"Gross, but still adorable.",+3G,2,,,0
-Big Triple Eye,By looking into this eye you are soothed 3 times over.,+3G,2,,,0
-Stink Eye,Makes you feel insecure and threatened.,-1G,1,,,0
-Eye of the Storm,You feel oddly calm.,+2G,2,,,0
-Intriguing Wink Twinkle,You are intrigued.,+1G,1,,,0
-Sore Eye,Makes you feel bad for looking at it.,-1G,1,,,0
-Klutz,"A Klutz draws near, falling into everything in his path. If you're lucky, he will be his only victim.",4spin: -2V / -1V / -- / +1G,3,,,0
-Gumshoe,Questions you profusely.,-2G,2,,,0
-Tony Robbin',You pay him a lot of money to boost your confidence.,"-3D, +1G",3,,,0
-Boss,He wants you to work on Saturday.,"7-Spin: Spin once to set the variable, spin again to match or surpass the number to win and escape. If you lose, -1D, -1G,-1V",3,,,0
-Modern Racist,He insults you on a profoundly innovative level.,-1G,1,,,0
-Blushing Bridezilla,You are happy you are not marrying this intensely delusional and difficult woman.,+1D,1,,,0
-Green Shyster,He takes your money with promises of a healthier future for us all.,"-1D, +1G",2,,,0
-Game Show Ghost,BOO! YOU WIN!,+2D,2,,,0
-Wrong-Sided Lighting Man,His shadow's on the wrong side. It's highly disturbing.,"-1D, -1G",2,,,0
-Big Mistake,Hanging out with this guy has caused you nothing but trouble.,"-1D, -1G, -1V",3,,,0
-Stan's Head,It is full of great stuff.,+1DGV,3,,,0
-Ultrastache,"He is very wise, and his facial hair inspires confidence.","+2D, +2G",3,,,0
-Horny Feminist,All she wants is some respect. Sometimes that's tough to find.,-2G,2,,,0
-Face of Evil,This clown is just as sinister as it looks.,"-2D, -2G, -2V",3,,,0
-Vegas Lights Lady,She lights up your life.,"+1D, +1V",2,,,0
-Business Douche,He comes after you looking for capital.,4-Spin: -1D / -2D / -3D / Escape.,4,,,0
-Sir Reginald The Cyclopean Monocle Mayor,"If you've got the gumption, he can provide the deeds!",Trade as many gumption as you like for deeds.,3,,,0
+Snake Eyes,Piercing eyes shake your confidence.,-2G,2,96,3,0
+Cat Eyes,These eyes warm your heart.,+2G,2,54,3,0
+Them Eyes,There is something mysterious about them eyes.,-1G,1,14,4,0
+Fish Eyes,These help you see the light.,+1G,1,15,4,0
+Come Hither Look,"You succumb to the stare of pair of hypnotic eyes, to much consequence.",-3G,2,89,3,0
+Puppy Dog Eye,"Gross, but still adorable.",+3G,2,6,3,0
+Big Triple Eye,By looking into this eye you are soothed 3 times over.,+3G,2,50,3,0
+Stink Eye,Makes you feel insecure and threatened.,-1G,1,29,4,0
+Eye of the Storm,You feel oddly calm.,+2G,2,37,3,0
+Intriguing Wink Twinkle,You are intrigued.,+1G,1,40,4,0
+Sore Eye,Makes you feel bad for looking at it.,-1G,1,58,4,0
+Klutz,"A Klutz draws near, falling into everything in his path. If you're lucky, he will be his only victim.",4spin: -2V / -1V / -- / +1G,3,35,0,0
+Gumshoe,Questions you profusely.,-2G,2,92,3,0
+Tony Robbin',You pay him a lot of money to boost your confidence.,"-3D, +1G",3,49,2,0
+Boss,He wants you to work on Saturday.,"7-Spin: Spin once to set the variable, spin again to match or surpass the number to win and escape. If you lose, -1D, -1G,-1V",3,44,2,1
+Modern Racist,He insults you on a profoundly innovative level.,-1G,1,61,4,0
+Blushing Bridezilla,You are happy you are not marrying this intensely delusional and difficult woman.,+1D,1,22,4,0
+Green Shyster,He takes your money with promises of a healthier future for us all.,"-1D, +1G",2,97,4,1
+Game Show Ghost,BOO! YOU WIN!,+2D,2,98,2,1
+Wrong-Sided Lighting Man,His shadow's on the wrong side. It's highly disturbing.,"-1D, -1G",2,38,3,0
+Big Mistake,Hanging out with this guy has caused you nothing but trouble.,"-1D, -1G, -1V",3,93,2,0
+Stan's Head,It is full of great stuff.,+1DGV,3,38,2,0
+Ultrastache,"He is very wise, and his facial hair inspires confidence.","+2D, +2G",3,95,2,0
+Horny Feminist,All she wants is some respect. Sometimes that's tough to find.,-2G,2,81,3,0
+Face of Evil,This clown is just as sinister as it looks.,"-2D, -2G, -2V",3,56,2,0
+Vegas Lights Lady,She lights up your life.,"+1D, +1V",2,53,3,0
+Business Douche,He comes after you looking for capital.,4-Spin: -1D / -2D / -3D / Escape.,4,40,1,0
+Sir Reginald The Cyclopean Monocle Mayor,"If you've got the gumption, he can provide the deeds!",Trade as many gumption as you like for deeds.,3,46,2,0
 Game Master 1,"""The safest route is along the bottom of the board. Do you really want to play it safe?""",,1,10,2,1
 Game Master 2,"""Avoiding all of the dark monsters is a good idea.""",,1,15,2,1
 Gar,"""Higher stats don't make you a better person, only different.""",,1,26,2,1
 Chang,"""Potions shake your game up.""",,1,25,2,1
 Sean,"""Pay close attention to colours and similar character features. They will help guide you.""",,1,20,2,1
 Tyrone,"""Monsters will engage you in battle, and you can win by pumping up your stats.""",,1,31,2,1
-All Man,A god among men. Leave an impression with him.,"4Spin:  1= He likes you. +1D, +1G, +1V 2= He doesn't notice you and walk past. 3= He doesn't thick much of you. -1G 4= He hates you. -1D, -1G, -1V",4,,,0
-Twice the Man,He is twice the man you are and makes you feel insignificant.,"-2D, -2G, -2V",3,,,0
-Man's Man,You admire his qualities a lot and he inspires you to be a better person.,"+2D, +2G, +2G",3,,,0
+All Man,A god among men. Leave an impression with him.,"4Spin:  1= He likes you. +1D, +1G, +1V 2= He doesn't notice you and walk past. 3= He doesn't thick much of you. -1G 4= He hates you. -1D, -1G, -1V",4,21,1,0
+Twice the Man,He is twice the man you are and makes you feel insignificant.,"-2D, -2G, -2V",3,27,2,0
+Man's Man,You admire his qualities a lot and he inspires you to be a better person.,"+2D, +2G, +2G",3,61,2,0
 Half a Man,You feel tall.,+1V,1,9,4,1
 Other Half a Man,Gross! This guy got the wrong end of the deal.,"-1V / If you started this turn on Half a Man, you feel pretty bad about the tall joke. -2V",1,10,4,1
-New Man,His Vigour rubs off on yours.,"+3D, +3G, +3G",3,,,0
-Man Enough,"His confidence far exceeds his height. So much so, he challenges you to an arm wrestling match!",4-Spin vs V: -1D / +1D,3,,,0
-Marked Man,Standing next to a guy with this many enemies was a bad decision.,"-2D, -2G, -2V",3,,,0
-Yes Man,He tries hard to win your favour.,"+2D, +2G, +2G",3,,,0
-Best Man,He is better than everybody.,"-3D, -3G, -3V",3,,,0
-Reverse Santa,This un-jolly fellow takes your stuff away for himself.,-1D,1,,,0
-Serial Dater,This date is going nowhere.,-2V,2,,,0
-Fashion Police,What you wear will never be good enough.,-2G,2,,,0
-Baby with Candy,Looks easy enough to take...,Leave the baby's candy alone. / Take his candy. +2V and -4G,2,,,0
+New Man,His Vigour rubs off on yours.,"+3D, +3G, +3G",3,74,3,0
+Man Enough,"His confidence far exceeds his height. So much so, he challenges you to an arm wrestling match!",4-Spin vs V: -1D / +1D,3,59,3,0
+Marked Man,Standing next to a guy with this many enemies was a bad decision.,"-2D, -2G, -2V",3,13,2,0
+Yes Man,He tries hard to win your favour.,"+2D, +2G, +2G",3,51,2,0
+Best Man,He is better than everybody.,"-3D, -3G, -3V",3,80,2,0
+Reverse Santa,This un-jolly fellow takes your stuff away for himself.,-1D,1,78,4,0
+Serial Dater,This date is going nowhere.,-2V,2,26,3,0
+Fashion Police,What you wear will never be good enough.,-2G,2,95,3,0
+Baby with Candy,Looks easy enough to take...,Leave the baby's candy alone. / Take his candy. +2V and -4G,2,20,3,0
 Officer Down,He's directing traffic in an unusual way.,Move straight downward only on your next spin.,5,17,0,1
-Crooked Tax Man,He assures you that your hard-earned dollars will not go to waste.,"-2D, +2G",3,,,0
+Crooked Tax Man,He assures you that your hard-earned dollars will not go to waste.,"-2D, +2G",3,2,2,0
 Harsh Competitaur,All he ever wants to do is compete with you.,"7-Spin greater than 6, win = +1D, +1G, +1V, Loss -1D, -1G, -1V",4,62,0,0
-Obvious Toupee,You try really hard not to stare.,G > 4: -- / -1G,2,,,0
-Grown Adult Bully,You run into jerks now and then. Sometimes you get a chance to shut their mouth.,4-Spin > 2: +1D / -1D,3,,,0
-Foot Face,His face was meant for walking. He'll walk all over you if you let him.,V > 3: -- / -1G,2,,,0
-Kettle Child,"He makes the best tea, if he likes you.",V > 5: +2V / -2V,0,,,0
-Man-Boy,"You might find his immaturity amusing, or he might just be holding you back.",D < 5: +1G / -2 to your next spin,2,,,0
-Yellow-Belly Alabaster,Some people wear their cowardice on their shirt.,D > 2: +1D / -1D,1,,,0
-Juice Lee,Defeat him and drink his juice for much Vigour. Lose and suffer at his juicy hands.,"Chose to challenge Juice Lee, 7-spin, greater than 6 to win +3V, Lose = -3V, or walk away.",3,,,0
-Train Wreck,You're starting to feel like self-preservation should be more of a priority.,-2VGD,1,,,0
-Dreamboat,He can't wait to sail away to paradise... with the right person.,V > 7: +3V,2,,,0
+Obvious Toupee,You try really hard not to stare.,G > 4: -- / -1G,2,14,3,0
+Grown Adult Bully,You run into jerks now and then. Sometimes you get a chance to shut their mouth.,4-Spin > 2: +1D / -1D,3,88,2,0
+Foot Face,His face was meant for walking. He'll walk all over you if you let him.,V > 3: -- / -1G,2,56,3,0
+Kettle Child,"He makes the best tea, if he likes you.",V > 5: +2V / -2V,0,47,4,0
+Man-Boy,"You might find his immaturity amusing, or he might just be holding you back.",D < 5: +1G / -2 to your next spin,2,96,4,0
+Yellow-Belly Alabaster,Some people wear their cowardice on their shirt.,D > 2: +1D / -1D,1,74,4,0
+Juice Lee,Defeat him and drink his juice for much Vigour. Lose and suffer at his juicy hands.,"Chose to challenge Juice Lee, 7-spin, greater than 6 to win +3V, Lose = -3V, or walk away.",3,9,2,0
+Train Wreck,You're starting to feel like self-preservation should be more of a priority.,-2VGD,4,48,4,0
+Dreamboat,He can't wait to sail away to paradise... with the right person.,V > 7: +3V,2,24,3,0
 General Downer,"He makes you feel awful, and he always has the last word.",Move down one square.,2,12,3,1
 Up Chuck,"He's moving on up and taking you with him, because he likes the cut of your jib.",Spin and move straight upward only on your next spin.,1,13,3,1
-Man Behind Glass,"He seems to be in there against his will. Will you ignore him, or help him out by shattering the glass?","Choose: -- / -2V, +1D",2,,,0
-Upface,"You can count on this guy to be always looking up, no matter what.","Move upward, up to two spaces.",1,,,0
-Sneaky Raccoon,Raccoons get up to all kinds of mischief at night.,"4-spin: Find some  -1V / It accepts you into its group. +2G / It defends its territory and attacks you. -1G, -1V /It robs you of the cash in your wallet. -3D",4,,,0
-Bwognee,"It's an adorable rabbit, here to give you a warm fuzzy feeling.",+2V,1,,,0
-White Rabbit,"This particular rabbit, while fuzzy, is extraordinarily deadly.",-2V,2,,,0
-Vulnerable Nest,You start to notice how your actions affect the balance of nature.,Trade up to -3G for up to +3V,0,,,0
-Dumb Duck,"This dumb duck is so annoying! (""""""How annoying is he?"""""")","4-Spin: 1=-1G, 2=-2G, 3=-3G, 4=-1V",3,,,0
-Helmet Cat,Helmet Cat challenges you to a race for big $$$.,"Spin once for yourself, then once for Helmet Cat. Win= +3D, Loss= -3D",3,,,0
-Snake Plane,You might get a bite on this frightening flight.,-2G and add +2 to your next turn.,2,,,0
-Flying Shark,Evolution takes a scary turn.,"4-Spin Battle: 1 or 3 = Lose -2V, 2 or 4 = Win +2D",3,,,0
-Nude Rabbit,"Nude Rabbit loves you very much, and takes good care of you.",+2V,1,,,0
-Unwise Owl,"Most owls are wise, but this one isn't one of them.",Go straight to one of the following squares: (varying degrees of difficulty and/or loss),1,,,0
-Clear Bear,This bear helps you achieve a certain... clarity.,(Recommend some squares to aim for),1,,,0
-Sleepwalking Dog,"There's no telling if it will howl at you, bite you, lick your wounds or just sniff you and walk on by.",4Spin:  1= It sniffs you and passes you by. / 2= It bites you. -2V / 3= It licks your wounds. +1V / 4= It howls disturbingly loud at you. -2G,3,,,0
-Pirrate,He learned a lot from his former swashbuckling master. Now he's a professional pirate of his own.,-1D,1,,,0
+Man Behind Glass,"He seems to be in there against his will. Will you ignore him, or help him out by shattering the glass?","Choose: -- / -2V, +1D",2,29,3,0
+Upface,"You can count on this guy to be always looking up, no matter what.","Move upward, up to two spaces.",1,26,4,0
+Sneaky Raccoon,Raccoons get up to all kinds of mischief at night.,,4,65,1,0
+Bwognee,"It's an adorable rabbit, here to give you a warm fuzzy feeling.",+2V,1,8,4,0
+White Rabbit,"This particular rabbit, while fuzzy, is extraordinarily deadly.",-2V,2,42,3,0
+Vulnerable Nest,You start to notice how your actions affect the balance of nature.,Trade up to -3G for up to +3V,0,8,0,0
+Dumb Duck,"This dumb duck is so annoying! (""How annoying is he?"")","4-Spin: 1=-1G, 2=-2G, 3=-3G, 4=-1V",3,83,3,0
+Helmet Cat,Helmet Cat challenges you to a race for big $$$.,"Spin once for yourself, then once for Helmet Cat. Win= +3D, Loss= -3D",3,4,2,0
+Snake Plane,You might get a bite on this frightening flight.,-2G and add +2 to your next turn.,2,41,3,0
+Flying Shark,Evolution takes a scary turn.,"4-Spin Battle: 1 or 3 = Lose -2V, 2 or 4 = Win +2D",3,52,2,0
+Nude Rabbit,"Nude Rabbit loves you very much, and takes good care of you.",+2V,1,6,4,0
+Unwise Owl,"Most owls are wise, but this one isn't one of them.",Go straight to one of the following squares: (varying degrees of difficulty and/or loss),1,75,4,0
+Clear Bear,This bear helps you achieve a certain... clarity.,(Recommend some squares to aim for),1,51,4,0
+Sleepwalking Dog,"There's no telling if it will howl at you, bite you, lick your wounds or just sniff you and walk on by.",4Spin:  1= It sniffs you and passes you by. / 2= It bites you. -2V / 3= It licks your wounds. +1V / 4= It howls disturbingly loud at you. -2G,3,60,2,0
+Pirrate,He learned a lot from his former swashbuckling master. Now he's a professional pirate of his own.,-1D,1,31,4,0
 Snail Face,"His conversation is so slow. It sounds like a warning, but you can't bear to stand around long enough to hear it.",Keep moving!,3,53,2,1
-Turkey Snail,This strange creature is a rare hybrid of your two favourite foods.,"""Gross! No it's not!"" (Keep moving.) / ""Looks delicious!"" (Cook him up for +2V)",2,,,0
-Hulk Maniac Grizzly,Think you got what it takes to take down a professional grizzly wrestler? Or are you gonna run away like a coward?,7-Spin > 5: +2D / Run away. Your next move is 3 spaces straight forward.,4,,,0
-Sickly Seagull,"Don't worry about the smell. They say when a seagull vomits on you, it's good luck!",7-spin for next turn.,1,,,0
-Heavy Hen,"In the pecking order, she is queen.",4-Spin > 3: Move up to 3 squares upward.,1,,,0
-Screaming Chimp,Every interaction today feels like youﾒre arguing with an angry ape. ,4-Spin: -2V / -- / -1VG / +1V,2,,,0
-Charlie Horse,He forces you into his horse racing gambling ring.,"4-spin. 1-3 = -1D, 4= +2D",3,,,0
-Gambling Seal,He has a way of roping you into a game of roulette.,"7-Spin: 1-3 = -1D, 4-6 = -2D, 7= +2D",3,,,0
-Massive Whale Shark,It chews you up and spits you out. ,"-1V, move straight forward",1,,,0
-Afro Ducky,Afro Ducky knows where all the cool hangouts are.,Move straight forward.,2,,,0
-Serpent Flamingo,Serpent Flamingo seduces you into a nice massage. ,"-1G, +1V",2,,,0
-Fat Dog,Fat Dog is super big and fluffy and he warms your heart when you pat him.,+1V,1,,,0
-Wall Flies,They are here to test your patience.,Vigour Test: 4 or more = win. Easily ignored. 3 or less = -1V,3,,,0
+Turkey Snail,This strange creature is a rare hybrid of your two favourite foods.,"""Gross! No it's not!"" (Keep moving.) / ""Looks delicious!"" (Cook him up for +2V)",2,40,3,0
+Hulk Maniac Grizzly,Think you got what it takes to take down a professional grizzly wrestler? Or are you gonna run away like a coward?,7-Spin > 5: +2D / Run away. Your next move is 3 spaces straight forward.,4,26,1,0
+Sickly Seagull,"Don't worry about the smell. They say when a seagull vomits on you, it's good luck!",7-spin for next turn.,1,19,4,0
+Heavy Hen,"In the pecking order, she is queen.",4-Spin > 3: Move up to 3 squares upward.,1,36,4,0
+Screaming Chimp,Every interaction today feels like youï¾’re arguing with an angry ape. ,4-Spin: -2V / -- / -1VG / +1V,2,71,3,0
+Charlie Horse,He forces you into his horse racing gambling ring.,"4-spin. 1-3 = -1D, 4= +2D",3,47,2,0
+Gambling Seal,He has a way of roping you into a game of roulette.,"7-Spin: 1-3 = -1D, 4-6 = -2D, 7= +2D",3,41,0,0
+Massive Whale Shark,It chews you up and spits you out. ,"-1V, move straight forward",1,35,4,0
+Afro Ducky,Afro Ducky knows where all the cool hangouts are.,Move straight forward.,2,25,3,0
+Serpent Flamingo,Serpent Flamingo seduces you into a nice massage. ,"-1G, +1V",2,72,3,0
+Fat Dog,Fat Dog is super big and fluffy and he warms your heart when you pat him.,+1V,1,57,4,0
+Wall Flies,They are here to test your patience.,Vigour Test: 4 or more = win. Easily ignored. 3 or less = -1V,3,16,2,0
 Inviting Ghost,Inviting Ghost invites you to be haunted.,-1V,1,57,2,1
-Frosty Bitch,"This ghostly mutt sinks his icicle fangs into you, and chills your soul.",-2V,0,,,0
-+ Dog,+ Dog approaches you in a friendly manner and guides you through the dark.,+1 to your movement on your next turn.,1,,,0
-Hard No,Hard No passes through you. You find it difficult to move forward.,Only move up to 2 on your next turn.,2,,,0
-Big Up,Big Up floats you upward.,Move up one square.,1,,,0
+Frosty Bitch,"This ghostly mutt sinks his icicle fangs into you, and chills your soul.",-2V,0,90,0,0
++ Dog,+ Dog approaches you in a friendly manner and guides you through the dark.,+1 to your movement on your next turn.,1,76,4,0
+Hard No,Hard No passes through you. You find it difficult to move forward.,Only move up to 2 on your next turn.,2,47,1,0
+Big Up,Big Up floats you upward.,Move up one square.,1,54,4,0
 Spirit Fossil,"This ancient fossil releases a ghost, who possesses your body temporarily.",Move directly forward 3 spaces. (to a space that makes sense to a ghost),2,55,2,1
-Lightning Hand,"From its cold dead finger comes a flash of light, and you are instantly teleported.",Move directly forward 4 spaces (to a negative space),3,,,0
-Wuvy Duvy,This spirit haunts your heart with an intense feeling of love and tenderness.,+1V and move directly forward 2 spaces.,2,,,0
-Hallucinatory Dynamo of a Neckless Freak,"While you try to figure out what it is, it possesses your body. Next thing you know you are somewhere else.",Move 3 squares straight ahead. (warp to another square),4,,,0
+Lightning Hand,"From its cold dead finger comes a flash of light, and you are instantly teleported.",Move directly forward 4 spaces (to a negative space),3,70,2,0
+Wuvy Duvy,This spirit haunts your heart with an intense feeling of love and tenderness.,+1V and move directly forward 2 spaces.,2,11,3,0
+Hallucinatory Dynamo of a Neckless Freak,"While you try to figure out what it is, it possesses your body. Next thing you know you are somewhere else.",Move 3 squares straight ahead. (warp to another square),4,25,1,0
 Mysterious Amulet,This artifact leaves you feeling strangely compelled to wander.,"Move up to 5 squares. For this turn only, you can move diagonally!",2,43,2,1
-Uncomfortably Generous Soul,It really seems to want to treat you well. You are spoiled almost to death before you finally escape.,"-5V, +5D",5,,,0
-Toothless Crocodile Banshee,"This unfulfilled crocodile needs to bite someone in order to leave purgatory, but it's having a hard time.","Allow yourself to be bitten, slowly but surely. -1V, +1D",3,,,0
-Fire Fighting Boogeyman,"He haunts your path, wandering purgatory in search of fires. He lights you aflame, and then douses you in water.",Move ahead to Seemingly Shallow Puddle,4,,,0
-Homeless Phantom,"He haunts your wallet, and cash disappears from it.",-1D,1,,,0
-Dead Cool Raisin Mascot,"Nobody remembers who he is, and he is angry from the grave. He needs money to make a comeback.","4-Spin: 1&3 = win +1D, 2&4 = -1D",2,,,0
-Unidentifiable Skull,This skull baffles the most seasoned archaeologists.,-2D,2,,,0
-Toothpaste Spook,"You toothbrush is now haunted, and you are afraid to brush your teeth.",-1V,1,,,0
+Uncomfortably Generous Soul,It really seems to want to treat you well. You are spoiled almost to death before you finally escape.,"-5V, +5D",5,36,0,0
+Toothless Crocodile Banshee,"This unfulfilled crocodile needs to bite someone in order to leave purgatory, but it's having a hard time.","Allow yourself to be bitten, slowly but surely. -1V, +1D",3,3,2,0
+Fire Fighting Boogeyman,"He haunts your path, wandering purgatory in search of fires. He lights you aflame, and then douses you in water.",Move ahead to Seemingly Shallow Puddle,4,86,1,1
+Homeless Phantom,"He haunts your wallet, and cash disappears from it.",-1D,1,64,4,0
+Dead Cool Raisin Mascot,"Nobody remembers who he is, and he is angry from the grave. He needs money to make a comeback.","4-Spin: 1&3 = win +1D, 2&4 = -1D",2,63,3,0
+Unidentifiable Skull,This skull baffles the most seasoned archaeologists.,-2D,2,43,3,0
+Toothpaste Spook,"You toothbrush is now haunted, and you are afraid to brush your teeth.",-1V,1,3,4,0
 Floating Demon Goat Head,A Floating Demon Goat Head draws near. Time for battle!,7-Spin > 5: +2D / -2V.,4,62,1,1
-Devil Tongue,It gives you twice the licking.,-2V,3,,,0
-Unspeakable Findings,You come across something that you cannot un-see.,-3V,4,,,0
-Tallish,A Tallish walks quickly and effortlessly towards you. You feel dwarfed by its size.,Test G > 5: -- / -1VG,4,,,0
-Insincere Smile,The shiftiest smile you ever saw. It stays trapped in your mind and bothers you all day.,Test D > 4 : -- / -2D,4,,,0
+Devil Tongue,It gives you twice the licking.,-2V,3,8,2,0
+Unspeakable Findings,You come across something that you cannot un-see.,-3V,4,73,2,0
+Tallish,A Tallish walks quickly and effortlessly towards you. You feel dwarfed by its size.,Test G > 5: -- / -1VG,4,22,1,0
+Insincere Smile,The shiftiest smile you ever saw. It stays trapped in your mind and bothers you all day.,Test D > 4 : -- / -2D,4,53,1,0
 Zompire,It wants to suck your blood and eat your brains.,4spin > 2: -- / -1DGV,3,62,2,1
-Werewolf Repoman,"By the light of a full moon, he comes to take your stuff.","7Spin: > 5 = +2D, < 3 = -2D",4,,,0
-Charming Snake,"If you aren't on your game, it will charm you into submission.",G > 7: +1G / -2G,4,,,0
-Towel Whipping Tentacle,Hell hath spawned the worst thing ever! OW!,4-Spin > 3: +3V / -3V,5,,,0
-Rose Thorn,Always trying to prickle your day. Perhaps you can make the best of it.,7-Spin > 3: +1D / -3V,3,,,0
-Ugly Genie,"He will gaze upon your works, and perhaps reward you with a wish.",Test D > 8: +6 to any stat,5,,,0
-Amorphous Mass,This amazing discovery emerges rapidly from the local laboratory.,4spin > 1: +1D / -1V,0,,,0
+Werewolf Repoman,"By the light of a full moon, he comes to take your stuff.","7Spin: > 5 = +2D, < 3 = -2D",4,80,1,0
+Charming Snake,"If you aren't on your game, it will charm you into submission.",G > 7: +1G / -2G,4,2,1,0
+Towel Whipping Tentacle,Hell hath spawned the worst thing ever! OW!,4-Spin > 3: +3V / -3V,5,71,0,0
+Rose Thorn,Always trying to prickle your day. Perhaps you can make the best of it.,7-Spin > 3: +1D / -3V,3,37,2,0
+Ugly Genie,"He will gaze upon your works, and perhaps reward you with a wish.",Test D > 8: +6 to any stat,5,76,0,0
+Amorphous Mass,This amazing discovery emerges rapidly from the local laboratory.,4spin > 1: +1D / -1V,0,6,0,0
 Green Spider,Indigenous to irradiated areas. Watch out for its bite.,"7-Spin Battle: Greater than 6 = Win for +4D, 6 or less = lose for -2D, -2G -2V",5,24,0,1
-Male Sperm,"Tiny he may be, this sperm might be more vigorous than thee.",V > 7: V = 10 / -3V,4,,,0
-Male Sperm on Wheels,He is determined to prove his vigour over all other sperm.,V > 8: V = 10 / -3V,5,,,0
-Pittsburgh,This guy is the pitts. He wants to steal your steel. Are you gonna let him burg you like that?,"4-Spin Battle: 1&3 = Win for +2D, 2&4 = Lose for -2D",4,,,0
-Allergy Plant,You thought it was bad going out in the springtime. This plant turns your sinuses into vats of acid.,"7-Spin Battle: Greater than 5 = Win for +1V, 5 or less = lose for -3V",4,,,0
-Super Small Poisonous Bug,He's tiny and he's everywhere! He wants to exchange your nutrients for poison.,"7-Spin Battle: Greater than 9 = Win for +3D, +3G, +3V. 8 or less = lose for -1V",4,,,0
-Pituitary Gland,Puberty rears its ugly head (once again).,Vigour Test: 5 or more = win for +2V. 4 or less = -2V,4,,,0
+Male Sperm,"Tiny he may be, this sperm might be more vigorous than thee.",V > 7: V = 10 / -3V,4,74,2,0
+Male Sperm on Wheels,He is determined to prove his vigour over all other sperm.,V > 8: V = 10 / -3V,5,81,0,0
+Pittsburgh,This guy is the pitts. He wants to steal your steel. Are you gonna let him burg you like that?,"4-Spin Battle: 1&3 = Win for +2D, 2&4 = Lose for -2D",4,17,4,0
+Allergy Plant,You thought it was bad going out in the springtime. This plant turns your sinuses into vats of acid.,"7-Spin Battle: Greater than 5 = Win for +1V, 5 or less = lose for -3V",4,28,1,0
+Super Small Poisonous Bug,He's tiny and he's everywhere! He wants to exchange your nutrients for poison.,"7-Spin Battle: Greater than 9 = Win for +3D, +3G, +3V. 8 or less = lose for -1V",4,75,1,0
+Pituitary Gland,Puberty rears its ugly head (once again).,Vigour Test: 5 or more = win for +2V. 4 or less = -2V,4,52,1,0
 Trans Fatty Acid,Will wreak havoc on your heart if you aren't healthy.,Vigour Test: 6 or more = win. Easily ignored. 5 or less = -3V,4,23,1,1
 Fatty Acid,Will make you heavier if you aren't in shape.,Vigour Test: 3 or more = win for +1V. 2 or less = -1V,2,23,3,1
-Crystal Jerk,This guy pushes everyone around with his flashy demeanour. Time to put him in his place.,Deeds Test: 5 or more = win for +2D. 4 or less = -2D,4,,,0
-L'ove,Are you ready for the slow and steady management of the great unconditional L'ove?,Deeds Test: 7 or more = win for +1D. 6 or less = loss for -2D.,4,,,0
-Crying Dragon,Even an all-powerful creature can have a moment of weakness and guilt for all the wrong it has done.,Choose: Leave it alone / Teach it a lesson in its weakened state. 7-Spin > 7: +3DGV / -3DGV,5,,,0
-Tongue Slug,"It can taste everything, especially fear.",Test V > 5: +1V / -1V,3,,,0
+Crystal Jerk,This guy pushes everyone around with his flashy demeanour. Time to put him in his place.,Deeds Test: 5 or more = win for +2D. 4 or less = -2D,4,42,1,0
+L'ove,Are you ready for the slow and steady management of the great unconditional L'ove?,Deeds Test: 7 or more = win for +1D. 6 or less = loss for -2D.,4,89,1,0
+Crying Dragon,Even an all-powerful creature can have a moment of weakness and guilt for all the wrong it has done.,Choose: Leave it alone / Teach it a lesson in its weakened state. 7-Spin > 7: +3DGV / -3DGV,5,61,0,0
+Tongue Slug,"It can taste everything, especially fear.",Test V > 5: +1V / -1V,3,39,2,0
 Broken Dancer,Broken Dancer challenges you to a dance battle. You lose.,-3G,4,16,1,1
 Kisswalker,Kisswalker smooches you to near-suffocation.,V = 1,5,18,0,1
-Terrible Envy,"Terrible Envy wants what you have, and takes it.",D = 1,5,,,0
-Dark Card,Dark Card only gambles for high stakes.,"7-Spin: 1-4 = -3D, 5&6 = -5D, 7 = Reduce Deeds to 1.",5,,,0
-Hot Chick,"She makes you feel good psychologically, but in the end you get burned.","+1G, -3V",4,,,0
+Terrible Envy,"Terrible Envy wants what you have, and takes it.",D = 1,5,86,0,0
+Dark Card,Dark Card only gambles for high stakes.,"7-Spin: 1-4 = -3D, 5&6 = -5D, 7 = Reduce Deeds to 1.",5,21,0,1
+Hot Chick,"She makes you feel good psychologically, but in the end you get burned.","+1G, -3V",4,19,1,0
 Murder of Crows,They don't call it a murder for nothing.,"4-Spin: Lose up to the total of any Deeds, Gumption or Vigour.",4,17,3,1
-People Person,"People Person knows you better than yourself, and takes advantage of this fact.","-2D, -2G, -2V",3,,,0
+People Person,"People Person knows you better than yourself, and takes advantage of this fact.","-2D, -2G, -2V",3,35,2,0
 Codependent Leech,It attaches itself to your back and sucks a little more of your vigour every day.,4-spin: subtract from V,4,55,3,1
 Strict Space Man,He guards what is behind him tenaciously.,-3V and move directly forward 2 spaces (opast an obvious beneficial space).,4,42,2,1
-X-Ray Woman,"She helps you see through yourself, but at a painful cost.","+1G, -3V",4,,,0
-Popular Car With Bass,"This car takes you for a ride, at the expense of your dignity.","-2G, go forward 2 (to a bad space)",3,,,0
-Uninformed Punk,He sees you as a goody two shoes. He wants a fight.,"Deeds Test: Greater than 4 = -3V, 4 or less = - 2V",4,,,0
-Sad Paw,Sad Paw is miserable and stomps on your life.,-3DGV,4,,,0
-Chaotic Act,This menace has no regard for the order of things.,"7-Spin: Lose up to the total of any Deeds, Gumption or Vigour.",5,,,0
-Screeching Game Changer,This horrible monster wreaks havoc on your journey.,"D, G, V = 4",5,,,0
-5 O'clock Shadow,It always eventually shows up.,"Set one or either Deeds, Gumption or Vigour to 5.",4,,,0
-Glitter Guy,His flashy exterior makes him difficult to avoid.,4-Spin. This is the amount of Vigour you lose.,4,,,0
-Nowhere Man,"Appears out of nowhere, then takes you back with him. You know not where he's going to.",Go ahead X (to The Middle of Nowhere).,3,,,0
+X-Ray Woman,"She helps you see through yourself, but at a painful cost.","+1G, -3V",4,79,1,0
+Popular Car With Bass,"This car takes you for a ride, at the expense of your dignity.","-2G, go forward 2 (to a bad space)",3,91,2,0
+Uninformed Punk,He sees you as a goody two shoes. He wants a fight.,"Deeds Test: Greater than 4 = -3V, 4 or less = - 2V",4,15,1,0
+Sad Paw,Sad Paw is miserable and stomps on your life.,-3DGV,4,56,1,0
+Chaotic Act,This menace has no regard for the order of things.,"7-Spin: Lose up to the total of any Deeds, Gumption or Vigour.",5,78,0,0
+Screeching Game Changer,This horrible monster wreaks havoc on your journey.,"D, G, V = 4",5,89,0,0
+5 O'clock Shadow,It always eventually shows up.,"Set one or either Deeds, Gumption or Vigour to 5.",4,20,1,0
+Glitter Guy,His flashy exterior makes him difficult to avoid.,4-Spin. This is the amount of Vigour you lose.,4,31,1,0
+Nowhere Man,"Appears out of nowhere, then takes you back with him. You know not where he's going to.",Move 4 squares straight forward.,3,72,2,1
 Reverse Ghost,Black ghosts are scarier.,"-3D, -3G, -3V",4,60,1,1
-Murderous Tire,He is out to hurt you. He will run you over if you aren't fast enough to get away.,V > 7: -1V / -3V,4,,,0
-Medikit,This particular Medikit is home to a mouse. Nothing in here for you but bites.,-1V,1,,,0
-Yellow Socks,"At the risk of looking unfashionable, you could add some comfort to your step.","Choose: Ignore the socks / -1G, +1 to your next spin",1,,,0
-Strange Glasses,"Sure, you might *look* stupid, but you will feel like you're in the future.",+1G,1,,,0
-Bucket of Chaos,Do you dare experience what is in the bucket?,Choose: Ignore the bucket / 4-spin: It tastes great. +1G / It explodes. -1V / It disappears. Nothing happens. What a gyp. / You slip and slide forward from its contents under your feet. Go directly forward 2 spaces (something difficult for the player),3,,,0
-Comically Large Red X,It stops you in your tracks.,Start your next turn by either moving 1 up or down.,3,,,0
-Sharp Orb,Why in the hell would you ever go near this thing?,-2V,2,,,0
-Shock Art,"You're flabbergasted by this visual depiction, and you can't look away.",Move up to 2 on your next turn.,1,,,0
-Meteorite,"This must be what they meant by ""meteoric rise.""",,0,,,0
-Hot Can,"Inside was discontinued hot sauce, as you find out to your great chagrin a little too late.","-1V, +2G, +1 to your next turn.",3,,,0
-Mystery Can,Are you going to risk eating what is inside?,"Choose: Walk away from the Mystery Can / 4-Spin: 1= Mmm, Soup. +1V / Mmm, dog food. -1V / Mmm, maple syrup. +2V / Mmm... you're not sure what it was, but you feel lemony fresh and smooth as a shiny floor. -2V",2,,,0
-Scroll,"Unrolled, it grants you an unexpected benefit.",(+2V against a certain square),0,,,0
-Disk 1,"You load it up, and... Hey, whereﾒd you get that cheat code?!",Skip ahead 2 spaces. (to a positive square in row 4 or 5),1,41,2,1
+Murderous Tire,He is out to hurt you. He will run you over if you aren't fast enough to get away.,V > 7: -1V / -3V,4,17,1,0
+Medikit,This particular Medikit is home to a mouse. Nothing in here for you but bites.,-1V,1,21,4,0
+Yellow Socks,"At the risk of looking unfashionable, you could add some comfort to your step.","Choose: Ignore the socks / -1G, +1 to your next spin",1,79,4,0
+Strange Glasses,"Sure, you might *look* stupid, but you will feel like you're in the future.",+1G,1,71,4,0
+Bucket of Chaos,Do you dare experience what is in the bucket?,Choose: Ignore the bucket / 4-spin: It tastes great. +1G / It explodes. -1V / It disappears. Nothing happens. What a gyp. / You slip and slide forward from its contents under your feet. Go directly forward 2 spaces (something difficult for the player),3,87,2,0
+Comically Large Red X,It stops you in your tracks.,Start your next turn by either moving 1 up or down.,3,68,2,0
+Sharp Orb,Why in the hell would you ever go near this thing?,-2V,2,33,3,0
+Shock Art,"You're flabbergasted by this visual depiction, and you can't look away.",Move up to 2 on your next turn.,1,23,4,0
+Meteorite,"This must be what they meant by ""meteoric rise.""",,0,69,1,0
+Hot Can,"Inside was discontinued hot sauce, as you find out to your great chagrin a little too late.","-1V, +2G, +1 to your next turn.",3,54,2,0
+Mystery Can,Are you going to risk eating what is inside?,"Choose: Walk away from the Mystery Can / 4-Spin: 1= Mmm, Soup. +1V / Mmm, dog food. -1V / Mmm, maple syrup. +2V / Mmm... you're not sure what it was, but you feel lemony fresh and smooth as a shiny floor. -2V",2,4,3,0
+Scroll,"Unrolled, it grants you an unexpected benefit.",(+2V against a certain square),0,61,1,1
+Disk 1,"You load it up, and... Hey, where’d you get that cheat code?!",Skip ahead 2 spaces. (to a positive square in row 4 or 5),1,41,2,1
 Disk 2,"This obsolete disk contains a virus so ancient, no one knows how to stop it. It's been biding its time, waiting to infect you all over again...",-2V,2,35,3,1
-Influential Album,This album changes the way you perceive the world.,+1D,1,,,0
-Super Ugly Sweater,Wearing this hideous thing instantly lowers your self-esteem. Everyone leaves you alone.,"-2G, Next turn has no effect no matter what you land on.",3,,,0
-Awful Shirt,Just owning this thing is bad for your reputation. You are shunned by pretty mucheveryone.,"-2D, Next turn has no effect no matter what you land on.",3,,,0
-Toy Noisemaker,You find this toy and put it in the nearest lost and found. Your good deed of the day.,+1D,1,,,0
+Influential Album,This album changes the way you perceive the world.,+1D,1,30,4,0
+Super Ugly Sweater,Wearing this hideous thing instantly lowers your self-esteem. Everyone leaves you alone.,"-2G, Next turn has no effect no matter what you land on.",3,5,2,0
+Awful Shirt,Just owning this thing is bad for your reputation. You are shunned by pretty mucheveryone.,"-2D, Next turn has no effect no matter what you land on.",3,36,2,0
+Toy Noisemaker,You find this toy and put it in the nearest lost and found. Your good deed of the day.,+1D,1,83,4,0
 Participation Ribbon,"Well, no one can say you didn't try.",-1D,1,98,4,1
-Door Number Three,Let's see what is behind Door Number Three.,"4-Spin: Dust bunnies, and some loose change. +1D / A muffin. +1V / Some dirty dishes to clean up. -1D / A strange smell. -1V",2,,,0
-Fun Bucks,"Hey, this isn't real, this is funny money!","Your only hope of spending it is making it to (pick an appropriate square), which is 4 squares away. If you can get there on your next turn, redeem Fun Bucks for +3V",4,,,0
-Noosiance,Who hung all of these nooses here? You take them down before someone gets hurt.,+2D,0,,,0
-Great Magnet,This latest innovation in tax collection takes loose change right out of your pockets.,-1D,0,,,0
-2.5 Cent Coin,This strange coin is pretty rare! Must be worth about 3.5 cents.,+3D,0,,,0
-Political Agenda,This expensive book is filled with political notions that you may or may not want to subscribe to.,"(Choice of 2 squares, or spin again)",0,,,0
-Poetic Justice,"According to Poetic Justice, virtue is rewarded and vice is punished.","Deeds Test: 5 or greater = +1D, 4 or Less = -1D",3,,,0
+Door Number Three,Let's see what is behind Door Number Three.,"4-Spin: Dust bunnies, and some loose change. +1D / A muffin. +1V / Some dirty dishes to clean up. -1D / A strange smell. -1V",2,65,3,0
+Fun Bucks,"Hey, this isn't real, this is funny money!","Your only hope of spending it is making it to (pick an appropriate square), which is 4 squares away. If you can get there on your next turn, redeem Fun Bucks for +3V",4,69,3,1
+Noosiance,Who hung all of these nooses here? You take them down before someone gets hurt.,+2D,0,68,0,0
+Great Magnet,This latest innovation in tax collection takes loose change right out of your pockets.,-1D,0,37,4,0
+2.5 Cent Coin,This strange coin is pretty rare! Must be worth about 3.5 cents.,+3D,0,18,4,0
+Political Agenda,This expensive book is filled with political notions that you may or may not want to subscribe to.,"(Choice of 2 squares, or spin again)",0,32,3,0
+Poetic Justice,"According to Poetic Justice, virtue is rewarded and vice is punished.","Deeds Test: 5 or greater = +1D, 4 or Less = -1D",3,82,1,0
 Cult Codex,"Word on the street is this book contains some wacky ideas. Come this way, I'll tell you all about it.",Choose: Walk away from the Cult Codex and end your turn. / Equalize your deeds and set it to 5.,4,44,1,1
-Giant Rule Book,According to the Giant Rule Book you must do the following:,"1. Pay you respect to the Rule Book -1D / 2. Make your Gumption 5, regardless of what it is now. / 3. Go where the Giant Rule Book wants you to go. 4Spin. Go straight forward the amount shown.",5,,,0
-Book of Answers,This expensive book ends up being ten pounds of empty platitudes. How disappointing.,-3D,4,,,0
-Plan B,Having a backup plan is always helpful.,4-Spin twice at the start of your next turn. Select which spin you would like best to use in order to proceed.,2,,,0
-Mediocrity Subscription,Reading this stuff makes your life a little more boring.,"Choose to equalize Deeds, Gumption, or Vigour by setting it to 5.",4,,,0
-Bad News,"It seems to focus only on tragedy, as if designed to ruin your day.",-2D,2,,,0
-Boys Handbook,Great reads inspire great deeds.,+3D,5,,,0
-The Meaning of Life,"Here it is, sealed up in a nice little package. You open it and give it a read. It's about lemurs.",-2D,4,,,0
-Unlocked Diary,"Definitely none of your business. You wish you could unread it, but you can't.",-3D,5,,,0
-Alive Red Balloon Friend,He gladly floats above to guide you for a while.,On your next turn you should land on either: (pick 1 positive square to land on that is close),4,,,0
-French Horn Slug,"You're starting to wonder why you got this pet. As annoying as it sounds, you should probably feed it.","+1D, -1V",2,,,0
-Talking Key,"This key can talk, and it turns out he's got a thing for cubes.",He says he will help you get into the Mysterious Cube if you can get there on your next turn. (it is positioned 3 spaces away).,4,,,0
-Devil Bulb,"It radiates an evil heat that singes your skin,but itﾒs keeping the dark at bay.",-1V and if you land on (Some dark square) its effect is nullified.,5,,,0
-Dunce Cap,"No one can wear this cap without looking dumb, but you find it to be surprisingly useful at times.","-1D, shields you from the effects of the Political Agenda on your next turn.",3,,,0
-Bad Haircut,"This guy is nothing but trouble. It will cut your dignity down to size, if you let it.","4-Spin Battle: 1-3 = You win for +1D, 4= Lose -1D.",4,,,0
-Sensitive Tooth,"You didn't watch what you said around him, and now he is pitching a fit.",4-spin > 1: +1D / -1D,3,,,0
-Gloria Hammerstein,"Meet Gloria. She judges people for a living, and you are next.","Deeds Test: If 3 or more, No effect. If 2 or less = -1D, -1G -1V",5,,,0
-Lonesome Shoe,This shoe is sad since her matching friend went missing.,Take her to Donnie's Magic Shoe (4 spaces away) on your next turn to earn +3D.,1,,,0
-Hattitude,That's right. Attitude in a hat. You feel unassailable in this bad boy.,+2D,2,,,0
+Giant Rule Book,According to the Giant Rule Book you must do the following:,"1. Pay you respect to the Rule Book -1D / 2. Make your Gumption 5, regardless of what it is now. / 3. Go where the Giant Rule Book wants you to go. 4Spin. Go straight forward the amount shown.",5,43,0,0
+Book of Answers,This expensive book ends up being ten pounds of empty platitudes. How disappointing.,-3D,4,90,1,0
+Plan B,Having a backup plan is always helpful.,4-Spin twice at the start of your next turn. Select which spin you would like best to use in order to proceed.,2,34,3,0
+Mediocrity Subscription,Reading this stuff makes your life a little more boring.,"Choose to equalize Deeds, Gumption, or Vigour by setting it to 5.",4,72,1,0
+Bad News,"It seems to focus only on tragedy, as if designed to ruin your day.",-2D,2,73,0,0
+Boys Handbook,Great reads inspire great deeds.,+3D,5,93,0,0
+The Meaning of Life,"Here it is, sealed up in a nice little package. You open it and give it a read. It's about lemurs.",-2D,4,1,1,0
+Unlocked Diary,"Definitely none of your business. You wish you could unread it, but you can't.",-3D,5,30,0,0
+Alive Red Balloon Friend,He gladly floats above to guide you for a while.,On your next turn you should land on either: (pick 1 positive square to land on that is close),4,53,4,0
+French Horn Slug,"You're starting to wonder why you got this pet. As annoying as it sounds, you should probably feed it.","+1D, -1V",2,94,3,0
+Talking Key,"This key can talk, and it turns out he's got a thing for cubes.",He says he will help you get into the Mysterious Cube if you can get there on your next turn. (it is positioned 3 spaces away).,4,63,1,1
+Devil Bulb,"It radiates an evil heat that singes your skin,but itï¾’s keeping the dark at bay.",-1V and if you land on (Some dark square) its effect is nullified.,5,82,0,1
+Dunce Cap,"No one can wear this cap without looking dumb, but you find it to be surprisingly useful at times.","-1D, shields you from the effects of the Political Agenda on your next turn.",3,30,3,0
+Bad Haircut,"This guy is nothing but trouble. It will cut your dignity down to size, if you let it.","4-Spin Battle: 1-3 = You win for +1D, 4= Lose -1D.",4,82,3,0
+Sensitive Tooth,"You didn't watch what you said around him, and now he is pitching a fit.",4-spin > 1: +1D / -1D,3,66,2,0
+Gloria Hammerstein,"Meet Gloria. She judges people for a living, and you are next.","Deeds Test: If 3 or more, No effect. If 2 or less = -1D, -1G -1V",5,11,0,0
+Lonesome Shoe,This shoe is sad since her matching friend went missing.,Take her to Donnie's Magic Shoe (4 spaces away) on your next turn to earn +3D.,1,8,3,1
+Hattitude,That's right. Attitude in a hat. You feel unassailable in this bad boy.,+2D,2,18,3,0
 Talking Cult Sneaker,He says he's got something you've really got to read.,Warp to the Cult Codex.,4,41,1,1
-Sad Anchor,You feel like this chump is just dragging you down.,Move up to 2 spaces on your next turn.,4,,,0
-Moustache Mop,It cleans up the schmutz around your mouth.,+2V,1,,,0
-Crystal Kite,"This shiny friend floats above, showing you reflections of what's ahead.",On your next turn you should land on either: (pick 2 positive squares to land on that are close),3,,,0
-Ball 1,Helps you move a little further.,+1 to your movement on your next turn.,4,,,0
-Elf Sphere,You found the elf sphere. He grants you one wish.,Exchange 2 of one variable for another.,4,,,0
-Hell's Snowball,"It is scalding hot on the outside, and absolutely freezing on the inside.",-3V,4,,,0
-Yellow Snowball,EW! Gross! Don't touch that!,-1V,2,,,0
-Talking Bowling Ball Friend,You can find friends anywhere! This one will help you out in a fight.,+1 to next battle (nearby squares),4,,,0
-Ball of Madness,The ball of Madness brings you to a state of madness.,"7-Spin. 1,4,5 = -1V. 2,7 = -1D. 3,6= -1G",5,,,0
-Alarm Bell,"It goes off and hurts your ears, because it is so very loud.",-1V,1,,,0
-Brain Ball,Brain Ball challenges you to a thinking contest. You lose.,-1G,2,,,0
-Missing Breast,Picking it up and carrying it with you makes you feel great.,+3V,3,,,0
-Fortune Orb,Fortune Orb knows where you are going next.,"4-Spin to land on one of 4 local squares, varying in effect.",3,,,0
-Upset Snow Globe,Upset Snow Globe shakes you to see how you like it.,V = 5,5,,,0
-Upside Down Sphere,"Upside Down Sphere blows your mind, in a good way.","+1D, +1G, +1V",4,,,0
+Sad Anchor,You feel like this chump is just dragging you down.,Move up to 2 spaces on your next turn.,4,48,1,0
+Moustache Mop,It cleans up the schmutz around your mouth.,+2V,1,44,4,0
+Crystal Kite,"This shiny friend floats above, showing you reflections of what's ahead.",On your next turn you should land on either: (pick 2 positive squares to land on that are close),3,40,2,1
+Ball 1,Helps you move a little further.,+1 to your movement on your next turn.,4,68,1,0
+Elf Sphere,You found the elf sphere. He grants you one wish.,Exchange 2 of one variable for another.,4,14,1,0
+Hell's Snowball,"It is scalding hot on the outside, and absolutely freezing on the inside.",-3V,4,50,1,0
+Yellow Snowball,EW! Gross! Don't touch that!,-1V,2,31,3,0
+Talking Bowling Ball Friend,You can find friends anywhere! This one will help you out in a fight.,+1 to next battle (nearby squares),4,24,1,0
+Ball of Madness,The ball of Madness brings you to a state of madness.,"7-Spin. 1,4,5 = -1V. 2,7 = -1D. 3,6= -1G",5,45,0,0
+Alarm Bell,"It goes off and hurts your ears, because it is so very loud.",-1V,1,38,4,0
+Brain Ball,Brain Ball challenges you to a thinking contest. You lose.,-1G,2,70,4,0
+Missing Breast,Picking it up and carrying it with you makes you feel great.,+3V,3,78,2,0
+Fortune Orb,Fortune Orb knows where you are going next.,"4-Spin to land on one of 4 local squares, varying in effect.",3,18,1,0
+Upset Snow Globe,Upset Snow Globe shakes you to see how you like it.,V = 5,5,40,0,0
+Upside Down Sphere,"Upside Down Sphere blows your mind, in a good way.","+1D, +1G, +1V",4,57,1,0
 Roboto,"Roboto is programmed to bite, and you just got in the way of his titanium teeth.",-1V,1,27,3,1
-Vending Machine,Grab a snack.,"-1D, +1V",1,,,0
-Blingy Randomizer,Does a good job of randomizing your wallet.,Choose to lose -1D for a chance to 4or7-Spin to play a small gambling game.,2,,,0
-Helicopter Parent,"Will take you places, but only in a straight line.","7-Spin on your next turn to move, but you are only allowed to move straight forward.",3,,,0
-Emotional Dump Truck,It proceeds to dump a bunch of emotions all over you. More than you can handle.,-3G,4,,,0
-Spider Camera,Spider Camera has the scoop.,,0,,,0
+Vending Machine,Grab a snack.,"-1D, +1V",1,72,4,1
+Blingy Randomizer,Does a good job of randomizing your wallet.,Choose to lose -1D for a chance to 4or7-Spin to play a small gambling game.,2,21,3,0
+Helicopter Parent,"Will take you places, but only in a straight line.","7-Spin on your next turn to move, but you are only allowed to move straight forward.",3,11,2,0
+Emotional Dump Truck,It proceeds to dump a bunch of emotions all over you. More than you can handle.,-3G,4,12,1,0
+Spider Camera,Spider Camera has the scoop.,,0,52,4,0
 Error Repeater,This machine is impossible to use. It seems designed to fail.,-3D,4,,,0
-Walking Talkie,This machine broadcasts loudly what you're up to.,,0,,,0
-Rejected Prototype,"Alive but abandoned, it's not sure of its function.Maybe you can program one into it.",+1D,2,,,0
-Money Shredder,Itﾒs very good at eating up your dollars and cents.,-3D,4,33,1,0
-Hard Metal Reflector Plate,There is no getting past this thing.,Start your next turn by either moving 1 up or down.,3,,,0
-Permanently Angry Mechanical Bull,"An angry juggernaut bent on attacking you, no matter what you do. You better be quick to dodge it.","Vigour Test: 6 or more = dodge to safety, 5 or less = -2V",4,,,0
-Sunday Driver,You are stuck behind this slow moving vehicle.,Only move up to 2 on your next turn.,3,,,0
-Obsolete Technology Revolt,This particular technology doesn't want to work anymore. So you fix it.,2,2,,,0
-Pill Dispenser,Feeling lucky? Why not try a pill from the Pill Dispenser.,4-Spin: Only move up to 2 on your next turn. / +2V / Nullify the effects of the square on your next turn. / Reduce one variable by one to increase another variable by one.,2,,,0
-Unfair Pinball,Getting a high score on this machine will be difficult.,4-Spin: 1-3 = Lose -1D. 4= Win +1D,4,,,0
-Wheel of Options,Spin the wheel to figure out where you go next.,7-Spin to land on the next square.,5,,,0
-Glorious Robo-Falcon,Glorious Robo Falcon will give you a swift ride.,Choose a square of the next 5 directly in front of you on your next turn.,5,,,0
-Soulless Mechanical Owl,It has no soul. You feel like it wants some of yours.,+1D,1,,,0
-Peace Extinguisher,Chaos erupts after the peace goes out.,7-spin: -2V / -1G / +2D / +1V / -2G / -1D / +2V,5,,,0
+Walking Talkie,This machine broadcasts loudly what you're up to.,,0,75,3,0
+Rejected Prototype,"Alive but abandoned, it's not sure of its function.Maybe you can program one into it.",+1D,2,46,3,0
+Money Shredder,Itï¾’s very good at eating up your dollars and cents.,-3D,4,33,1,0
+Hard Metal Reflector Plate,There is no getting past this thing.,Start your next turn by either moving 1 up or down.,3,92,1,0
+Permanently Angry Mechanical Bull,"An angry juggernaut bent on attacking you, no matter what you do. You better be quick to dodge it.","Vigour Test: 6 or more = dodge to safety, 5 or less = -2V",4,5,1,0
+Sunday Driver,You are stuck behind this slow moving vehicle.,Only move up to 2 on your next turn.,3,63,2,0
+Obsolete Technology Revolt,This particular technology doesn't want to work anymore. So you fix it.,2,2,9,3,0
+Pill Dispenser,Feeling lucky? Why not try a pill from the Pill Dispenser.,4-Spin: Only move up to 2 on your next turn. / +2V / Nullify the effects of the square on your next turn. / Reduce one variable by one to increase another variable by one.,2,39,3,0
+Unfair Pinball,Getting a high score on this machine will be difficult.,4-Spin: 1-3 = Lose -1D. 4= Win +1D,4,78,1,0
+Wheel of Options,Spin the wheel to figure out where you go next.,7-Spin to land on the next square.,5,29,0,0
+Glorious Robo-Falcon,Glorious Robo Falcon will give you a swift ride.,Choose a square of the next 5 directly in front of you on your next turn.,5,75,0,0
+Soulless Mechanical Owl,It has no soul. You feel like it wants some of yours.,+1D,1,16,4,0
+Peace Extinguisher,Chaos erupts after the peace goes out.,7-spin: -2V / -1G / +2D / +1V / -2G / -1D / +2V,5,20,0,0
 Mystic Potion,"When you're done drinking this, you find the world has changed.",Move immediately to any square in the next four columns.,0,27,1,1
-Mind Medicine,It's like an ON switch for your mind.,+2GV,0,,,0
-Brainwash,Clearing out any residual thoughts can make you happier.,"-3G, +3V",0,26,0,1
-Intense Cologne,So intense that it hurts.,-3V,0,,,0
-Know It All,It's like a liquid library. You quaff it greedily.,+3D,0,,,0
+Mind Medicine,It's like an ON switch for your mind.,+2GV,0,31,0,0
+Brainsparkle,Clearing out any residual thoughts can make you happier.,"-3G, +3V",0,26,0,1
+Intense Cologne,So intense that it hurts.,-3V,0,69,4,0
+Know It All,It's like a liquid library. You quaff it greedily.,+3D,0,8,1,0
 Ugly Bottle,Ugly Bottle means ugly effects. You shouldn't have drunk this.,Reduce Gumption to 1.,0,28,2,1
-Rapid Aging,Time takes its toll on you much more quickly.,Move 10 spaces on your next turn.,0,,,0
-Bottled Up Feelings,Emptying this bottle relieves you of much stress.,Max out Gumption to 10.,0,,,0
-Ipecac,You drink this and persistently vomit for hours.,-3V,0,,,0
-Snake Oil,You cannot believe you were suckered into paying for this stuff that doesn't even work.,-2GD,0,,,0
-Wet Cement,"The opportunity presents itself, so you make your mark. Vandalism schmandalism.",+1DG,0,,,0
-Red Town Paint,This stuff is specially formulated to help you make the most of a situation.," +3D, +3G, and +3V",0,,,0
-Seemingly Shallow Puddle,It ends up begin much deeper than you thought. You're in over your head.,+V from Fire Fighting Boogeyman,0,,,0
-Sticky Situation,Itﾒll take some effort to slide out of this one.,Move forward one space in any direction next turn.,0,,,0
-Instant Shame Spray,Some people have a talent for making you feel awful.Sometimes you do it to yourself.,-2G,0,,,0
-Brain Wash,"Not to worry, citizen. We'll get you cleaned up in no time.",Set G to 4,0,,,0
-Tear Drops,May they bring you all the sadness you desire.,,0,,,0
-Sugar Crash,Your imbalanced diet conks you out hard.,-2V,0,,,0
-Not Avocado Sandwich,"You don't know what's in this sandwich you just ate, but it's definitely not what you ordered.",-3V,0,,,0
-All-Seeing Latte,The All-Seeing Latte suggests that you get moving.,"+1 to your next spin. This time, you can read the labels before you move.",0,,,0
-T Guy Steak,Are you MAN enough to take this thick cut on?,"Test G > 7: T Guy thinks you deserve to learn how to tenderize, marinade, and cook itself to perfection. +5V. / T Guy thinks you aren't manly enough to eat him and he smacks you around a bit to toughen you up. -2V",0,,,0
-Accurate Fortune Cookie,The accurate fortune cookie knows what's in store.,Go forward 2 spaces.,0,,,0
-Brown Breakfast,"It tastes like something you raked off the lawn, but it sure keeps you regular!","This time, you can read the labels before you move.",0,,,0
-Painscription,"You're not sure if this a mistake, or if your doctor just doesn't like you.",4Spin: Cures what ails you. +1v / Placebo effect. Nothing happens. / Intensifies pain. -1V / Your body spirals out of control. -3V,0,,,0
-Glass of White and Orange,Whatever that was sure had a lot of nutrients in it. ,+3V or +3G,0,,,0
-Regular and Diet Poison Spazzy Cola,Ugh! I never drink that Poison Spazzy Cola! Give me the other Poison Spazzy Cola.,-2V or -2G,0,,,0
-Swill,"Tastes like a mop bucket, but chills you right out.","+1G, -1V",0,,,0
-Tea Time,Relax. It's Tea Time.,+1V,0,,,0
-Second Hand Smoke,You've been told this is bad for you. It certainly looks bad.,-2V,0,,,0
-Blobburger,"When you asked for all the toppings, this wasn't what you had in mind.",,0,,,0
-Super Sugar Cube,"So sweet, you'll be too giddy to notice all your molars caving in.",,0,,,0
-Peanut Butter,Goes great with everything! Try it on steak and potatoes.,,0,,,0
-Onion Donut,You used to think coffee breath was bad BEFORE people started dunking these in their mugs.,,0,,,0
+Rapid Aging,Time takes its toll on you much more quickly.,Move 10 spaces on your next turn.,0,48,3,1
+Bottled Up Feelings,Emptying this bottle relieves you of much stress.,Max out Gumption to 10.,0,88,1,0
+Ipecac,You drink this and persistently vomit for hours.,-3V,0,25,0,0
+Snake Oil,You cannot believe you were suckered into paying for this stuff that doesn't even work.,-2GD,0,81,1,0
+Wet Cement,"The opportunity presents itself, so you make your mark. Vandalism schmandalism.",+1DG,0,48,0,0
+Red Town Paint,This stuff is specially formulated to help you make the most of a situation.," +3D, +3G, and +3V",0,97,3,1
+Seemingly Shallow Puddle,It ends up begin much deeper than you thought. You're in over your head.,+V from Fire Fighting Boogeyman,0,91,1,1
+Sticky Situation,Itï¾’ll take some effort to slide out of this one.,Move forward one space in any direction next turn.,0,74,0,0
+Instant Shame Spray,Some people have a talent for making you feel awful.Sometimes you do it to yourself.,-2G,0,3,1,0
+Brain Wash,"Not to worry, citizen. We'll get you cleaned up in no time.",Set G to 4,0,91,3,0
+Tear Drops,May they bring you all the sadness you desire.,,0,63,0,0
+Sugar Crash,Your imbalanced diet conks you out hard.,-2V,0,2,3,0
+Not Avocado Sandwich,"You don't know what's in this sandwich you just ate, but it's definitely not what you ordered.",-3V,0,42,0,0
+All-Seeing Latte,The All-Seeing Latte suggests that you get moving.,"+1 to your next spin. This time, you can read the labels before you move.",0,97,1,0
+T Guy Steak,Are you MAN enough to take this thick cut on?,"Test G > 7: T Guy thinks you deserve to learn how to tenderize, marinade, and cook itself to perfection. +5V. / T Guy thinks you aren't manly enough to eat him and he smacks you around a bit to toughen you up. -2V",0,87,0,0
+Accurate Fortune Cookie,The accurate fortune cookie knows what's in store.,Go forward 2 spaces.,0,19,0,1
+Brown Breakfast,"It tastes like something you raked off the lawn, but it sure keeps you regular!","This time, you can read the labels before you move.",0,50,4,0
+Painscription,"You're not sure if this a mistake, or if your doctor just doesn't like you.",4Spin: Cures what ails you. +1v / Placebo effect. Nothing happens. / Intensifies pain. -1V / Your body spirals out of control. -3V,0,63,4,0
+Glass of White and Orange,Whatever that was sure had a lot of nutrients in it. ,+3V or +3G,0,15,0,0
+Regular and Diet Poison Spazzy Cola,Ugh! I never drink that Poison Spazzy Cola! Give me the other Poison Spazzy Cola.,-2V or -2G,0,84,3,0
+Swill,"Tastes like a mop bucket, but chills you right out.","+1G, -1V",0,51,0,0
+Tea Time,Relax. It's Tea Time.,+1V,0,58,3,1
+Second Hand Smoke,You've been told this is bad for you. It certainly looks bad.,-2V,0,62,4,0
+Blobburger,"When you asked for all the toppings, this wasn't what you had in mind.",,0,70,0,0
+Super Sugar Cube,"So sweet, you'll be too giddy to notice all your molars caving in.",,0,94,1,0
+Peanut Butter,Goes great with everything! Try it on steak and potatoes.,,0,59,4,0
+Onion Donut,You used to think coffee breath was bad BEFORE people started dunking these in their mugs.,,0,72,0,0
 Sexually Branded Beer,Each batch is lovingly brewed by a dedicated team of focus group statisticians.,"If you are male: +1G
-If you are female: +1G",0,,,0
-Purple Flutter Bomb,"Gracefully it drifts down, gently it explodes.",,0,,,0
-3-Shooter,"If you've got half a gun, you'll just have to be twice as good a shot.",,0,,,0
-Spikes Up,"When the spikes go up, better hope you're not going down.",-2V if you came from above,0,,,0
-Spike Ball,You have no idea how this got in your couch cushions.,,0,,,0
-Rocket Hammer,Great for space nails.,,0,,,0
-P Whip,Be glad you're not Q.,,0,,,0
-Double-Sided Red Tape,"Once youﾒre wrapped up in this, it takes ages to escape,and wraps everyone nearby right up with you.",Move 1 space forward.,0,,,0
-File 13,This file contains a list of difficult clients. ,Avoid the next few squares: (list a few squares that are negative in proximity to its whereabouts).,0,,,0
-Secret Handshake,Your attempt to fit in with an exclusive crowdtakes a bit of practice.,"4Spin: 1 and 3 = unsuccessful attempt. They reject you and move you forward one space (into something lightly negative) / They appreciate your attempt but your handshake needs work. They send you off with awarding. / You successfully perform the secret handshake and convince them to accept you as a member. You are entitled to a series of benefits after paying an entrance fee. -2D, +1G, and +1V",0,,,0
-Mooching Glove,A hand is outstretched insistently toward you.,-2D,0,,,0
-Ancient Python Dispenser,This office was constructed by Hammurabi himself. You haven't yet found a use for all his leftover office supplies.,,0,,,0
-Pink Lunchbox,Your senses are invaded by an overwhelming pungency of exquisite rotting. The tears in your eyes make it hard to tell what was once in here., -1V,0,,,0
-Guilt Trip,The guilt trip taxes your confidence and takes you on a journey you never would have wilfully undertaken. ,-2G and move forward 2 spaces.,0,,,0
-Mysterious Briefcase,"The mystery of what is inside eats at your consciousness all day, as your imagination gets the best of you.",Ignore the effects of the next square you land on.,0,,,0
-Crystal Music Box,Its sound is exquisitely and uniquely devastating.,-1DG,0,,,0
-Cube,"It's got four walls, a ceiling and a floor. What else do you want?",,0,,,0
-Sack of Food,It never hurts to be prepared.,+1V,1,,,0
+If you are female: +1G",0,11,4,0
+Purple Flutter Bomb,"Gracefully it drifts down, gently it explodes.",,0,81,4,0
+3-Shooter,"If you've got half a gun, you'll just have to be twice as good a shot.",,0,4,1,0
+Spikes Up,"When the spikes go up, better hope you're not going down.",-2V if you came from above,0,95,4,0
+Spike Ball,You have no idea how this got in your couch cushions.,,0,65,4,0
+Rocket Hammer,Great for space nails.,,0,27,0,0
+P Whip,Be glad you're not Q.,,0,67,4,0
+Double-Sided Red Tape,"Once youï¾’re wrapped up in this, it takes ages to escape,and wraps everyone nearby right up with you.",Move 1 space forward.,0,32,0,0
+File 13,This file contains a list of difficult clients. ,Avoid the next few squares: (list a few squares that are negative in proximity to its whereabouts).,0,57,3,0
+Secret Handshake,Your attempt to fit in with an exclusive crowd takes a bit of practice.,"4Spin: 1 and 3 = unsuccessful attempt. They reject you and move you forward one space (into something lightly negative) / They appreciate your attempt but your handshake needs work. They send you off with awarding. / You successfully perform the secret handshake and convince them to accept you as a member. You are entitled to a series of benefits after paying an entrance fee. -2D, +1G, and +1V",0,85,3,0
+Mooching Glove,A hand is outstretched insistently toward you.,-2D,0,93,3,0
+Ancient Python Dispenser,This office was constructed by Hammurabi himself. You haven't yet found a use for all his leftover office supplies.,,0,7,3,0
+Pink Lunchbox,Your senses are invaded by an overwhelming pungency of exquisite rotting. The tears in your eyes make it hard to tell what was once in here., -1V,0,24,4,0
+Guilt Trip,The guilt trip taxes your confidence and takes you on a journey you never would have wilfully undertaken. ,-2G and move forward 2 spaces.,0,79,3,0
+Mysterious Briefcase,"The mystery of what is inside eats at your consciousness all day, as your imagination gets the best of you.",Ignore the effects of the next square you land on.,0,4,4,0
+Crystal Music Box,Its sound is exquisitely and uniquely devastating.,-1DG,0,64,3,1
+Cube,"It's got four walls, a ceiling and a floor. What else do you want?",,0,65,0,1
+Sack of Food,It never hurts to be prepared.,+1V,1,1,3,0
 Poppycock,Nonsense!,"Move 1 space forward, or step up.",1,84,4,1
 Claptrap,Utter madness!,"Move 1 space forward, or step up.",1,85,4,1
 Codswallop,Horse feathers!,"Move 1 space forward, or step up.",1,86,4,1
@@ -292,100 +292,100 @@ Load of Crock,Ludicrous!,"Move 1 space forward, or step up.",1,90,4,1
 Hogwash,Ridiculous!,"Move 1 space forward, or step up.",1,91,4,1
 Fiddlesticks,What a load of garbage!,"Move 1 space forward, or step up.",1,92,4,1
 Flim Flam,Bananas!,"That was fun, but it's time to move on. Spin for your next move!",1,93,4,1
-Impending Doom,"It's just a feeling, but you are certain everything is going to go wrong.",,0,,,0
-Vulnerable Feeling,The slightest challenge seems insurmountable.,Move 2 spaces (all tests) and -1 to your spin.,0,,,0
-Rock Bottom,You can only go up from here.,G = 1,0,,,0
-Overwhelming Feeling,"An event touches you so deeply that you are staggered, unable to think of anything else.","The next square you land on, ignore any effects and spin again immediately.",0,,,0
-Depressive Haze,Basic tasks and social interactions... they're too much for your weary mind to handle today.,"The next square you land on, ignore any effects and spin again immediately.",0,,,0
-Glitter Cloud,"Upon breathing this in, you feel some strange effects.","4Spin: +2D, -1G, and +1V / +1D, +2G, and -1V / -1D, -1G, and +2V / -1D, -1G, and -1V",0,,,0
-Altruism,You reflect on what you have accomplished for the good of others.,Set G equal to your D.,0,,,0
-Near Death Experience,"You return to the living world, and take a fresh look at everything you see.",Swap your V and D.,0,,,0
-Clown Avalanche,The world is full of laughter and fear. Sometimes you can't tell the difference.,,0,,,0
-Green Vortex,"Today you're stuck in bed, with a sickness so palpable you can see it.",,0,,,0
-The Power of Music,Formidable indeed.,+3G,0,,,0
-Arrow Swarm,"You shrug, and follow the crowd.",Move straight ahead 3 spaces,0,,,0
-Queen Arrow,You defer to her authority and follow.,Move straight ahead 5 spaces,0,,,0
-Zeitgeist,"An overwhelming feeling of influence washes over you, and you go along with it.",Move straight ahead 3 spaces,0,,,0
-Talking Guidance Star,Talking Guidance Star reminds you to share with a friend or a neighbour what they've discovered. Tell them right now!,,0,,,0
-Q,Questions and quandaries plague your mind. Ask a friend or neighbour for advice on what theyﾒve found.,,0,,,0
-Caution! Sharp Cutter,Stay clear!,-1 to your next spin.,0,,,0
-Caution! Talking Skull,Gotta watch out for these!,-1 to your next spin.,0,,,0
-Caution! Talking Pig,A common warning.,-1 to your next spin.,0,,,0
-Caution! Crying,Tread lightly.,-1 to your next spin.,0,,,0
-Cloud Blows,What might have felt like a howling gale in the past is now just a pleasant breeze.,,0,,,0
-Outraged Dr. Love,He's got too much on his mind today to share the love.,Move forward 1 space (to a product),0,,,0
-Ecstatic Dr. Love,"He's in a pleasant mood, and love is forthcoming.",+1 VGD,0,,,0
-Annoyed Dr. Love,He's not showing the love right now.,Move forward 1 space (to a product),0,,,0
-Happy Dr. Love,Today's a good day for spreading the love around!,+1 VGD,0,,,0
-Donnie's Magic Shoe,Snazzy!,,0,,,0
-Retired Busybody,Has nothing better to do than poke his nose in your business.,,0,,,0
-July Snowfall,Nice day to build snowmen at the beach!,,0,,,0
-Perfect Lawn,"The world may be a mess, but this square of grass is a slice of heaven. Now don't walk on it.",,0,,,0
-Raining Change,"You've been waiting for a change in the weather, but this is loony.",,0,,,0
-Blinding Science,A product of brilliant minds.,+3D,0,,,0
-Girlfriend Ghost,You are haunted by relationships past.,G > 5: +1G / -1G,3,,,0
-Banana,Your breakfast somehow makes you more cheerful than usual.,+2V +1G,2,,,0
-Angry Vending Machine,Don't count on getting a snack today. This machine snacks on your coins instead.,-1V -1D,2,,,0
-Beholder,All eyes on you.,7spin: -5VG / -4VG / -3VG / -2VG / -1VG / -- / +5DG,5,98,0,1
-Ballot Box,You briefly imagine that you have some control over events.,Move directly to any square on the next column. (Incl. Lizard pres + Vampire pres),3,,,0
-Toxic Fern,Don't touch it. Don't even go near it.,-1V,1,,,0
-Ugly Sweater,"It hurts your eyes to look at, and hurts your pride to wear it.",+1V -1G,1,,,0
-Scottish Stop Sign,Stop and enjoy the scenery a moment. Now away with ye!,+1G,1,,,0
-Gaping Chasm,"The sign said ""Keep off the grass."" You wish you'd paid attention.",Move 2 squares downward.,3,,,0
-Hypno-Flag,"You stand at attention, and when told to march, you march.",March 3 squares forward.,3,,,0
-Bad Blood,It definitely shouldn't be that colour.,-2V,2,,,0
-Liquid Hole,The floor seems somehow more menacing than it did yesterday.,Move 2 squares downward.,3,,,0
-Cooties,Eeeew!,-1G,1,,,0
-Evil Mastermind,"Battle this foe in complete darkness, or be cast out of his domain.",7spin > 6: +3G / Move 2 down,5,,,0
-Glitter Vision,You are blinded by the light!,4spin and move straight forward.,4,,,0
-Thumbs Up,You're feeling great!,4spin: Move up,1,,,0
+Impending Doom,"It's just a feeling, but you are certain everything is going to go wrong.",,0,57,0,0
+Vulnerable Feeling,The slightest challenge seems insurmountable.,Move 2 spaces (all tests) and -1 to your spin.,0,49,0,0
+Rock Bottom,You can only go up from here.,G = 1,0,12,4,0
+Overwhelming Feeling,"An event touches you so deeply that you are staggered, unable to think of anything else.","The next square you land on, ignore any effects and spin again immediately.",0,80,0,0
+Depressive Haze,Basic tasks and social interactions... they're too much for your weary mind to handle today.,"The next square you land on, ignore any effects and spin again immediately.",0,84,0,0
+Glitter Cloud,"Upon breathing this in, you feel some strange effects.","4Spin: +2D, -1G, and +1V / +1D, +2G, and -1V / -1D, -1G, and +2V / -1D, -1G, and -1V",0,3,0,0
+Altruism,You reflect on what you have accomplished for the good of others.,Set G equal to your D.,0,27,4,0
+Near Death Experience,"You return to the living world, and take a fresh look at everything you see.",Swap your V and D.,0,36,3,0
+Clown Avalanche,The world is full of laughter and fear. Sometimes you can't tell the difference.,,0,92,0,0
+Green Vortex,"Today you're stuck in bed, with a sickness so palpable you can see it.",,0,73,3,0
+The Power of Music,Formidable indeed.,+3G,0,9,1,0
+Arrow Swarm,"You shrug, and follow the crowd.",Move straight ahead 3 spaces,0,73,1,1
+Queen Arrow,You defer to her authority and follow.,Move straight ahead 5 spaces,0,77,1,1
+Zeitgeist,"An overwhelming feeling of influence washes over you, and you go along with it.",Move straight ahead 3 spaces,0,90,3,0
+Talking Guidance Star,Talking Guidance Star reminds you to share with a friend or a neighbour what they've discovered. Tell them right now!,,0,96,1,1
+Q,Questions and quandaries plague your mind. Ask a friend or neighbour for advice on what theyï¾’ve found.,,0,73,4,0
+Caution! Sharp Cutter,Stay clear!,-1 to your next spin.,0,44,3,0
+Caution! Talking Skull,Gotta watch out for these!,-1 to your next spin.,0,13,4,0
+Caution! Talking Pig,A common warning.,-1 to your next spin.,0,28,4,0
+Caution! Crying,Tread lightly.,-1 to your next spin.,0,33,0,0
+Cloud Blows,What might have felt like a howling gale in the past is now just a pleasant breeze.,,0,46,4,0
+Outraged Dr. Love,He's got too much on his mind today to share the love.,Move forward 1 space (to a product),0,51,3,0
+Ecstatic Dr. Love,"He's in a pleasant mood, and love is forthcoming.",+1 VGD,0,47,3,0
+Annoyed Dr. Love,He's not showing the love right now.,Move forward 1 space (to a product),0,50,0,0
+Happy Dr. Love,Today's a good day for spreading the love around!,+1 VGD,0,54,0,0
+Donnie's Magic Shoe,Snazzy!,,0,10,1,1
+Retired Busybody,Has nothing better to do than poke his nose in your business.,,0,10,0,0
+July Snowfall,Nice day to build snowmen at the beach!,,0,25,4,0
+Perfect Lawn,"The world may be a mess, but this square of grass is a slice of heaven. Now don't walk on it.",,0,52,0,0
+Raining Change,"You've been waiting for a change in the weather, but this is loony.",,0,33,4,0
+Blinding Science,A product of brilliant minds.,+3D,0,39,0,0
+Girlfriend Ghost,You are haunted by relationships past.,G > 5: +1G / -1G,3,30,2,0
+Banana,Your breakfast somehow makes you more cheerful than usual.,+2V +1G,2,62,3,0
+Angry Vending Machine,Don't count on getting a snack today. This machine snacks on your coins instead.,-1V -1D,2,91,0,0
+Beholder,All eyes on you.,7spin: -5VG / -4VG / -3VG / -2VG / -1VG / -- / +5DG,5,97,0,1
+Ballot Box,You briefly imagine that you have some control over events.,Move directly to any square on the next column. (Incl. Lizard pres + Vampire pres),3,32,2,0
+Toxic Fern,Don't touch it. Don't even go near it.,-1V,1,68,4,0
+Ugly Sweater,"It hurts your eyes to look at, and hurts your pride to wear it.",+1V -1G,1,45,4,0
+Scottish Stop Sign,Stop and enjoy the scenery a moment. Now away with ye!,+1G,1,43,4,0
+Gaping Chasm,"The sign said ""Keep off the grass."" You wish you'd paid attention.",Move 2 squares downward.,3,89,2,0
+Hypno-Flag,"You stand at attention, and when told to march, you march.",March 3 squares forward.,3,94,2,1
+Bad Blood,It definitely shouldn't be that colour.,-2V,2,86,3,0
+Liquid Hole,The floor seems somehow more menacing than it did yesterday.,Move 2 squares downward.,3,6,2,0
+Cooties,Eeeew!,-1G,1,77,4,0
+Evil Mastermind,"Battle this foe in complete darkness, or be cast out of his domain.",7spin > 6: +3G / Move 2 down,5,58,0,0
+Glitter Vision,You are blinded by the light!,4spin and move straight forward.,4,67,1,0
+Thumbs Up,You're feeling great!,4spin: Move up,1,20,4,0
 Sideways Stalactites,Watch where you're going!,4spin > 4: -- / -2V,4,,,0
 Handelabra,,,0,6,1,0
-Reach for the Stars,You're up in the clouds. You're so close.,G > 6: +3D / --,5,,,0
-Lizard President,You're thinking you should've voted for the vampire.,-3 V / +2 G,3,,,0
-Vampire President,Maybe we would have been better off with the lizard.,-3 D / +2 G,2,,,0
-Uppercut,Act quickly if you want to dodge this savage blow.,"Choose: Move 2 squares upward, or -2V",3,,,0
+Reach for the Stars,You're up in the clouds. You're so close.,G > 6: +3D / --,5,23,0,1
+Lizard President,You're thinking you should've voted for the vampire.,-3 V / +2 G,3,34,2,0
+Vampire President,Maybe we would have been better off with the lizard.,-3 D / +2 G,2,33,2,0
+Uppercut,Act quickly if you want to dodge this savage blow.,"Choose: Move 2 squares upward, or -2V",3,21,2,1
 Poppin' Wheelie,Some young hooligans are tearing through your neighbourhood.,,0,,,0
-Imagination Land,A breeze and sunshine are coming through the window. Your mind drifts away from your work.,Move anywhere within the next 2 columns.,4,,,0
-Melting Eyeball,"You find yourself staring at a screen at 5 AM, and this is how you feel.",-2 V,0,,,0
-Pyramids,"Discover ancient secrets, and travel through forgotten passages.",Move to any square in the next two columns.,5,,,0
-Power Tower,Access granted only for those with enough... power.,VGD > 5: Move up 2.,3,,,0
-Refraction Waves,"The colours of the world change around you, and you find yourself elsewhere.",Move to any square in the next 3 columns.,4,,,0
-Still Life with Fruit,Absolute stillness makes a startling contrast to your racing thoughts.,,0,,,0
-Cube Farm,Hey you over there! Head down and get back to work!,-2G,1,,,0
-World of Wires,Nice new electronic device you've got there! Hooking it up might take a while.,Move up to 2 squares this turn.,2,,,0
-Hypnotic Screensaver,"You spend more time than you should staring at this, but it gives your mind some time to focus.","+1 V, move up to 2 squares.",2,,,0
-All-Seeing Orb,"You briefly gain the power of far sight, and learn many strange things.",Trade up to 3 -D / +G,5,,,0
-Ghost Ship,"The full moon glints off of the waves, and a misty vessel seems to appear in the distance.",+2 to next spin,5,64,0,0
-Sailing Ship,"You pay your passage downriver, and enjoy a relaxing voyage.","-2D, +2 to next spin",3,,,0
-Ruby Spaceship,"Ever since the night that otherworldly light shone on you from the sky, you've been feeling fortunate.",+3D,4,,,0
-Little Brown Jug,"You won't feel good tomorrow, but you sure feel great right now!",-1D -2V +3G,2,,,0
-Lemon Eye Drops,You probably should have thought twice before grabbing these off the shelf.,+1V -3G,2,,,0
-Hypercube,"A glimpse into the fourth dimension leaves you confused, but fascinated.",+2G,4,,,0
-Angry Mob,"The people are taking to the streets. Are you one of them, or are you just in their way?",D > 6: -2VG,3,,,0
-Tetris Crisis,This isn't looking good.,-2G,2,,,0
-Car Crash,Itﾒll take guts to drive a road like this.,G < 7: -3V,3,84,1,1
-Terrible Remix,Could be hazardous to your composure.,-1G,1,,,0
-Possible Existence Failure,"It could be around any corner, but usually the warning signs are there.",,0,,,0
-Family Shield,Your history teaches you ways to fight the battles ahead.,+2V,3,,,0
-Cell Phone Vision,Remember to watch where you're going!,-1 to next spin,2,,,0
-Cell Phone Photo,The world passes through the filter of your discerning eye.,,0,,,0
-Fist Bump,"You're not sure if that's handshake, a fist bump, or a high five coming your way. Think fast!",4spin x2: 2 in a row? +2G / -1G,2,,,0
-Wheel of Choices,Suddenly you have so many options.,7spin to move on your next turn.,3,,,0
-Fight Night,You've got a lot riding on this!,4spin > 2: +3V / -3V,5,,,0
-Daytime Sugar Skull,"You think back fondly of people you've lost, and feel happy to be alive.",,0,,,0
-Nighttime Sugar Skull,"You think back fondly of people you've lost, and celebrate life while you have it.",,0,,,0
-Ice Floe Hut,Your species rules the world because of its limitless adaptability.,,0,,,0
-Beardcicle,The cold weather transforms your face into an ice sculpture.,-1V +1G,1,,,0
-Burning Bridge,Just keep moving forward and don't look back.,Move straight ahead on your next spin.,4,,,0
-Sunrise Castle,You find a calm place near the edge of the sky.,"+3D, +1G",5,,,0
-Text Adventure,Games weren't always so flashy and bright. You make fun with what you have.,,0,,,0
-Desktop Buddy,He seems way too friendly and helpful. You wonder where he came from.,,0,,,0
+Imagination Land,A breeze and sunshine are coming through the window. Your mind drifts away from your work.,Move anywhere within the next 2 columns.,4,64,1,0
+Melting Eyeball,"You find yourself staring at a screen at 5 AM, and this is how you feel.",-2 V,0,55,4,0
+Pyramids,"Discover ancient secrets, and travel through forgotten passages.",Move to any square in the next two columns.,5,2,0,0
+Power Tower,Access granted only for those with enough... power.,VGD > 5: Move up 2.,3,64,2,1
+Refraction Waves,"The colours of the world change around you, and you find yourself elsewhere.",Move to any square in the next 3 columns.,4,35,1,0
+Still Life with Fruit,Absolute stillness makes a startling contrast to your racing thoughts.,,0,4,0,0
+Cube Farm,Hey you over there! Head down and get back to work!,-2G,1,49,4,0
+World of Wires,Nice new electronic device you've got there! Hooking it up might take a while.,Move up to 2 squares this turn.,2,15,3,0
+Hypnotic Screensaver,"You spend more time than you should staring at this, but it gives your mind some time to focus.","+1 V, move up to 2 squares.",2,52,3,0
+All-Seeing Orb,"You briefly gain the power of far sight, and learn many strange things.",Trade up to 3 -D / +G,5,79,0,0
+Ghost Ship,"The full moon glints off of the waves, and a misty vessel seems to appear in the distance.",+2 to next spin,5,64,0,1
+Sailing Ship,"You pay your passage downriver, and enjoy a relaxing voyage.","-2D, +2 to next spin",3,1,0,0
+Ruby Spaceship,"Ever since the night that otherworldly light shone on you from the sky, you've been feeling fortunate.",+3D,4,43,1,0
+Little Brown Jug,"You won't feel good tomorrow, but you sure feel great right now!",-1D -2V +3G,2,78,3,0
+Lemon Eye Drops,You probably should have thought twice before grabbing these off the shelf.,+1V -3G,2,68,3,0
+Hypercube,"A glimpse into the fourth dimension leaves you confused, but fascinated.",+2G,4,18,2,0
+Angry Mob,"The people are taking to the streets. Are you one of them, or are you just in their way?",D > 6: -2VG,3,92,2,0
+Tetris Crisis,This isn't looking good.,-2G,2,95,0,0
+Car Crash,Itï¾’ll take guts to drive a road like this.,G < 7: -3V,3,84,1,1
+Terrible Remix,Could be hazardous to your composure.,-1G,1,66,4,0
+Possible Existence Failure,"It could be around any corner, but usually the warning signs are there.",,0,7,0,0
+Family Shield,Your history teaches you ways to fight the battles ahead.,+2V,3,29,2,0
+Cell Phone Vision,Remember to watch where you're going!,-1 to next spin,2,70,3,0
+Cell Phone Photo,The world passes through the filter of your discerning eye.,,0,56,4,0
+Fist Bump,"You're not sure if that's handshake, a fist bump, or a high five coming your way. Think fast!",4spin x2: 2 in a row? +2G / -1G,2,61,3,0
+Wheel of Choices,Suddenly you have so many options.,7spin to move on your next turn.,3,81,2,0
+Fight Night,You've got a lot riding on this!,4spin > 2: +3V / -3V,5,83,0,0
+Daytime Sugar Skull,"You think back fondly of people you've lost, and feel happy to be alive.",,0,85,1,0
+Nighttime Sugar Skull,"You think back fondly of people you've lost, and celebrate life while you have it.",,0,5,4,0
+Ice Floe Hut,Your species rules the world because of its limitless adaptability.,,0,29,1,0
+Beardcicle,The cold weather transforms your face into an ice sculpture.,-1V +1G,1,2,4,0
+Burning Bridge,Just keep moving forward and don't look back.,Move straight ahead on your next spin.,4,66,1,0
+Sunrise Castle,You find a calm place near the edge of the sky.,"+3D, +1G",5,5,0,0
+Text Adventure,Games weren't always so flashy and bright. You make fun with what you have.,,0,67,0,0
+Desktop Buddy,He seems way too friendly and helpful. You wonder where he came from.,,0,12,0,0
 Money Suit,Makes you feel like a million bucks! (Mud Wave afterward),+3D +2G (mud wave afterward),5,13,0,1
 Natural 20,You score a critical hit in battle! (all monsters within 2 squares' movement),Move up to 2 squares and score the maximum on your spin.,3,22,2,1
-Cat's Crystal,One shape can always be transformed into another.,,0,,,0
-Helvetica,"When in doubt, it's a solid choice.",+1 G,2,,,0
-Impossible Triangle,The angles... they are not real!,-3G,5,,,0
+Cat's Crystal,One shape can always be transformed into another.,,0,51,1,0
+Helvetica,"When in doubt, it's a solid choice.",+1 G,2,17,2,0
+Impossible Triangle,The angles... they are not real!,-3G,5,44,0,0
 Go! (1/5),,,5,0,0,1
 Go! (2/5),,,4,0,1,1
 Go! (3/5),,,3,0,2,1
@@ -396,44 +396,44 @@ Fin! (2/5),,,4,99,1,1
 Fin! (3/5),,,3,99,2,1
 Fin! (4/5),,,3,99,3,1
 Fin! (5/5),,,1,99,4,1
-Blood Storm,The world seems determined to sap all your strength.,V > 6: -- / -2V,3,,,0
-Brain Storm,"You can survive any kind of weather the world throws at you, if you use your head.",G > 6: -- / -2V,3,,,0
-Green Storm,"You thought it was finally spring, but the world had other plans.",V > 6: -- / -2G,3,,,0
-Blood Storm II,"The world seems a violent, raging maelstrom.",V > 7: -- / -2V,4,,,0
-Fire Storm,"The world seems a cold place, that can burn you all the same.",V > 7: -- / -2GV,5,,,0
-Electrical Storm,"For an instant, the pressure drops, and you feel a crackling energy coursing through the air. ",,0,,,0
-Slime Storm,It's a little sticky out today. You don't think you'll make it far.,Move up to 2 squares.,2,,,0
-Arrow Storm,Seek shelter from the storm... over that way!,Move only straight ahead or down on your next turn.,3,,,0
-Storm Clouds,"The sky is an evil colour today. Wherever you're going, go quickly!",7-spin on your next turn.,1,,,0
-Purple Lightning,For a moment the sky and the earth are connected.,,0,,,0
-Tornado,It rips a path straight through everything. Quickly leap out of the way!,Move up to 2 squares straight up or down.,3,,,0
-Hurricane,"Swirling winds scatter everything around the landscape, including you.",4-spin: Move 2 up / Move 2 down / Move to the top of next column / Move to bottom of next column,3,,,0
-Blood Wave,"This wave is cheerfully coloured, but a painful ride.",-2V + Move 3 squares ahead,4,,,0
+Blood Storm,The world seems determined to sap all your strength.,V > 6: -- / -2V,3,24,2,0
+Brain Storm,"You can survive any kind of weather the world throws at you, if you use your head.",G > 6: -- / -2V,3,14,2,0
+Green Storm,"You thought it was finally spring, but the world had other plans.",V > 6: -- / -2G,3,71,1,0
+Blood Storm II,"The world seems a violent, raging maelstrom.",V > 7: -- / -2V,4,45,2,0
+Fire Storm,"The world seems a cold place, that can burn you all the same.",V > 7: -- / -2GV,5,46,0,0
+Electrical Storm,"For an instant, the pressure drops, and you feel a crackling energy coursing through the air. ",,0,19,3,0
+Slime Storm,It's a little sticky out today. You don't think you'll make it far.,Move up to 2 squares.,2,77,3,0
+Arrow Storm,Seek shelter from the storm... over that way!,Move only straight ahead or down on your next turn.,3,85,2,0
+Storm Clouds,"The sky is an evil colour today. Wherever you're going, go quickly!",7-spin on your next turn.,1,34,4,0
+Purple Lightning,For a moment the sky and the earth are connected.,,0,28,0,0
+Tornado,It rips a path straight through everything. Quickly leap out of the way!,Move up to 2 squares straight up or down.,3,23,2,0
+Hurricane,"Swirling winds scatter everything around the landscape, including you.",4-spin: Move 2 up / Move 2 down / Move to the top of next column / Move to bottom of next column,3,86,2,0
+Blood Wave,"This wave is cheerfully coloured, but a painful ride.",-2V + Move 3 squares ahead,4,59,0,0
 Mud Wave,"A tsunami of muddy water, all over your nice new clothes!",-3D (after Money Suit),5,14,0,1
-Tubular Wave,You're feeling especially radical today.,+2 to your next spin,1,,,0
-Yellow Wave,Something about this water makes you not want to get wet.,"-2G, -1 to next spin",2,,,0
-Technology Wave,"It's coming whether you like it or not, so why not surf it?",Move 3 squares ahead,3,,,0
-Shit Storm,You probably shouldn't have left the house today.,-2GVD,4,,,0
-Little Fluffy Clouds,The sunrise is invigorating. Or is that a sunset?,+3G,4,,,0
-Forest Fire,You definitely can't go this way.,Move only up or forward next turn.,3,,,0
-Volcano,The fiery pressure inside has finally broken loose. Run as fast as you can!,"7-spin, move only forward.",5,,,0
-Monochrome Rainbow,It seems a little less impressive than most rainbows.,-1G,1,,,0
-Insomnia,The strangest things happen to you when you can't sleep. (sometime before Recurring Nightmare),-2V -1G,3,,,0
-A Good Night's Sleep,A great cure for so many ills.,+1VGD,3,,,0
-Synaesthesia,Taste the rainbow.,"Trade: -3 to any, +3 of any other.",5,,,0
-Heartburn,"Is that passion you are feeling, or is it stomach acid?",-1V +1G,1,,,0
-Mysterious Silence,This would be relaxing if it wasn't so ominous.,,5,,,0
-Recurring Nightmare,"It appears every night, leaving you wishing you still had insomnia!",-3G,4,,,0
+Tubular Wave,You're feeling especially radical today.,+2 to your next spin,1,80,4,0
+Yellow Wave,Something about this water makes you not want to get wet.,"-2G, -1 to next spin",2,82,2,0
+Technology Wave,"It's coming whether you like it or not, so why not surf it?",Move 3 squares ahead,3,96,2,1
+Shit Storm,You probably shouldn't have left the house today.,-2GVD,4,11,1,0
+Little Fluffy Clouds,The sunrise is invigorating. Or is that a sunset?,+3G,4,74,1,0
+Forest Fire,You definitely can't go this way.,Move only up or forward next turn.,3,87,1,1
+Volcano,The fiery pressure inside has finally broken loose. Run as fast as you can!,"7-spin, move only forward.",5,60,0,0
+Monochrome Rainbow,It seems a little less impressive than most rainbows.,-1G,1,42,4,0
+Insomnia,The strangest things happen to you when you can't sleep. (sometime before Recurring Nightmare),-2V -1G,3,79,2,0
+A Good Night's Sleep,A great cure for so many ills.,+1VGD,3,98,3,1
+Synaesthesia,Taste the rainbow.,"Trade: -3 to any, +3 of any other.",5,56,0,0
+Heartburn,"Is that passion you are feeling, or is it stomach acid?",-1V +1G,1,39,4,0
+Mysterious Silence,This would be relaxing if it wasn't so ominous.,,5,37,0,0
+Recurring Nightmare,"It appears every night, leaving you wishing you still had insomnia!",-3G,4,7,1,0
 Coma,Everything goes black...,Move forward 10,4,39,1,1
 Wake Up in the Hospital,...and suddenly everything is blinding white.,-4V(10 past coma),4,49,1,1
 Dr. Spectre,"During a feverish illness, you seem to remember a shadowy figure tending to you.",,4,38,1,1
 Uncontained Virus,Your fever is rising. The chills are taking hold.,4spin: -3V / -2V / -1V / Move ahead 1,4,37,1,1
 Oops,"We had a little accident, but it's not like it's the end of thFWOOOOOSHH!!!!!","Trade: -3 to any two, +3 to the other",5,98,1,1
 Gibbous Moon,"Another month passes, and you pause for reflection.","Trade: -2 to any, +2 to another",3,97,2,1
-Double Earth,"You take comfort in the fact that no matter what happens here, you have a chance to start over somewhere else.",,3,,,0
-Exit Planet Earth,You embark on a great adventure from which you might not return.,4spin > 2: Move directly to Space Station / Move directly to Gibbous Moon,5,94,1,1
+Double Earth,"You take comfort in the fact that no matter what happens here, you have a chance to start over somewhere else.",,3,1,2,0
+Exit Planet Earth,You embark on a great adventure from which you might not return.,4spin > 2: Move directly to Space Station / Move directly to Gibbous Moon,5,95,1,1
 Bleeding Moon,"You've never really believed in signs from the heavens, but this is undeniably portentous.","Trade: -3 to any, +1 to any other",4,55,1,1
-Space Station,"Advanced technology and a great view, what more could you ask for?","Trade: -1 to any, +2 to other 2",5,97,0,1
+Space Station,"Advanced technology and a great view, what more could you ask for?","Trade: -1 to any, +2 to other 2",5,98,0,1
 UFO,You are visited by an unearthly presence. They leave you with gifts and knowledge.,"Trade: -2 to any, +1 to any other",5,34,0,1
 Alien Abduction,"A strange glow suffuses you, and you feel an upward pull.",Move up 1 square (to UFO),4,34,1,1
 Rubik's Hypercube,This coloured shape boggles your mind.,"4spin: -- / -- / -1VGD / +1VGD, move straight ahead next turn.",3,65,2,1
@@ -446,54 +446,54 @@ Pink Arrow,,"Instead of spinning, you can choose to go three squares straight do
 Purple Arrow,,Add 2 to your spin if you go straight forward.,0,16,0,1
 Blue Arrow,,"Instead of spinning, you can choose to go 3 squares straight up.",0,16,3,1
 Green Arrow,,Add 2 to your spin if you go straight forward.,0,10,3,1
-Turmoil,"A state of great disturbance, confusion, or uncertainty.",4spin: -1VGD / -2G / -2V / -2D / -- / -- / --,4,,,0
-Distraction,Extreme agitation of the mind or emotions.,4spin: -1G / -1V / -1D / --,3,,,0
-Befuddlement,Confusion resulting from failure to understand.,4spin: -1V / -1G / -1D / --,3,,,0
-Discombobulation,A feeling of embarrassment that leaves you confused.,4spin: -1G / -1D / -1V / --,3,,,0
-Bewilderment,The condition of being confused or disoriented.,7spin: -1VGD / -2V / -2D / -2G / -- / -- / --,4,,,0
-Uncertainty,The state of being uncertain; doubt; hesitancy.,4spin: -1D / -1G / -1V / --,2,,,0
-Incomprehension,Inability or failure to comprehend; lack of understanding.,4spin: -1D / -1V / -1G / --,2,,,0
-Vexation,"The state of being annoyed, frustrated, or worried.",4spin: -1V / -1D / -1G / --,2,,,0
-Perplexity,Inability to deal with or understand something complicated or unaccountable.,7spin: -2VG / -2VD / -2DG / -- / -- / -- / --,5,,,0
-Mystification,A mental state characterized by a lack of clear and orderly thought and behaviour.,7spin: -1VGD / -2D / -2G / -2V / -- / -- / --,4,,,0
-Blue Whale,"No matter how bad you have it, his problems are probably bigger than yours.",,0,,,0
-Hammerhead Goldfish,Your pet is the fiercest hunter ever to prowl a round glass bowl.,,0,,,0
-Fighting Fish on Steroids,"Your pet is a menace to all worldly creatures, as long as they're smaller than an apple.",,0,,,0
-Peacock,Its beauty is blinding.,Test G < 4: -1V,2,,,0
-Night Vision Peacock,"Its beauty is blinding, even in the absence of light.",Test G < 6: -1V,3,,,0
-Demon Peacock,Its beauty blinds you with brighter colours than you have ever seen.,Test G < 7: -2V,4,,,0
-Worker Bee,Hard work brings sweet rewards.,Test G > 6: +2V,2,,,0
-Blaster Worm,"He looks harmless, but once you let him in he causes havoc.",Test G < 5: -3D,4,,,0
-Jar of Fireflies,You do not fear the darkness. ,You have +3G for the next turn only. (3 before a few dark monsters),5,,,0
-X-Ray Fish,Lately you've felt like you can see through everyone.,,0,,,0
-Alligator in a Box,"Quick, put it back in!",4spin < 2: -2V,2,,,0
-Triggerfish,Sometimes bright colours are there as a warning. Sometimes they are the best way to hide yourself.,,0,,,0
-Pixel Cat,This pixel's edges are razor sharp!,4spin < 2: -1V,2,,,0
-White Cat,"Meeting this cat's gaze, you feel like you will be extra lucky for the next few turns.",,0,,,0
-Angry Cat,"You let out a piercing caterwaul, to let everyone know what you want.",,0,,,0
-Pink Puffball Kitten,"It's so soft, small and helpless, it pushes every sympathetic button in your body.",,0,,,0
-Elephant,This elephant will give you a ride if you can make it up on top of his back.,Test V > 4: 7spin next turn,2,,,0
-Upper-Class Whale,He barely takes notice of such small folk as you.,0,5,,,0
-Annoying Bunny,What's cute and furry on the outside turns out to be a horrible pest.,,0,,,0
-Tetris Demon,Little-known fact: Tetris is never a single player game. You are always playing against me.,"Test V > 6, G > 6: +2 D / -1 D",4,,,0
-Sneaky Devil,He appears out of nowhere just to mess with you. Getting past him takes wits and skill.,"Test G > 7, V > 7: -- / -2D",5,,,0
-Pentavil,This five-pointed malefactor stares at you from a wall. His piercing gaze judges you harshly.,"Test D > 7, G > 7: -- / -3G",5,,,0
-Doomicorn,"With a playful whicker that sounds strangely malicious, it offers you a ride. Can you mount this spectral stallion?","Test V > 8, G > 7: +3 to next spin / -3V",5,,,0
-Clumsy Devil,This brute threatens you with awkwardly large horns. You think you might be able to slip by...,"Test V > 6, G > 5: -- / -3V",4,,,0
+Turmoil,"A state of great disturbance, confusion, or uncertainty.",4spin: -1VGD / -2G / -2V / -2D / -- / -- / --,4,45,1,0
+Distraction,Extreme agitation of the mind or emotions.,4spin: -1G / -1V / -1D / --,3,48,2,0
+Befuddlement,Confusion resulting from failure to understand.,4spin: -1V / -1G / -1D / --,3,50,2,0
+Discombobulation,A feeling of embarrassment that leaves you confused.,4spin: -1G / -1D / -1V / --,3,19,2,0
+Bewilderment,The condition of being confused or disoriented.,7spin: -1VGD / -2V / -2D / -2G / -- / -- / --,4,13,1,0
+Uncertainty,The state of being uncertain; doubt; hesitancy.,4spin: -1D / -1G / -1V / --,2,66,3,0
+Incomprehension,Inability or failure to comprehend; lack of understanding.,4spin: -1D / -1V / -1G / --,2,60,3,0
+Vexation,"The state of being annoyed, frustrated, or worried.",4spin: -1V / -1D / -1G / --,2,5,3,0
+Perplexity,Inability to deal with or understand something complicated or unaccountable.,7spin: -2VG / -2VD / -2DG / -- / -- / -- / --,5,53,0,0
+Mystification,A mental state characterized by a lack of clear and orderly thought and behaviour.,7spin: -1VGD / -2D / -2G / -2V / -- / -- / --,4,36,1,0
+Blue Whale,"No matter how bad you have it, his problems are probably bigger than yours.",,0,77,0,0
+Hammerhead Goldfish,Your pet is the fiercest hunter ever to prowl a round glass bowl.,,0,55,0,0
+Fighting Fish on Steroids,"Your pet is a menace to all worldly creatures, as long as they're smaller than an apple.",,0,41,4,0
+Peacock,Its beauty is blinding.,Test G < 4: -1V,2,7,2,0
+Night Vision Peacock,"Its beauty is blinding, even in the absence of light.",Test G < 6: -1V,3,67,3,0
+Demon Peacock,Its beauty blinds you with brighter colours than you have ever seen.,Test G < 7: -2V,4,70,1,0
+Worker Bee,Hard work brings sweet rewards.,Test G > 6: +2V,2,28,3,0
+Blaster Worm,"He looks harmless, but once you let him in he causes havoc.",Test G < 5: -3D,4,46,1,0
+Jar of Fireflies,You do not fear the darkness. ,You have +3G for the next turn only. (3 before a few dark monsters),5,47,0,0
+X-Ray Fish,Lately you've felt like you can see through everyone.,,0,12,2,0
+Alligator in a Box,"Quick, put it back in!",4spin < 2: -2V,2,80,3,0
+Triggerfish,Sometimes bright colours are there as a warning. Sometimes they are the best way to hide yourself.,,0,1,4,0
+Pixel Cat,This pixel's edges are razor sharp!,4spin < 2: -1V,2,3,3,0
+White Cat,"Meeting this cat's gaze, you feel like you will be extra lucky for the next few turns.",,0,88,3,0
+Angry Cat,"You let out a piercing caterwaul, to let everyone know what you want.",,0,69,0,0
+Pink Puffball Kitten,"It's so soft, small and helpless, it pushes every sympathetic button in your body.",,0,66,0,0
+Elephant,This elephant will give you a ride if you can make it up on top of his back.,Test V > 4: 7spin next turn,2,49,3,0
+Upper-Class Whale,He barely takes notice of such small folk as you.,0,5,9,0,0
+Annoying Bunny,What's cute and furry on the outside turns out to be a horrible pest.,,0,83,2,0
+Tetris Demon,Little-known fact: Tetris is never a single player game. You are always playing against me.,"Test V > 6, G > 6: +2 D / -1 D",4,32,1,0
+Sneaky Devil,He appears out of nowhere just to mess with you. Getting past him takes wits and skill.,"Test G > 7, V > 7: -- / -2D",5,85,0,1
+Pentavil,This five-pointed malefactor stares at you from a wall. His piercing gaze judges you harshly.,"Test D > 7, G > 7: -- / -3G",5,38,0,0
+Doomicorn,"With a playful whicker that sounds strangely malicious, it offers you a ride. Can you mount this spectral stallion?","Test V > 8, G > 7: +3 to next spin / -3V",5,88,0,0
+Clumsy Devil,This brute threatens you with awkwardly large horns. You think you might be able to slip by...,"Test V > 6, G > 5: -- / -3V",4,84,2,1
 Skinny Devil,This wispy fiend offers you passage at a price.,Choose: -2D or move only 1 square (next square is a hazard of some kind),3,83,1,1
-Cloud Devil,The weather is today can only be described as malevolent.,"Test G > 8: -- / -2G, -1 from next spin",4,,,0
-Devil Orb,"This orb flits in front of you, whispering that it can carry you places.","Pay up to 5 D, travel to any square within that many columns.",2,,,0
-Devil Moon,The night sky glows red. Your sleep is troubled.,"Test G > 7, V > 7: -- / -2GV",4,,,0
-Devil Flies,The insects buzzing around tonight seem motivated by an uncommon malice.,"Test G > 5, V > 5:",1,,,0
-Stacks of Cash,They're just lying here.,+2D,0,83,3,1
-Stacks and Sacks of Cash,They are lying here in a suspiciously tidy pile.,+3D,0,86,2,1
-Stacks and Sacks of Cash and Gold,A pile of wealth is stacked here almost dangerously high.,+4D,0,89,1,1
-Stacks and Sacks of Cash and Gold and a Kitten,"A pile of wealth is stacked to the ceiling, and it's adorable!",+4D +2G,0,92,0,1
+Cloud Devil,The weather is today can only be described as malevolent.,"Test G > 8: -- / -2G, -1 from next spin",4,54,1,0
+Devil Orb,"This orb flits in front of you, whispering that it can carry you places.","Pay up to 5 D, travel to any square within that many columns.",2,45,3,0
+Devil Moon,The night sky glows red. Your sleep is troubled.,"Test G > 7, V > 7: -- / -2GV",4,30,1,0
+Devil Flies,The insects buzzing around tonight seem motivated by an uncommon malice.,"Test G > 5, V > 5:",1,60,4,0
+Stacks of Cash,They're just lying here.,+2D,0,87,3,1
+Stacks and Sacks of Cash,They are lying here in a suspiciously tidy pile.,+3D,0,90,2,1
+Stacks and Sacks of Cash and Gold,A pile of wealth is stacked here almost dangerously high.,+4D,0,93,1,1
+Stacks and Sacks of Cash and Gold and a Kitten,"A pile of wealth is stacked to the ceiling, and it's adorable!",+4D +2G,0,96,0,1
 North of Nowhere,,,0,76,1,1
-Forbidding Moon,,,0,,,0
-Clouded Moon,,,0,,,0
-Arid Landscape,,,0,,,0
-Questionable Doorway,,,0,,,0
+Forbidding Moon,,,0,94,4,0
+Clouded Moon,,,0,82,4,0
+Grey Landscape,,,0,94,0,0
+Questionable Doorway,,,0,32,4,0
 West of Nowhere,,,0,77,2,1
 Middle of Nowhere,,,0,76,2,1
 East of Nowhere,,,0,75,2,1
