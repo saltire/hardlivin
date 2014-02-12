@@ -99,6 +99,45 @@ void scroll_left(uint8_t repeat, uint8_t speed) {
 	}
 }
 
+// this will scroll [count] squares across the screen
+// there is a brief pause in the middle when we load the next image
+void scroll_continuous(uint8_t count, uint8_t speed, uint8_t pause) {
+	int16_t image1[12][12];
+	int16_t image2[12][12];
+	request_square(image2);
+	int16_t col[12];
+
+	// scroll image 2 onto the screen
+	for (int8_t xoff = 9; xoff >= -12; xoff--) {
+		matrix.fillScreen(0);
+		draw_square(xoff + 22, 2, image2);
+		delay(speed);
+	}
+	delay(pause);
+
+	// swap image2 into image1, load a new image2
+	// then scroll image1 off and image2 on simultaneously
+	for (uint8_t i = 1; i < count; i++) {
+		memcpy(image1, image2, sizeof(image2));
+		request_square(image2);
+
+		for (int8_t xoff = 9; xoff >= -12; xoff--) {
+			matrix.fillScreen(0);
+			draw_square(xoff, 2, image1);
+			draw_square(xoff + 22, 2, image2);
+			delay(speed);
+		}
+		delay(pause);
+	}
+
+	// scroll image1 off the screen
+	for (int8_t xoff = 9; xoff >= -12; xoff--) {
+		matrix.fillScreen(0);
+		draw_square(xoff, 2, image2);
+		delay(speed);
+	}
+}
+
 void scroll_multiple(uint8_t repeat, uint8_t speed) {
 	int16_t image1[12][12];
 	int16_t image2[12][12];
@@ -131,11 +170,11 @@ void scroll_multiple(uint8_t repeat, uint8_t speed) {
 void setup() {
 	matrix.begin();
 	Serial.begin(9600);
-
-	draw_title();
 }
 
 void loop() {
-	//scroll_left(1, 100);
-	//scroll_multiple(1, 100);
+	draw_title();
+	delay(3000);
+
+	scroll_continuous(10, 100, 1000);
 }
