@@ -4,7 +4,8 @@ import os
 
 
 DATAPATH = os.path.join(os.path.dirname(__file__), 'data')
-INFOCOLS = 'title', 'desc', 'effect', 'difficulty', 'column', 'row', 'locked'
+INFOCOLS = ['title', 'desc', 'effect', 'difficulty', 'column', 'row', 'locked', 'sold', 'snakes',
+            'scolumn', 'srow']
 
 
 class CSVData:
@@ -18,7 +19,6 @@ class CSVData:
             info = {row[0]: tuple(unicode(s, 'utf-8') for s in row[1:])
                     for row in csv.reader(csvfile)}
 
-        colcount = 0
         self.info = OrderedDict()
         for source in self.sources:
             with open(os.path.join(DATAPATH, source + '.csv'), 'rb') as csvfile:
@@ -33,14 +33,6 @@ class CSVData:
                                               (title,) + info.get(title, ()) # source csv info
                                               + (('',) * len(INFOCOLS)))) # pad to length
                             self.info[filename] = sqinfo
-
-                            if sqinfo['column'] != '' and sqinfo['row'] != '':
-                                colcount = max(int(sqinfo['column']) + 1, colcount)
-
-        self.columns = [[''] * 5 for _ in range(colcount)]
-        for filename, sqinfo in self.info.iteritems():
-            if sqinfo['column'] != '' and sqinfo['row'] != '':
-                self.columns[colcount - int(sqinfo['column']) - 1][int(sqinfo['row'])] = filename
 
 
     def write_info(self, newinfo):

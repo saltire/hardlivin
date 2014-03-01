@@ -1,34 +1,27 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Hard Livin' Configurator</title>
+		<title>Hard Livin' at Snakes &amp; Lattes</title>
 		<link rel='stylesheet' type='text/css' href='/static/main.css' />
 		<link rel='stylesheet' type='text/css' href='/static/board.css' />
 		<script type='text/javascript' src='/static/jquery-1.10.2.min.js'></script>
 		<script type='text/javascript' src='/static/jquery-ui-1.10.3.custom.min.js'></script>
 		<script type='text/javascript' src='/static/jquery.editable.min.js'></script>
 		<script type='text/javascript' src='/static/board.js'></script>
-		<script type='text/javascript' src='/static/configurator.js'></script>
 	</head>
 	<body>
 		<div class='topbar'>
-			<h1>Hard Livin' Configurator</h1>
+			<h1>Hard Livin' at S&amp;L</h1>
 			<div class='save button disabled'>Save Changes</div>
 			<div class='status'><span></span></div>
 			<div>Board: <span class='count bcount'>{{ info|length - unused|length }}</span></div>
 			<div>Unused: <span class='count ucount'>{{ unused|length }}</span></div>
-			<div>Dim non-Snakes squares: <input id='dim-snakes' type='checkbox' /></div>
-			<div class='clear button'>Clear</div>
-			<div class='random button'>Fill randomly</div>
+			<div>Sold: <span class='count scount'>{{ sold|length }}</span></div>
+			<div>Dim sold squares: <input id='dim-sold' type='checkbox' /></div>
 		</div>
 		<div class='board-container'>
-			<div class='board {{ venue }}'>
+			<div class='board'>
 				<div class='wall' ></div>
-				<div class='column'>
-					{% for _ in range(5) %}
-					<div class='empty'></div>
-					{% endfor %}
-				</div>
 				{% for column in columns %}
 				<div class='column'>
 					{% for filename in column %}
@@ -49,24 +42,11 @@
 			<div id='{{ filename }}'>
 				<div class='left'>
 					<img src='/static/images/144/{{ filename }}.png' />
-					<p class='locked'>Locked?
-						<input type='checkbox' {% if sqinfo['locked']|int %}checked='checked' {% endif %}/>
-					</p>
-					{% if venue == 'hashtag' %}
-					<p class='notsnakes'>Sold before S&amp;L?
-						<input type='checkbox' {% if not sqinfo['snakes']|int %}checked='checked' {% endif %}/>
-					</p>
-					{% endif %}
-					<p class='difficulty'>
-						{% for d in range(5, 0, -1) %}
-						<input type='radio' name='{{ filename }}-difficulty' value='{{ d }}' {% if sqinfo['difficulty']|int == d %}checked='checked' {% endif %}/> {{ d }}<br />
-						{% endfor %}
-						<input type='radio' name='{{ filename }}-difficulty' value='0' {% if sqinfo['difficulty']|int == 0 %}checked='true' {% endif %}/> None<br />
+					<p class='sold'>Sold?
+						<input type='checkbox' {% if sqinfo['sold']|int %}checked='checked' {% endif %}/>
 					</p>
 				</div>
-				<p class='title large'>{{ sqinfo['title'] }}</p>
-				<p class='desc'>{{ sqinfo['desc'] }}</p>
-				<p class='effect'>{{ sqinfo['effect'] }}</p>
+				<p class='large'>{{ sqinfo['title'] }}</p>
 			</div>
 			{% endfor %}
 		</div>
