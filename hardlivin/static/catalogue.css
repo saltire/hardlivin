@@ -2,6 +2,14 @@ body { font-family: helvetica, arial, sans-serif; }
 table { width: 100%; border-collapse: collapse; }
 table td { padding: 2px 8px; border: 1px solid #000; }
 table td.thumb { width: 40px; padding: 2px; }
-table td.narrow { width: 48px; text-align: center; }
+table td.narrow { width: 48px; text-align: center; white-space: nowrap; }
 table td.blank { width: 25%; }
 table img { width: 100%; background: #edb; }
+
+input[type=button] { padding: 8px; border: 0; border-radius: 5px;
+	background: #000; color: #fff; font-size: 20px; font-weight: bold; }
+input.moveto { background: #0072bc; }
+input.sell { background: #39b54a; }
+input.unuse { background: #534741; }
+input.disabled { background: #ccc !important; }
+select { font-size: 20px; }

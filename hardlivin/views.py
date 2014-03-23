@@ -1,4 +1,3 @@
-import itertools
 from collections import OrderedDict
 
 from flask import jsonify, render_template, request
@@ -32,6 +31,11 @@ def memory_game():
 def get_snakes_squares(info):
     return OrderedDict((filename, sqinfo) for filename, sqinfo in info.iteritems()
                        if sqinfo['snakes'] == '1')
+
+
+def get_unsold_squares(info):
+    return OrderedDict((filename, sqinfo) for filename, sqinfo in info.iteritems()
+                       if sqinfo['sold'] != '1')
 
 
 @app.route('/sales')
@@ -91,8 +95,8 @@ def save_changes():
 
 
 @app.route('/catalogue')
-@app.route('/catalogue/<venue>')
-@app.route('/catalogue/<venue>/<sort>')
+@app.route('/catalogue/<sort>')
+@app.route('/catalogue/<sort>/<venue>')
 def catalogue(venue=None, sort=None):
     if venue not in ['hashtag', 'snakes']:
         venue = 'snakes'
@@ -106,16 +110,30 @@ def catalogue(venue=None, sort=None):
     data = CSVData()
     info = get_snakes_squares(data.info) if venue == 'snakes' else data.info
     cname, rname = ('scolumn', 'srow') if venue == 'snakes' else ('column', 'row')
-    info = [{'filename': filename,
-             'title': sqinfo['title'],
-             'pos': '{0}{1}'.format(int(sqinfo[cname]) + 1, 'ABCDE'[int(sqinfo[rname])]),
-             'column': int(sqinfo[cname]),
-             'row': int(sqinfo[rname]),
-             }
-            for filename, sqinfo in info.iteritems()
-            if sqinfo[cname] != '' and sqinfo[rname] != '']
 
-    return render_template('catalogue.html', info=sorted(info, key=sorts[sort]))
+    used = []
+    unused = []
+    sold = []
 
+    for filename, sqinfo in info.iteritems():
+        if sqinfo['sold'] != '1':
+            if sqinfo[cname] != '' and sqinfo[rname] != '':
+                used.append({'filename': filename,
+                             'title': sqinfo['title'],
+                             'pos': '{0}{1}'.format(int(sqinfo[cname]) + 1, 'ABCDE'[int(sqinfo[rname])]),
+                             'column': int(sqinfo[cname]),
+                             'row': int(sqinfo[rname]),
+                             })
+            else:
+                unused.append({'filename': filename,
+                               'title': sqinfo['title'],
+                               })
+        else:
+            sold.append({'filename': filename,
+                         'title': sqinfo['title']
+                         })
 
-
+    return render_template('catalogue.html',
+                           used=sorted(used, key=sorts[sort]),
+                           unused=sorted(unused, key=sorts['title']),
+                           sold=sorted(sold, key=sorts['title']))
