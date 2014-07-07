@@ -6,8 +6,8 @@ from . import app
 from csvdata import CSVData
 
 
-VENUES = {'hashtag': 100,
-          'snakes': 42,
+VENUES = {'hashtag': [('Gallery', 1, 100)],
+          'snakes': [('West Wall', 0, 20), ('East Wall', 20, 62)]
           }
 
 
@@ -38,26 +38,6 @@ def get_unsold_squares(info):
                        if sqinfo['sold'] != '1')
 
 
-@app.route('/sales')
-def draw_sales():
-    data = CSVData()
-    info = get_snakes_squares(data.info)
-
-    colcount = VENUES['snakes']
-    columns = [[''] * 5 for _ in range(colcount)]
-    unused = []
-
-    for filename, sqinfo in info.iteritems():
-        co, ro = sqinfo['scolumn'], sqinfo['srow']
-
-        if co != '' and ro != '':
-            columns[colcount - int(co) - 1][int(ro)] = filename
-        else:
-            unused.append(filename)
-
-    return render_template('sales.html', info=info, columns=columns, unused=unused)
-
-
 @app.route('/configurator')
 @app.route('/configurator/<venue>')
 def draw_configurator(venue=None):
@@ -67,7 +47,7 @@ def draw_configurator(venue=None):
     data = CSVData()
     info = get_snakes_squares(data.info) if venue == 'snakes' else data.info
 
-    colcount = VENUES[venue]
+    colcount = VENUES[venue][-1][2]
     columns = [[''] * 5 for _ in range(colcount)]
     unused = []
 
@@ -98,10 +78,7 @@ def save_changes():
 @app.route('/catalogue/<sort>')
 @app.route('/catalogue/<sort>/<venue>')
 def catalogue(venue=None, sort=None):
-    venues = {'hashtag': [('Gallery', 1, 100)],
-              'snakes': [('West Wall', 0, 21), ('East Wall', 21, 63)]
-              }
-    if venue not in venues:
+    if venue not in VENUES:
         venue = 'snakes'
 
     sorts = {'title': lambda sq: sq['title'],
@@ -117,14 +94,18 @@ def catalogue(venue=None, sort=None):
     used = []
     unused = []
     sold = []
+    chart = {}
     blank = OrderedDict(((col, row), '{0} {1}{2}'.format(wall[0], col + 1 - wall[1], 'ABCDE'[row]))
-                        for wall in venues[venue]
+                        for wall in VENUES[venue]
                         for col in range(wall[1], wall[2]) for row in range(5))
 
     for filename, sqinfo in info.iteritems():
         if sqinfo['sold'] != '1':
             if sqinfo[cname] != '' and sqinfo[rname] != '':
                 col, row = int(sqinfo[cname]), int(sqinfo[rname])
+                chart[col, row] = {'filename': filename,
+                                   'title': sqinfo['title'],
+                                   }
                 used.append({'filename': filename,
                              'title': sqinfo['title'],
                              'pos': blank.pop((col, row)),
@@ -142,6 +123,8 @@ def catalogue(venue=None, sort=None):
 
     return render_template('catalogue.html',
                            blank=blank,
+                           chart=chart,
+                           venue=VENUES[venue],
                            used=sorted(used, key=sorts[sort]),
                            unused=sorted(unused, key=sorts['title']),
                            sold=sorted(sold, key=sorts['title']))

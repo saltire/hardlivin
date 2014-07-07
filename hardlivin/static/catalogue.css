@@ -1,12 +1,19 @@
-.catalogue { padding: 2px 17px; background: #fff; color: #000; }
+.catalogue { padding: 2px 17px 32px; background: #fff; color: #000; }
+.catalogue h2 { margin: 16px 0 8px; }
 .catalogue table { color: #000; }
 
-table { width: 100%; border-collapse: collapse; }
-table td { padding: 2px 8px; border: 1px solid #000; }
-table td.thumb { width: 40px; padding: 2px; }
-table td.narrow { width: 48px; text-align: center; white-space: nowrap; }
-table td.blank { width: 25%; }
-table img { width: 100%; background: #edb; }
+.list table { width: 100%; border-collapse: collapse; }
+.list table td { padding: 2px 8px; border: 1px solid #000; }
+.list table td.thumb { width: 40px; padding: 2px; }
+.list table td.narrow { width: 48px; text-align: center; white-space: nowrap; }
+.list table td.blank { width: 25%; }
+.list table img { width: 100%; background: #edb; }
+
+.chart { overflow: auto; padding-bottom: 10px; }
+.chart table { border-collapse: collapse; }
+.chart table th { padding: 8px; }
+.chart table td { width: 40px; height: 40px; padding: 2px; border: 1px solid #000; }
+.chart table td img { width: 40px; }
 
 input[type=button] { height: 40px; padding: 8px; border: 0; border-radius: 5px;
 	background: #000; color: #fff; font-size: 20px; font-weight: bold; line-height: 24px;

@@ -1,8 +1,17 @@
 $(function() {
+	$('html, body').prop('scrollTop', 0);
 	$('select').prop('selectedIndex', 0);
 	
 	$('.catalogue h2').click(function() {
-		$(this).next().slideToggle();
+		$(this).next().slideToggle('slow');
+	});
+	
+	$('.chart table img').click(function() {
+		var $entry = $('.list img[src="' + $(this).attr('src') + '"]');
+		$entry.closest('.list').show();
+		$('html, body').animate({
+			scrollTop: $entry.offset().top
+		}, 'slow');
 	});
 	
 	$('input').click(function(e) {
