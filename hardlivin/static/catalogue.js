@@ -1,6 +1,10 @@
 $(function() {
 	$('select').prop('selectedIndex', 0);
 	
+	$('.catalogue h2').click(function() {
+		$(this).next().slideToggle();
+	});
+	
 	$('input').click(function(e) {
 		e.preventDefault;
 		
@@ -21,15 +25,15 @@ $(function() {
 			};
 		}
 		else if ($(this).hasClass('moveto')) {
-			var col = $(this).siblings('.col').val();
-			var row = $(this).siblings('.row').val();
-			if (col == '-' || row == '-') {
+			var pos = $(this).prev().val();
+			if (pos == '-') {
 				return;
 			}
+			var coords = pos.split(',');
 			info[$(this).attr('id').slice(7)] = {
 				sold: 0,
-				srow: 'ABCDE'.indexOf(row),
-				scolumn: parseInt(col) - 1
+				srow: parseInt(coords[1]),
+				scolumn: parseInt(coords[0])
 			};
 		}
 		

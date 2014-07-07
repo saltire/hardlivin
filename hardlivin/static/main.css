@@ -2,6 +2,6 @@
 
 body { margin: 0; background: #333; color: #fff; font-family: 'Open Sans'; }
 
-.topbar { height: 48px; line-height: 48px; overflow: auto; }
+.topbar { height: 48px; background: #333; line-height: 48px; overflow: auto; }
 .topbar h1 { float: left; margin: 0 0 0 17px; width: 384px; font-size: 24px; line-height: 48px; }
 .topbar div { float: left; margin-right: 20px; }

@@ -98,14 +98,17 @@ def save_changes():
 @app.route('/catalogue/<sort>')
 @app.route('/catalogue/<sort>/<venue>')
 def catalogue(venue=None, sort=None):
-    if venue not in ['hashtag', 'snakes']:
+    venues = {'hashtag': [('Gallery', 1, 100)],
+              'snakes': [('West Wall', 0, 21), ('East Wall', 21, 63)]
+              }
+    if venue not in venues:
         venue = 'snakes'
-    if sort not in ['title', 'position']:
-        sort = 'position'
 
     sorts = {'title': lambda sq: sq['title'],
              'position': lambda sq: (sq['column'], sq['row'])
              }
+    if sort not in sorts:
+        sort = 'position'
 
     data = CSVData()
     info = get_snakes_squares(data.info) if venue == 'snakes' else data.info
@@ -114,15 +117,19 @@ def catalogue(venue=None, sort=None):
     used = []
     unused = []
     sold = []
+    blank = OrderedDict(((col, row), '{0} {1}{2}'.format(wall[0], col + 1 - wall[1], 'ABCDE'[row]))
+                        for wall in venues[venue]
+                        for col in range(wall[1], wall[2]) for row in range(5))
 
     for filename, sqinfo in info.iteritems():
         if sqinfo['sold'] != '1':
             if sqinfo[cname] != '' and sqinfo[rname] != '':
+                col, row = int(sqinfo[cname]), int(sqinfo[rname])
                 used.append({'filename': filename,
                              'title': sqinfo['title'],
-                             'pos': '{0}{1}'.format(int(sqinfo[cname]) + 1, 'ABCDE'[int(sqinfo[rname])]),
-                             'column': int(sqinfo[cname]),
-                             'row': int(sqinfo[rname]),
+                             'pos': blank.pop((col, row)),
+                             'column': col,
+                             'row': row,
                              })
             else:
                 unused.append({'filename': filename,
@@ -134,6 +141,7 @@ def catalogue(venue=None, sort=None):
                          })
 
     return render_template('catalogue.html',
+                           blank=blank,
                            used=sorted(used, key=sorts[sort]),
                            unused=sorted(unused, key=sorts['title']),
                            sold=sorted(sold, key=sorts['title']))

@@ -1,110 +1,101 @@
 <html>
 	<head>
 		<title>Hard Livin' Catalogue</title>
+		<link rel='stylesheet' type='text/css' href='/static/main.css' />
 		<link rel='stylesheet' type='text/css' href='/static/catalogue.css' />
 		<script type='text/javascript' src='/static/jquery-1.10.2.min.js'></script>
 		<script type='text/javascript' src='/static/catalogue.js'></script>
 	</head>
 	<body>
-		<h1>Hanging squares:</h1>
-		<table>
-			<tr>
-				<th></th>
-				<th>#</th>
-				<th>Title</th>
-				<th></th>
-				<th></th>
-				<th></th>
-			</tr>
-			{% for sqinfo in used %}
-			<tr>
-				<td class='thumb'><img src="/static/images/144/{{ sqinfo['filename'] }}.png" /></td>
-				<td class='narrow'>{{ sqinfo['pos'] }}</td>
-				<td>{{ sqinfo['title'] }}</td>
-				<td class='narrow'>Move to:
-					<select class='col' id="col-{{ sqinfo['filename'] }}">
-						<option>-</option>
-						{% for c in range(42) %}
-						<option>{{ c + 1 }}</option>
-						{% endfor %}
-					</select>
-					<select class='row' id="row-{{ sqinfo['filename'] }}">
-						<option>-</option>
-						{% for r in range(5) %}
-						<option>{{ 'ABCDE'[r] }}</option>
-						{% endfor %}
-					</select>
-					<input class='moveto' id="moveto-{{ sqinfo['filename'] }}" type='button' value='Move' />
-				</td>
-				<td class='narrow'><input class='sell' id="sell-{{ sqinfo['filename'] }}" type='button' value='Sold' /></td>
-				<td class='narrow'><input class='unuse' id="unuse-{{ sqinfo['filename'] }}" type='button' value='Unused' /></td>
-			</tr>
-			{% endfor %}
-		</table>
-		
-		<h1>Unused squares:</h1>
-		<table>
-			<tr>
-				<th></th>
-				<th>Title</th>
-				<th></th>
-				<th></th>
-			</tr>
-			{% for sqinfo in unused %}
-			<tr>
-				<td class='thumb'><img src="/static/images/144/{{ sqinfo['filename'] }}.png" /></td>
-				<td>{{ sqinfo['title'] }}</td>
-				<td class='narrow'>Move to:
-					<select class='col' id="col-{{ sqinfo['filename'] }}">
-						<option>-</option>
-						{% for c in range(42) %}
-						<option>{{ c + 1 }}</option>
-						{% endfor %}
-					</select>
-					<select class='row' id="row-{{ sqinfo['filename'] }}">
-						<option>-</option>
-						{% for r in range(5) %}
-						<option>{{ 'ABCDE'[r] }}</option>
-						{% endfor %}
-					</select>
-					<input class='moveto' id="moveto-{{ sqinfo['filename'] }}" type='button' value='Move' />
-				</td>
-				<td class='narrow'><input class='sell' id="sell-{{ sqinfo['filename'] }}" type='button' value='Sold' /></td>
-			</tr>
-			{% endfor %}
-		</table>
+		<div class='topbar'>
+			<h1>Hard Livin' Catalogue</h1>
+		</div>
 
-		<h1>Sold squares:</h1>
-		<table>
-			<tr>
-				<th></th>
-				<th>Title</th>
-				<th></th>
-				<th></th>
-			</tr>
-			{% for sqinfo in sold %}
-			<tr>
-				<td class='thumb'><img src="/static/images/144/{{ sqinfo['filename'] }}.png" /></td>
-				<td>{{ sqinfo['title'] }}</td>
-				<td class='narrow'>Move to:
-					<select class='col' id="col-{{ sqinfo['filename'] }}">
-						<option>-</option>
-						{% for c in range(42) %}
-						<option>{{ c + 1 }}</option>
-						{% endfor %}
-					</select>
-					<select class='row' id="row-{{ sqinfo['filename'] }}">
-						<option>-</option>
-						{% for r in range(5) %}
-						<option>{{ 'ABCDE'[r] }}</option>
-						{% endfor %}
-					</select>
-					<input class='moveto' id="moveto-{{ sqinfo['filename'] }}" type='button' value='Move' />
-				</td>
-				<td class='narrow'><input class='unuse' id="unuse-{{ sqinfo['filename'] }}" type='button' value='Unused' /></td>
-			</tr>
-			{% endfor %}
-		</table>
+		<div class='catalogue'>
+			<h2>Hanging squares:</h2>
+			<table>
+				<tr>
+					<th></th>
+					<th>Title</th>
+					<th>Position</th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+				
+				{% for sqinfo in used %}
+				<tr>
+					<td class='thumb'><img src="/static/images/144/{{ sqinfo['filename'] }}.png" /></td>
+					<td>{{ sqinfo['title'] }}</td>
+					<td class='narrow'>{{ sqinfo['pos'] }}</td>
+					<td class='narrow'>Move to
+						<select>
+							<option>-</option>
+							{% for (row, col), pos in blank.items() %}
+							<option value='{{ row }},{{ col }}'>{{ pos }}</option>
+							{% endfor %}
+						</select>
+						<input class='moveto' id="moveto-{{ sqinfo['filename'] }}" type='button' value='Move' />
+					</td>
+					<td class='narrow'><input class='sell' id="sell-{{ sqinfo['filename'] }}" type='button' value='Mark as Sold' /></td>
+					<td class='narrow'><input class='unuse' id="unuse-{{ sqinfo['filename'] }}" type='button' value='Mark as Unused' /></td>
+				</tr>
+				{% endfor %}
+				
+			</table>
+			
+			<h2>Unused squares:</h2>
+			<table>
+				<tr>
+					<th></th>
+					<th>Title</th>
+					<th></th>
+					<th></th>
+				</tr>
+				{% for sqinfo in unused %}
+				<tr>
+					<td class='thumb'><img src="/static/images/144/{{ sqinfo['filename'] }}.png" /></td>
+					<td>{{ sqinfo['title'] }}</td>
+					<td class='narrow'>Move to:
+						<select>
+							<option>-</option>
+							{% for (row, col), pos in blank.items() %}
+							<option value='{{ row }},{{ col }}'>{{ pos }}</option>
+							{% endfor %}
+						</select>
+						<input class='moveto' id="moveto-{{ sqinfo['filename'] }}" type='button' value='Move' />
+					</td>
+					<td class='narrow'><input class='sell' id="sell-{{ sqinfo['filename'] }}" type='button' value='Mark as Sold' /></td>
+				</tr>
+				{% endfor %}
+			</table>
+	
+			<h2>Sold squares:</h2>
+			<table>
+				<tr>
+					<th></th>
+					<th>Title</th>
+					<th></th>
+					<th></th>
+				</tr>
+				{% for sqinfo in sold %}
+				<tr>
+					<td class='thumb'><img src="/static/images/144/{{ sqinfo['filename'] }}.png" /></td>
+					<td>{{ sqinfo['title'] }}</td>
+					<td class='narrow'>Move to:
+						<select>
+							<option>-</option>
+							{% for (row, col), pos in blank.items() %}
+							<option value='{{ row }},{{ col }}'>{{ pos }}</option>
+							{% endfor %}
+						</select>
+						<input class='moveto' id="moveto-{{ sqinfo['filename'] }}" type='button' value='Move' />
+					</td>
+					<td class='narrow'><input class='unuse' id="unuse-{{ sqinfo['filename'] }}" type='button' value='Mark as Unused' /></td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
 
 	</body>
 </html>

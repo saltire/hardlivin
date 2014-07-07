@@ -4,8 +4,8 @@ a { color: #fff; text-decoration: none; }
 a:hover { border-bottom: 1px dotted #c63; }
 
 .title { width: 750px; margin: 15px auto 0; position: relative; z-index: 1; }
-.title div { background: url('/static/title.png'); position: absolute; z-index: 2; }
-.title div:hover, .title div.hover { background-image: url('/static/title-overlay.png'); }
+.title div { background: url('/static/images/title.png'); position: absolute; z-index: 2; }
+.title div:hover, .title div.hover { background-image: url('/static/images/title-overlay.png'); }
 .title .h { width: 105px; height: 96px; left: 162px; top: 228px; background-position: -162px -228px; }
 .title .a { width: 93px; height: 96px; left: 270px; top: 228px; background-position: -270px -228px; }
 .title .r { width: 96px; height: 96px; left: 372px; top: 228px; background-position: -372px -228px; }
