@@ -28,6 +28,20 @@ def memory_game():
     return render_template('memory.html', squares=data.info.keys())
 
 
+@app.route('/list')
+def full_list():
+    info = CSVData().info
+
+    squares = [{'filename': filename,
+                'title': sq['title'],
+                'sold': sq['sold'] == '1' or sq['snakes'] == '0',
+                } for filename, sq in info.iteritems()]
+
+    print squares
+
+    return render_template('list.html', squares=sorted(squares, key=lambda sq: sq['title']))
+
+
 def get_snakes_squares(info):
     return OrderedDict((filename, sqinfo) for filename, sqinfo in info.iteritems()
                        if sqinfo['snakes'] == '1')

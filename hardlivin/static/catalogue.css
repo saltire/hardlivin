@@ -8,6 +8,7 @@
 .list table td.narrow { width: 48px; text-align: center; white-space: nowrap; }
 .list table td.blank { width: 25%; }
 .list table img { width: 100%; background: #edb; }
+.list table tr.sold td { color: #999; background: #eee; }
 
 .chart { overflow: auto; padding-bottom: 10px; }
 .chart table { border-collapse: collapse; }

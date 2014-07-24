@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Hard Livin' – The List</title>
+		<link rel='stylesheet' type='text/css' href='/static/main.css' />
+		<link rel='stylesheet' type='text/css' href='/static/catalogue.css' />
+		<script type='text/javascript' src='/static/jquery-1.10.2.min.js'></script>
+	</head>
+	<body>
+		<div class='topbar'>
+			<h1>Hard Livin' – The List</h1>
+		</div>
+
+		<div class='catalogue'>
+			<div class='list'>
+				<table>
+					{% for square in squares %}
+					<tr{% if square['sold'] %} class="sold"{% endif %}>
+						<td class='thumb'><img src="/static/images/144/{{ square['filename'] }}.png" /></td>
+						<td>{{ square['title'] }}</td>
+					</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
