@@ -34,7 +34,7 @@
 			</div>
 		</div>
 		<div class='info'>
-			{% for filename, (title, desc, painted) in info.iteritems() %}
+			{% for filename, (title, desc, painted) in info.items() %}
 			<div id='{{ filename }}'>
 				<img src='static/images/128/{{ filename }}.png' />
 				<p class='title'>{{ title }}</p>

@@ -9,4 +9,4 @@ app.jinja_options = dict(app.jinja_options, trim_blocks=True, lstrip_blocks=True
 
 
 # view functions must be imported into this module for routing to work
-import views
+from . import views

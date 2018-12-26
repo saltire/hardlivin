@@ -25,7 +25,6 @@ class ImageServer:
         self.images = [os.path.join(imgdir, fname) for fname in os.listdir(imgdir)]
         self.arduino = Arduino(port, 9600)
 
-
     def run(self):
         while True:
             code = self.arduino.serial.read(1)
@@ -38,7 +37,6 @@ class ImageServer:
             elif code == 'C':
                 print 'got request for title'
                 self.send_image('title.png')
-
 
     def send_image(self, imgpath):
         img = Image.open(imgpath)
@@ -53,7 +51,6 @@ class ImageServer:
             self.arduino.serial.read(1)
 
         print 'done.'
-
 
     def send_cols(self, imgpath):
         img = Image.open(imgpath)

@@ -15,18 +15,18 @@ class CSVData:
         self.sources = [f[:-4] for f in files if f[-4:] == '.csv' and f[:-4] + '.png' in files]
 
         # read info
-        with open(os.path.join(DATAPATH, 'info.csv'), 'rb') as csvfile:
-            info = {row[0]: tuple(unicode(s, 'utf-8') for s in row[1:])
+        with open(os.path.join(DATAPATH, 'info.csv'), 'rt', encoding='utf-8') as csvfile:
+            info = {row[0]: tuple(str(s) for s in row[1:])
                     for row in csv.reader(csvfile)}
 
         self.info = OrderedDict()
         for source in self.sources:
-            with open(os.path.join(DATAPATH, source + '.csv'), 'rb') as csvfile:
+            with open(os.path.join(DATAPATH, source + '.csv'), 'rt', encoding='utf-8') as csvfile:
                 for y, row in enumerate(csv.reader(csvfile)):
                     for x, title in enumerate(row):
                         if title:
                             if title not in info:
-                                print 'No info found for', title
+                                print('No info found for', title)
 
                             filename = '{0}-{1}-{2}'.format(source, x, y)
                             sqinfo = dict(zip(INFOCOLS,
@@ -36,18 +36,18 @@ class CSVData:
 
 
     def write_info(self, newinfo):
-        for filename, sqinfo in newinfo.iteritems():
+        for filename, sqinfo in newinfo.items():
             self.info[filename].update(sqinfo)
 
         # write NEW info file
         with open(os.path.join(DATAPATH, 'info.csv'), 'wb') as csvfile:
             writer = csv.writer(csvfile, lineterminator='\n')
-            for filename, sqinfo in self.info.iteritems():
-                writer.writerow([unicode(sqinfo[i]).encode('utf-8') for i in INFOCOLS])
+            for filename, sqinfo in self.info.items():
+                writer.writerow([sqinfo[i].encode('utf-8') for i in INFOCOLS])
 
         # write NEW source files
         sourcemaps = {}
-        for filename, fileinfo in self.info.iteritems():
+        for filename, fileinfo in self.info.items():
             source, x, y = filename.rsplit('-', 2)
             sourcemaps.setdefault(source, {})[int(x), int(y)] = fileinfo['title']
 

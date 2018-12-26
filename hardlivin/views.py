@@ -3,7 +3,7 @@ from collections import OrderedDict
 from flask import jsonify, render_template, request
 
 from . import app
-from csvdata import CSVData
+from .csvdata import CSVData
 
 
 VENUES = {'hashtag': [('Gallery', 1, 100)],
@@ -43,12 +43,12 @@ def full_list():
 
 
 def get_snakes_squares(info):
-    return OrderedDict((filename, sqinfo) for filename, sqinfo in info.iteritems()
+    return OrderedDict((filename, sqinfo) for filename, sqinfo in info.items()
                        if sqinfo['snakes'] == '1')
 
 
 def get_unsold_squares(info):
-    return OrderedDict((filename, sqinfo) for filename, sqinfo in info.iteritems()
+    return OrderedDict((filename, sqinfo) for filename, sqinfo in info.items()
                        if sqinfo['sold'] != '1')
 
 
@@ -65,7 +65,7 @@ def draw_configurator(venue=None):
     columns = [[''] * 5 for _ in range(colcount)]
     unused = []
 
-    for filename, sqinfo in info.iteritems():
+    for filename, sqinfo in info.items():
         co, ro = ((sqinfo['column'], sqinfo['row']) if venue == 'hashtag'
                   else (sqinfo['scolumn'], sqinfo['srow']))
 
@@ -113,7 +113,7 @@ def catalogue(venue=None, sort=None):
                         for wall in VENUES[venue]
                         for col in range(wall[1], wall[2]) for row in range(5))
 
-    for filename, sqinfo in info.iteritems():
+    for filename, sqinfo in info.items():
         if sqinfo['sold'] != '1':
             if sqinfo[cname] != '' and sqinfo[rname] != '':
                 col, row = int(sqinfo[cname]), int(sqinfo[rname])

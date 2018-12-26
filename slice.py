@@ -25,7 +25,7 @@ for size in sizes:
 
 titles = {}
 
-for imgfile, padding in files.iteritems():
+for imgfile, padding in files.items():
     # get square names and info
     with open(os.path.join(DATAPATH, imgfile + '.csv'), 'rb') as csvfile:
         squares = set((sx, sy) for sy, row in enumerate(csv.reader(csvfile))

@@ -10,9 +10,9 @@ with open('hardlivin/data/info.csv', 'rb') as c:
 	#print Counter(line['difficulty'] for line in info)
 	
 	patterns = {'vigour': '[+-]\dV',
-				'gumption': '[+-]\dG',
-				'deeds': '[+-]\dD',
+				      'gumption': '[+-]\dG',
+			        'deeds': '[+-]\dD',
 				
 				}
-	print Counter(stat for line in info for stat, pattern in patterns.iteritems()
-				  if re.search(pattern, line['effect']) is not None)
+	print(Counter(stat for line in info for stat, pattern in patterns.items()
+				        if re.search(pattern, line['effect']) is not None))
